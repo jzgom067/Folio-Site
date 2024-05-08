@@ -1,10 +1,10 @@
 .main {
   text-align: center;
-  background-color: #343236;
+  background-color: #2e2e2e;
 }
 
 .header {
-  background-color: #343236;
+  background-color: #2e2e2e;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,12 +14,12 @@
   color: white;
 
   border-bottom-style: solid;
-  border-bottom-color: white;
-  border-bottom-width: 0.01rem;
+  border-bottom-color: #c094f7;
+  border-bottom-width: 0.1rem;
 }
 
 .footer {
-  background-color: #343236;
+  background-color: #2e2e2e;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,6 +27,10 @@
   padding: 1rem;
   /* font-size: calc(10px + 2vmin); */
   color: white;
+
+  border-top-style: solid;
+  border-top-color: #c094f7;
+  border-top-width: 0.1rem;
 }
 
 .projects {
@@ -35,53 +39,95 @@
 
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 
 .project {
-  color: white;
   opacity: 0;
+  background-color: #363636;
 
   width: 100%;
   height: 100%;
 
-  border-color: white;
-  border-style: solid;
+  border-radius: 0.75rem;
+  box-shadow: #1f1f1f 0.3rem 0.3rem;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 1rem;
+  box-sizing: border-box;
+  color: white;
+  padding: 1rem;
+}
+
+.project-img-container {
+  height: 100%;
+  width: 10rem;
+  box-sizing: border-box;
+  align-self: left;
+  /* border-style: solid; */
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.project-text {
+  width: 100%;
+  align-content: top;
+  box-sizing: border-box;
+  align-self: right;
+  /* border-style: solid; */
+  text-align: left;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.project-desc {
+  color: lightgray;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.section-title {
+  color: #c094f7;
+  opacity: 0;
 }
 
 .logo {
-  opacity: 0;
   height: 3rem;
   pointer-events: none;
 }
 
-.text {
-  opacity: 0;
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.link {
+  font-size: 0.8rem;
+  color: #c094f7;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .logo {
+  .section-title{
     animation: move-fade-in normal 0.75s ease-out forwards;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .text{
-    animation: move-fade-in normal 0.75s ease-out forwards;
-    animation-delay: 0.1s;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .project{
     animation: move-fade-in normal 0.75s ease-out forwards;
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
   }
-}
-
-.link {
-  color: #61dafb;
 }
 
 @keyframes move-fade-in {
