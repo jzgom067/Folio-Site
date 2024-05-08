@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+import banana from './banan.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>src/App.js</code> was edited and saved.
+        <img src={banana} className="App-logo" alt="logo" />
+        <p className="App-text">
+          👋
         </p>
         <a
           className="App-link"

@@ -3,13 +3,18 @@
 }
 
 .App-logo {
+  opacity: 0;
   height: 40vmin;
   pointer-events: none;
 }
 
+.App-text {
+  opacity: 0;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: move-fade-in normal 0.75s ease-out forwards;
   }
 }
 
@@ -24,15 +29,33 @@
   color: white;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-text{
+    animation: move-fade-in normal 0.75s ease-out forwards;
+    animation-delay: 0.1s;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-link{
+    animation: move-fade-in normal 0.75s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+}
+
 .App-link {
+  opacity: 0;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes move-fade-in {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translate(-2rem, 0rem);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    /* transform: translate(0rem, 0rem); */
   }
 }
+
