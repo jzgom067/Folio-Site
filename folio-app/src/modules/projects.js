@@ -22,7 +22,8 @@ const projects = [
     date_end: 'February 2022',
     tech_stack: [
       'Unity',
-      'C#'
+      'C#',
+      'Blender'
     ]
   },
   {

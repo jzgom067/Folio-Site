@@ -7,7 +7,10 @@ const ProjGrid = ({ items }) => {
         <div
           key={index}
           className="project"
-          style={{ animationDelay: `${(index + 1) * 0.1}s` }}
+          style={{
+            animationDelay: `${(index + 1) * 0.1}s`,
+            zIndex: `${items.length - index}`
+          }}
         >
           <div className="project-content">
             <div className="project-img-container">

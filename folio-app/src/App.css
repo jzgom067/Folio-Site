@@ -23,11 +23,12 @@ header {
 footer {
   background-color: #2e2e2e;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   color: white;
+  gap: 1rem;
 
   border-top-style: solid;
   border-top-color: #c094f7;
@@ -54,12 +55,15 @@ footer {
   }
 }
 
-@media only screen and (max-width: 50rem) {
-  html {
-    font-size: 62.5%;
-  }
+@media only screen and (max-width: 55rem) {
   .projects {
     grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  html {
+    font-size: 62.5%;
   }
 }
 
@@ -159,9 +163,10 @@ footer {
   background-color: #1f1f1f;
   padding: 0.25rem;
   border-radius: 0.25rem;
-  z-index: 10;
   animation: lower-fade-out normal 0.15s ease-out forwards;
   pointer-events: none;
+  text-wrap: nowrap;
+  opacity: 0;
 }
 
 .dev-icon-container:hover .dev-icon {
@@ -169,6 +174,7 @@ footer {
 }
 
 .dev-icon-container:hover .dev-icon-tooltip {
+  z-index: 15;
   animation: rise-fade-in normal 0.15s ease-out forwards;
 }
 
@@ -197,21 +203,9 @@ footer {
 @keyframes rise-fade-in {
   from {
     transform: translate(0rem, 0.25rem);
-    opacity: 0;
   }
   to {
     transform: translate(0rem, 0rem);
     opacity: 1;
-  }
-}
-
-@keyframes lower-fade-out {
-  from {
-    transform: translate(0rem, 0rem);
-    opacity: 1;
-  }
-  to {
-    transform: translate(0rem, 0.25rem);
-    opacity: 0;
   }
 }

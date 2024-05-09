@@ -1,7 +1,27 @@
 import banana from './img/banan.png';
 import projects from './modules/projects.js';
 import ProjGrid from './modules/ProjGrid.js';
+import DevIcons from './modules/DevIcons.js';
 import './App.css';
+
+const allStack = [
+  'Python',
+  'Java',
+  'C#',
+  'C',
+  'C++',
+  'MySQL',
+  'HTML',
+  'Unity',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Node.js',
+  'Alpine.js',
+  'Tailwind CSS',
+  'Visual Studio Code',
+  'Blender'
+]
 
 function App() {
   return (
@@ -15,6 +35,7 @@ function App() {
       <h1 className="section-title">Projects</h1>
       <ProjGrid items={projects} />
       <footer>
+        <DevIcons techs={allStack} />
         🦃🐓🦆🐤🐣🥚
       </footer>
     </div>
