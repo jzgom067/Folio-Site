@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="main">
-      <header className="header">
+      <header>
         <img src={banana} className="logo" alt="logo" />
         <div className="name">
           Jack Zgombic
@@ -14,7 +14,7 @@ function App() {
       </header>
       <h1 className="section-title">Projects</h1>
       <ProjGrid items={projects} />
-      <footer className = "footer">
+      <footer>
         🦃🐓🦆🐤🐣🥚
       </footer>
     </div>

@@ -27,7 +27,7 @@ const projects = [
   },
   {
     name: 'CARPI Bot',
-    description: "A Discord bot made for RPI students",
+    description: "A Discord bot for RPI students",
     img: carpi,
     img_alt: 'carpi',
     links: [
@@ -37,7 +37,7 @@ const projects = [
       }
     ],
     date_start: 'December 2023',
-    date_end: 'Current',
+    date_end: 'Present',
     tech_stack: [
       'Python',
       'MySQL'

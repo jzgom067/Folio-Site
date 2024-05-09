@@ -16,22 +16,8 @@ const ProjGrid = ({ items }) => {
             <div className="project-text">
               <div className="project-title">{item.name}</div>
               <div>{item.description}</div>
+              <div className="project-date">{item.date_start} - {item.date_end}</div>
               <DevIcons techs={item.tech_stack} />
-              {/* <div>
-                {item.links.map((link, i) => (
-                  <>
-                    <span>{i === 0 ? '' : ' '}</span>
-                    <a
-                      className="link"
-                      href={link.link}
-                      target="_blank"
-                      rel="noopener noreferrer external"
-                    >
-                      {link.name}
-                    </a>
-                  </>
-                ))}
-              </div> */}
             </div>
           </div>
         </div>

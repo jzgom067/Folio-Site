@@ -14,7 +14,10 @@ const icons = {
 const DevIcons = ({ techs }) => (
     <div className="icons">
         {techs.map((tech, i) => (
-            <img className="dev-icon" src={icons[tech]} title={tech} alt={tech} key={i} />
+            <div className="dev-icon-container">
+                <img className="dev-icon" src={icons[tech]} alt={tech} key={i} />
+                <div className="dev-icon-tooltip">{tech}</div>
+            </div>
         ))}
     </div>
 )
