@@ -1,37 +1,7 @@
-import banana from './banan.png';
-import projects from './projects.js';
+import banana from './img/banan.png';
+import projects from './modules/projects.js';
+import ProjGrid from './modules/ProjGrid.js';
 import './App.css';
-
-const ProjGrid = ({ items }) => {
-  return (
-    <div className="projects">
-      {items.map((item, index) => (
-        <div
-          className="project"
-          style={{ animationDelay: `${(index + 1) * 0.1}s` }}
-        >
-          <div className="project-content">
-            <div className="project-img-container">
-              <img src={item.img} className="project-img" alt={item.img_alt} />
-            </div>
-            <div className="project-text">
-              <div className="project-title">{item.name}</div>
-              <div className="project-desc">{item.description}</div>
-              <a
-                className="link"
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer external"
-              >
-                {item.link_name}
-              </a>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
 
 function App() {
   return (
