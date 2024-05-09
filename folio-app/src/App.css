@@ -25,7 +25,6 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  /* font-size: calc(10px + 2vmin); */
   color: white;
 
   border-top-style: solid;
@@ -37,10 +36,26 @@
   color: white;
   padding: 1rem;
 
+  margin: auto;
+
+  max-width: 100rem;
+
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+}
+
+
+@media only screen and (max-width: 75rem) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 50rem) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project {
@@ -121,12 +136,8 @@
   .section-title{
     animation: move-fade-in normal 0.75s ease-out forwards;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
   .project{
     animation: move-fade-in normal 0.75s ease-out forwards;
-    animation-delay: 0.1s;
   }
 }
 
