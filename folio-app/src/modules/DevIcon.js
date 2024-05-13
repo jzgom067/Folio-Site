@@ -18,15 +18,17 @@ const icons = {
     "Blender": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg",
 }
 
-const DevIcons = ({ techs }) => (
-    <div className="icons">
-        {techs.map((tech, i) => (
-            <div className="dev-icon-container" key={i}>
-                <img className="dev-icon" src={icons[tech]} alt={tech} key={i} />
-                <div className="dev-icon-tooltip">{tech}</div>
-            </div>
-        ))}
+const DevIcon = ({ tech, size }) => (
+    <div
+        className="dev-icon-container"
+        style = {{
+            height: size,
+            width: size
+        }}
+    >
+        <img className="dev-icon" src={icons[tech]} alt={tech} />
+        <div className="dev-icon-tooltip">{tech}</div>
     </div>
 )
 
-export default DevIcons;
+export default DevIcon;

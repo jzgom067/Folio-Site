@@ -1,7 +1,7 @@
 import banana from './img/banan.png';
 import projects from './modules/projects.js';
 import ProjGrid from './modules/ProjGrid.js';
-import DevIcons from './modules/DevIcons.js';
+import DevIcon from './modules/DevIcon.js';
 import './App.css';
 
 const allStack = [
@@ -35,7 +35,11 @@ function App() {
       <h1 className="section-title">Projects</h1>
       <ProjGrid items={projects} />
       <footer>
-        <DevIcons techs={allStack} />
+        <div className="project-icons">
+          {allStack.map((tech, index) => (
+            <DevIcon tech={tech} size="2rem" key={index} />
+          ))}
+        </div>
         🦃🐓🦆🐤🐣🥚
       </footer>
     </div>

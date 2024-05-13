@@ -1,4 +1,4 @@
-import DevIcons from './DevIcons.js';
+import DevIcon from './DevIcon.js';
 
 const ProjGrid = ({ items }) => {
   return (
@@ -20,7 +20,11 @@ const ProjGrid = ({ items }) => {
               <div className="project-title">{item.name}</div>
               <div>{item.description}</div>
               <div className="project-date">{item.date_start} - {item.date_end}</div>
-              <DevIcons techs={item.tech_stack} />
+              <div className="project-icons">
+                {item.tech_stack.map((tech, index) => (
+                  <DevIcon tech={tech} size="2rem" key={index} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
