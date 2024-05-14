@@ -1,6 +1,6 @@
 import projects from './modules/projects.js';
 import ProjGrid from './modules/ProjGrid.js';
-import ExtLink from './modules/ExtLink.js';
+import Icon from './modules/Icon.js';
 import './App.css';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <span>GitHub</span>
-          <ExtLink></ExtLink>
+          <Icon name="External Link" color="gray" size="1em"></Icon>
         </a>
         <a
           className="profile-link"
@@ -26,7 +26,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <span>LinkedIn</span>
-          <ExtLink></ExtLink>
+          <Icon name="External Link" color="gray" size="1em"></Icon>
         </a>
       </header>
       <h1 className="section-title">Projects</h1>
