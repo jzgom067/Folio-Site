@@ -2,6 +2,7 @@
   /* Define color palette */
   --bg-color: #2e2e2e;
   --obj-color: #363636;
+  --obj-highlight-color: #484848;
   --obj-shadow-color: #1f1f1f;
   --accent-color: #c094f7;
 
@@ -78,10 +79,11 @@ footer {
   border-radius: 0.75rem;
   box-shadow: var(--obj-shadow-color) 0.3rem 0.3rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .project:hover {
-  filter: brightness(110%);
+  background-color: var(--obj-highlight-color);
 }
 
 .project-content {

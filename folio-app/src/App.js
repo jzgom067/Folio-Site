@@ -14,7 +14,7 @@ function App() {
         </div>
       </header>
       <h1 className="section-title">Projects</h1>
-      <ProjGrid items={projects} />
+      <ProjGrid projects={projects} />
       <footer>
         🦃🐓🦆🐤🐣🥚
       </footer>

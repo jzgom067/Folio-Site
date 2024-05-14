@@ -1,33 +1,36 @@
 import DevIcon from './DevIcon.js';
 
-const ProjGrid = ({ items }) => {
+const ProjGrid = ({ projects }) => {
   return (
     <div className="projects">
-      {items.map((item, index) => (
-        <div
+      {projects.map((proj, index) => (
+        <a
           key={index}
           className="project"
           style={{
             animationDelay: `${(index + 1) * 0.1}s`,
-            zIndex: `${items.length - index}`
+            zIndex: `${projects.length - index}`
           }}
+          href={proj.links[0].link}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="project-content">
             <div className="project-img-container">
-              <img src={item.img} className="project-img" alt={item.img_alt} />
+              <img src={proj.img} className="project-img" alt={proj.img_alt} />
             </div>
             <div className="project-text">
-              <div className="project-title">{item.name}</div>
-              <div>{item.description}</div>
-              <div className="project-date">{item.date_start} - {item.date_end}</div>
+              <div className="project-title">{proj.name}</div>
+              <div>{proj.description}</div>
+              <div className="project-date">{proj.date_start} - {proj.date_end}</div>
               <div className="project-icons">
-                {item.tech_stack.map((tech, index) => (
+                {proj.tech_stack.map((tech, index) => (
                   <DevIcon tech={tech} size="2rem" key={index} />
                 ))}
               </div>
             </div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );
