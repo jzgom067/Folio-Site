@@ -16,15 +16,34 @@ header {
   background-color: var(--bg-color);
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: left;
-  padding: 1rem;
-  gap: 1rem;
   color: white;
 
   border-bottom-style: solid;
   border-bottom-color: var(--accent-color);
   border-bottom-width: 0.1rem;
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  align-self: center;
+}
+
+.profile-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0rem;
+}
+
+.profile-link:hover {
+  background-color: var(--obj-color);
 }
 
 footer {
@@ -130,21 +149,6 @@ footer {
 }
 
 .section-title {
-  color: var(--accent-color);
-}
-
-.logo {
-  height: 3rem;
-  pointer-events: none;
-}
-
-.name {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.link {
-  font-size: 0.8rem;
   color: var(--accent-color);
 }
 
