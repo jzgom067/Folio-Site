@@ -1,6 +1,11 @@
-import projects from './modules/projects.js';
+// data
+import projects from './data/projects.js';
+import jobs from './data/jobs.js';
+
+// modules
 import ProjGrid from './modules/ProjGrid.js';
 import Icon from './modules/Icon.js';
+import Experience from './modules/Experience.js';
 import './App.css';
 
 function App() {
@@ -29,8 +34,20 @@ function App() {
           <Icon name="External Link" color="gray" size="1em"></Icon>
         </a>
       </header>
-      <h1 className="section-title">Projects</h1>
-      <ProjGrid projects={projects} />
+      {/* <div className="section">
+        <h1 className="section-title">About Me</h1>
+      </div> */}
+      <div className="section">
+        <h1 className="section-title">Projects</h1>
+        <ProjGrid projects={projects} />
+      </div>
+      <div className="section">
+        <h1 className="section-title">Experience</h1>
+        <Experience jobs={jobs}></Experience>
+      </div>
+      {/* <div className="section">
+        <h1 className="section-title">Tech Stack</h1>
+      </div> */}
       <footer>
         🦃🐓🦆🐤🐣🥚
       </footer>

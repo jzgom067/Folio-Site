@@ -10,6 +10,7 @@
   background-color: var(--bg-color);
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 header {
@@ -18,7 +19,6 @@ header {
   flex-direction: row;
   align-items: stretch;
   justify-content: left;
-  color: white;
 
   border-bottom-style: solid;
   border-bottom-color: var(--accent-color);
@@ -53,27 +53,24 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  color: white;
   gap: 1rem;
+}
 
-  border-top-style: solid;
-  border-top-color: var(--accent-color);
-  border-top-width: 0.1rem;
+.section {
+  border-bottom-style: solid;
+  border-bottom-width: 0.1rem;
+  border-bottom-color: var(--accent-color);
 }
 
 .projects {
   color: white;
   padding: 1rem;
-
-  margin: auto;
-
   max-width: 100rem;
-
+  margin: auto;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
 }
-
 
 @media only screen and (max-width: 75rem) {
   .projects {
@@ -118,8 +115,6 @@ footer {
 .project-img-container {
   width: 10rem;
   box-sizing: border-box;
-  align-self: left;
-  /* border-style: solid; */
 }
 
 .project-img {
@@ -134,7 +129,6 @@ footer {
   align-content: top;
   box-sizing: border-box;
   align-self: right;
-  /* border-style: solid; */
   text-align: left;
 }
 
@@ -153,6 +147,70 @@ footer {
 }
 
 .project-icons {
+  margin-top: auto;
+  justify-content: right;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 60rem;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.job {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  box-sizing: border-box;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--obj-color);
+  box-shadow: var(--obj-shadow-color) 0.3rem 0.3rem;
+}
+
+.job:hover {
+  background-color: var(--obj-highlight-color);
+}
+
+.job-img-container {
+  width: 12rem;
+}
+
+.job-img {
+  border-radius: 0.75rem;
+  width: 100%;
+}
+
+.job-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: top;
+  box-sizing: border-box;
+  align-self: right;
+  text-align: left;
+}
+
+.job-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.job-date {
+  color: lightgray;
+  font-size: 0.9rem;
+}
+
+.job-icons {
   margin-top: auto;
   justify-content: right;
   display: flex;
@@ -191,11 +249,15 @@ footer {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .section-title{
+  .section-title {
     opacity: 0;
     animation: slide-fade-in normal 0.75s ease-out forwards;
   }
-  .project{
+  .project {
+    opacity: 0;
+    animation: slide-fade-in normal 0.75s ease-out forwards;
+  }
+  .job {
     opacity: 0;
     animation: slide-fade-in normal 0.75s ease-out forwards;
   }
