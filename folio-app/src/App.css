@@ -1,10 +1,10 @@
 .main {
   /* Define color palette */
-  --bg-color: #2e2e2e;
-  --obj-color: #363636;
+  --bg-color: #121212;
+  --obj-color: #1e1e1e;
   --obj-highlight-color: #484848;
-  --obj-shadow-color: #1f1f1f;
-  --accent-color: #c094f7;
+  --obj-shadow-color: #101010;
+  --accent-color: #b788f8;
 
   text-align: center;
   background-color: var(--bg-color);
@@ -93,7 +93,7 @@ footer {
 .project {
   background-color: var(--obj-color);
   border-radius: 0.75rem;
-  box-shadow: var(--obj-shadow-color) 0.3rem 0.3rem;
+  box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
   cursor: pointer;
   text-decoration: none;
 }
@@ -174,7 +174,7 @@ footer {
   padding: 1rem;
   border-radius: 1rem;
   background-color: var(--obj-color);
-  box-shadow: var(--obj-shadow-color) 0.3rem 0.3rem;
+  box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
 }
 
 .job:hover {

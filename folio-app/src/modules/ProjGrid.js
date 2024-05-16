@@ -1,3 +1,7 @@
+// globals
+import globals from '../data/globals.js'
+
+// modules
 import DevIcon from './DevIcon.js';
 
 const ProjGrid = ({ projects }) => {
@@ -8,7 +12,7 @@ const ProjGrid = ({ projects }) => {
           key={index}
           className="project"
           style={{
-            animationDelay: `${(index + 1) * 0.1}s`,
+            animationDelay: `${globals.fadeInDelay++ * 0.1}s`,
             zIndex: `${projects.length - index}`
           }}
           href={proj.links[0].link}

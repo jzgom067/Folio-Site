@@ -1,3 +1,6 @@
+// global variables
+import globals from './data/globals.js';
+
 // data
 import projects from './data/projects.js';
 import jobs from './data/jobs.js';
@@ -38,11 +41,25 @@ function App() {
         <h1 className="section-title">About Me</h1>
       </div> */}
       <div className="section">
-        <h1 className="section-title">Projects</h1>
+        <h1 
+          className="section-title"
+          style={{
+            animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+          }}
+        >
+          Projects
+        </h1>
         <ProjGrid projects={projects} />
       </div>
       <div className="section">
-        <h1 className="section-title">Experience</h1>
+        <h1 
+          className="section-title"
+          style={{
+            animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+          }}
+        >
+          Experience
+        </h1>
         <Experience jobs={jobs}></Experience>
       </div>
       {/* <div className="section">

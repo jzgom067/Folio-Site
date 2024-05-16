@@ -1,3 +1,7 @@
+// globals
+import globals from '../data/globals.js';
+
+// modules
 import DevIcon from '../modules/DevIcon.js';
 
 const Experience = ({ jobs }) => {
@@ -8,7 +12,7 @@ const Experience = ({ jobs }) => {
           key={index}
           className="job"
           style={{
-            animationDelay: `${(index + 1) * 0.1}s`
+            animationDelay: `${globals.fadeInDelay++ * 0.1}s`
           }}
         >
           <div className="job-img-container">
