@@ -8,11 +8,12 @@ import DevIcon from '../modules/DevIcon.js';
 import React, { useState, useEffect } from 'react';
 
 const Experience = ({ jobs }) => {
+  const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
   const [devIconWidth, setDevIconWidth] = useState('2.5rem');
 
   const updateVariable = () => {
-    if (window.innerWidth <= 55 *
-      parseFloat(getComputedStyle(document.documentElement).fontSize)) {
+    if (window.innerWidth <= 55 * rem) {
       setDevIconWidth('2rem');
     } else {
       setDevIconWidth('2.5rem');
@@ -22,9 +23,6 @@ const Experience = ({ jobs }) => {
   useEffect(() => {
     window.addEventListener('resize', updateVariable);
     updateVariable();
-    return () => {
-      window.removeEventListener('resize', updateVariable);
-    };
   })
 
   return (
