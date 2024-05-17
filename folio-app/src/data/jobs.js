@@ -8,12 +8,8 @@ const jobs = [
     img_alt: 'hiveclass',
     links: [
       {
-        name: 'GitHub',
-        link: 'https://github.com/jzgom067/Super-Golf'
-      },
-      {
-        name: 'itch.io',
-        link: 'https://jzgombic.itch.io/golf'
+        name: 'Hiveclass',
+        link: 'https://www.hiveclass.co/'
       }
     ],
     date_start: 'January 2022',

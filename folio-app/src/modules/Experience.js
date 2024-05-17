@@ -4,16 +4,41 @@ import globals from '../data/globals.js';
 // modules
 import DevIcon from '../modules/DevIcon.js';
 
+// react stuff
+import React, { useState, useEffect } from 'react';
+
 const Experience = ({ jobs }) => {
+  const [devIconWidth, setDevIconWidth] = useState('2.5rem');
+
+  const updateVariable = () => {
+    if (window.innerWidth <= 55 *
+      parseFloat(getComputedStyle(document.documentElement).fontSize)) {
+      setDevIconWidth('2rem');
+    } else {
+      setDevIconWidth('2.5rem');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateVariable);
+    updateVariable();
+    return () => {
+      window.removeEventListener('resize', updateVariable);
+    };
+  })
+
   return (
     <div className="jobs">
       {jobs.map((job, index) => (
-        <div
+        <a
           key={index}
           className="job"
           style={{
             animationDelay: `${globals.fadeInDelay++ * 0.1}s`
           }}
+          href={job.links[0].link}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="job-img-container">
             <img className="job-img" src={job.img} alt={job.img_alt}></img>
@@ -30,11 +55,11 @@ const Experience = ({ jobs }) => {
             </div>
             <div className="job-icons">
               {job.tech_stack.map((tech, index) => (
-                <DevIcon tech={tech} size="2.5rem" key={index} />
+                <DevIcon tech={tech} size={devIconWidth} key={index} />
               ))}
             </div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
     );
