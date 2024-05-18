@@ -38,6 +38,7 @@ const Experience = ({ jobs }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div className="job-outline"></div>
           <div className="job-img-container">
             <img className="job-img" src={job.img} alt={job.img_alt}></img>
           </div>

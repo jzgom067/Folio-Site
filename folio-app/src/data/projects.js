@@ -1,12 +1,8 @@
-import banana from '../img/banan.png';
-import supergolf from '../img/supergolf.png';
-import carpi from '../img/carpi.png';
-
 const projects = [
   {
     name: 'Super Golf',
     description: "A 3D golf game made in Unity",
-    img: supergolf,
+    img: require('../img/supergolf.png'),
     img_alt: 'golf',
     links: [
       {
@@ -29,7 +25,7 @@ const projects = [
   {
     name: 'CARPI Bot',
     description: "A Discord bot for RPI students",
-    img: carpi,
+    img: require('../img/carpi.png'),
     img_alt: 'carpi',
     links: [
       {
@@ -47,7 +43,7 @@ const projects = [
   {
     name: 'This Website',
     description: "A portfolio",
-    img: banana,
+    img: require('../img/banan.png'),
     img_alt: 'banana',
     links: [
       {

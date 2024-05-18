@@ -5,6 +5,7 @@
   --obj-highlight-color: #484848;
   --obj-shadow-color: #101010;
   --accent-color: #b788f8;
+  --tooltip-color: #080808;
 
   text-align: center;
   background-color: var(--bg-color);
@@ -102,6 +103,9 @@ footer {
   .job-img {
     border-radius: 0.5rem !important;
   }
+  .job-outline {
+    border-radius: 0.75rem !important;
+  }
 }
 
 @media only screen and (max-width: 40rem) {
@@ -127,6 +131,23 @@ footer {
 
 .project:hover {
   background-color: var(--obj-highlight-color);
+}
+
+.project:focus {
+  outline: none;
+}
+
+.project-outline {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.75rem;
+  pointer-events: none;
+  top: 0;
+}
+
+.project:focus .project-outline {
+  outline-style: solid;
 }
 
 .project-img-container {
@@ -198,6 +219,23 @@ footer {
   background-color: var(--obj-highlight-color);
 }
 
+.job:focus {
+  outline: none;
+}
+
+.job-outline {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  pointer-events: none;
+  top: 0;
+}
+
+.job:focus .job-outline {
+  outline-style: solid;
+}
+
 .job-img-container {
   width: 12rem;
   box-sizing: border-box;
@@ -248,8 +286,9 @@ footer {
 }
 
 .dev-icon-tooltip {
+  top: 15rem;
   font-size: 0.9rem;
-  background-color: #1f1f1f;
+  background-color: var(--tooltip-color);
   padding: 0.25rem;
   border-radius: 0.25rem;
   pointer-events: none;
@@ -263,7 +302,6 @@ footer {
 }
 
 .dev-icon-container:hover .dev-icon-tooltip {
-  z-index: 15;
   opacity: 1;
   transform: translateY(-0.25rem);
 }
