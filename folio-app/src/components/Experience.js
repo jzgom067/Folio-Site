@@ -2,7 +2,7 @@
 import globals from '../data/globals.js';
 
 // modules
-import DevIcon from '../modules/DevIcon.js';
+import DevIcon from './DevIcon.js';
 
 // react stuff
 import React, { useState, useEffect } from 'react';
