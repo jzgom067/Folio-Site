@@ -19,6 +19,7 @@ const ProjGrid = ({ projects }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div className="project-outline"></div>
           <div className="project-img-container">
             <img src={proj.img} className="project-img" alt={proj.img_alt} />
           </div>

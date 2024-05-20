@@ -99,6 +99,9 @@ footer {
   .job {
     border-radius: 0.75rem !important;
   }
+  .job-outline {
+    .border-radius: 0.75rem !important;
+  }
   .job-img {
     border-radius: 0.5rem !important;
   }
@@ -127,6 +130,22 @@ footer {
 
 .project:hover {
   background-color: var(--obj-highlight-color);
+}
+
+.project:focus {
+  outline: none;
+}
+
+.project-outline {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  border-radius: 0.75rem;
+}
+
+.project:focus .project-outline {
+  outline-style: solid;
 }
 
 .project-img-container {
@@ -196,6 +215,22 @@ footer {
 
 .job:hover {
   background-color: var(--obj-highlight-color);
+}
+
+.job:focus {
+  outline: none;
+}
+
+.job-outline {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  border-radius: 1rem;
+}
+
+.job:focus .job-outline {
+  outline-style: solid;
 }
 
 .job-img-container {

@@ -1,8 +1,8 @@
 // globals
 import globals from '../data/globals.js';
 
-// modules
-import DevIcon from './DevIcon.js';
+// components
+import DevIcon from '../components/DevIcon.js';
 
 // react stuff
 import React, { useState, useEffect } from 'react';
@@ -38,6 +38,7 @@ const Experience = ({ jobs }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div className="job-outline"></div>
           <div className="job-img-container">
             <img className="job-img" src={job.img} alt={job.img_alt}></img>
           </div>
