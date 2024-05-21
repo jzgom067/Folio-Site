@@ -5,6 +5,7 @@ import carpi from '../img/carpi.png';
 const projects = [
   {
     name: 'Super Golf',
+    slug: 'golf',
     description: "A 3D golf game made in Unity",
     img: supergolf,
     img_alt: 'golf',
@@ -28,6 +29,7 @@ const projects = [
   },
   {
     name: 'CARPI Bot',
+    slug: 'carpi',
     description: "A Discord bot for RPI students",
     img: carpi,
     img_alt: 'carpi',
@@ -46,6 +48,7 @@ const projects = [
   },
   {
     name: 'This Website',
+    slug: 'website',
     description: "A portfolio",
     img: banana,
     img_alt: 'banana',

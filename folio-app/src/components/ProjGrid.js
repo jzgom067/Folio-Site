@@ -4,20 +4,21 @@ import globals from '../data/globals.js'
 // modules
 import DevIcon from './DevIcon.js';
 
+// router
+import { Link } from 'react-router-dom';
+
 const ProjGrid = ({ projects }) => {
   return (
     <div className="projects">
       {projects.map((proj, index) => (
-        <a
+        <Link
           key={index}
           className="project"
           style={{
             animationDelay: `${globals.fadeInDelay++ * 0.1}s`,
             zIndex: `${projects.length - index}`
           }}
-          href={proj.links[0].link}
-          target="_blank"
-          rel="noopener noreferrer"
+          to={"/project/" + proj.slug}
         >
           <div className="project-outline"></div>
           <div className="project-img-container">
@@ -33,7 +34,7 @@ const ProjGrid = ({ projects }) => {
               ))}
             </div>
           </div>
-        </a>
+        </Link>
       ))}
     </div>
   );

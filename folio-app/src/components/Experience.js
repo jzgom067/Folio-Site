@@ -7,6 +7,9 @@ import DevIcon from '../components/DevIcon.js';
 // react stuff
 import React, { useState, useEffect } from 'react';
 
+// router
+import { Link } from 'react-router-dom';
+
 const Experience = ({ jobs }) => {
   const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
@@ -28,15 +31,13 @@ const Experience = ({ jobs }) => {
   return (
     <div className="jobs">
       {jobs.map((job, index) => (
-        <a
+        <Link
           key={index}
           className="job"
           style={{
             animationDelay: `${globals.fadeInDelay++ * 0.1}s`
           }}
-          href={job.links[0].link}
-          target="_blank"
-          rel="noopener noreferrer"
+          to={"/experience/" + job.slug}
         >
           <div className="job-outline"></div>
           <div className="job-img-container">
@@ -58,7 +59,7 @@ const Experience = ({ jobs }) => {
               ))}
             </div>
           </div>
-        </a>
+        </Link>
       ))}
     </div>
     );

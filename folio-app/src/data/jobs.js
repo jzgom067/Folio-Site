@@ -3,6 +3,7 @@ import hiveclass from '../img/hiveclass.png';
 const jobs = [
   {
     name: 'Hiveclass',
+    slug: 'hiveclass',
     description: "Developer",
     img: hiveclass,
     img_alt: 'hiveclass',
