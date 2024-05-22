@@ -6,9 +6,9 @@ const projects = [
   {
     name: 'Super Golf',
     slug: 'golf',
-    description: "A 3D golf game made in Unity",
-    img: supergolf,
-    img_alt: 'golf',
+    subtitle: "A 3D golf game made in Unity",
+    logo: supergolf,
+    logo_alt: 'golf',
     links: [
       {
         name: 'GitHub',
@@ -25,14 +25,21 @@ const projects = [
       'Unity',
       'C#',
       'Blender'
-    ]
+    ],
+    text: {
+      description: "A golf game made over the course of 2 months.",
+      contributions: "I made the project from start to finish.",
+      learned: "I learned how to finish a project after years of prototypes.",
+      challenges: "Everything in this project was completely self-taught.",
+      next: "Game development is fun, I might make more games in the future."
+    }
   },
   {
     name: 'CARPI Bot',
     slug: 'carpi',
-    description: "A Discord bot for RPI students",
-    img: carpi,
-    img_alt: 'carpi',
+    subtitle: "A Discord bot for RPI students",
+    logo: carpi,
+    logo_alt: 'carpi',
     links: [
       {
         name: 'GitHub',
@@ -44,14 +51,21 @@ const projects = [
     tech_stack: [
       'Python',
       'MySQL'
-    ]
+    ],
+    text: {
+      description: "",
+      contributions: "",
+      learned: "",
+      challenges: "",
+      next: ""
+    }
   },
   {
     name: 'This Website',
     slug: 'website',
-    description: "A portfolio",
-    img: banana,
-    img_alt: 'banana',
+    subtitle: "A portfolio",
+    logo: banana,
+    logo_alt: 'banana',
     links: [
       {
         name: 'GitHub',
@@ -66,7 +80,14 @@ const projects = [
       'JavaScript',
       'React',
       'Node.js'
-    ]
+    ],
+    text: {
+      description: "",
+      contributions: "",
+      learned: "",
+      challenges: "",
+      next: ""
+    }
   }
 ]
 

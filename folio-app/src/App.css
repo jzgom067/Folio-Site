@@ -13,16 +13,31 @@
   color: white;
 }
 
-.nav-bar {
-  background-color: var(--bg-color);
+/* #region navbar */
+.navbar {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  background-color: var(--bg-color);
 
   border-bottom-style: solid;
   border-bottom-color: var(--accent-color);
   border-bottom-width: 0.1rem;
+}
+
+.navbar-left {
+  margin-right: auto;
+}
+
+.navbar-right {
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: left;
 }
 
 .name {
@@ -45,6 +60,7 @@
 .profile-link:hover {
   background-color: var(--obj-color);
 }
+/* #endregion */
 
 footer {
   background-color: var(--bg-color);
@@ -90,7 +106,7 @@ footer {
   .job-img-container {
     width: 10rem !important;
   }
-  .dev-icon-container {
+  .job .dev-icon-container {
     width: 2rem !important;
   }
   .jobs {
@@ -148,12 +164,12 @@ footer {
   outline-style: solid;
 }
 
-.project-img-container {
+.project-logo-container {
   width: 10rem;
   box-sizing: border-box;
 }
 
-.project-img {
+.project-logo {
   width: 100%;
   border-radius: 0.5rem;
 }
@@ -233,12 +249,12 @@ footer {
   outline-style: solid;
 }
 
-.job-img-container {
+.job-logo-container {
   width: 12rem;
   box-sizing: border-box;
 }
 
-.job-img {
+.job-logo {
   border-radius: 0.75rem;
   width: 100%;
 }
@@ -269,6 +285,23 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+}
+/* #endregion */
+
+/* #region project page */
+.project-tech {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.project-page-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
 }
 /* #endregion */
 

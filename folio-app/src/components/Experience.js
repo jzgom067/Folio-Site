@@ -40,15 +40,15 @@ const Experience = ({ jobs }) => {
           to={"/experience/" + job.slug}
         >
           <div className="job-outline"></div>
-          <div className="job-img-container">
-            <img className="job-img" src={job.img} alt={job.img_alt}></img>
+          <div className="job-logo-container">
+            <img className="job-logo" src={job.logo} alt={job.logo_alt}></img>
           </div>
           <div className="job-text">
             <div className="job-title">
               {job.name}
             </div>
             <div>
-              {job.description}
+              {job.subtitle}
             </div>
             <div className="job-date">
               {job.date_start + ' - ' + job.date_end}

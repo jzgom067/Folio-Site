@@ -21,12 +21,12 @@ const ProjGrid = ({ projects }) => {
           to={"/project/" + proj.slug}
         >
           <div className="project-outline"></div>
-          <div className="project-img-container">
-            <img src={proj.img} className="project-img" alt={proj.img_alt} />
+          <div className="project-logo-container">
+            <img src={proj.logo} className="project-logo" alt={proj.logo_alt} />
           </div>
           <div className="project-text">
             <div className="project-title">{proj.name}</div>
-            <div>{proj.description}</div>
+            <div>{proj.subtitle}</div>
             <div className="project-date">{proj.date_start} - {proj.date_end}</div>
             <div className="project-icons">
               {proj.tech_stack.map((tech, index) => (

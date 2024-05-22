@@ -4,9 +4,9 @@ const jobs = [
   {
     name: 'Hiveclass',
     slug: 'hiveclass',
-    description: "Developer",
-    img: hiveclass,
-    img_alt: 'hiveclass',
+    subtitle: "Developer",
+    logo: hiveclass,
+    logo_alt: 'hiveclass',
     links: [
       {
         name: 'Hiveclass',
