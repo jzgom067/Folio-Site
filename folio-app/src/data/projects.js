@@ -59,7 +59,7 @@ const projects = [
         "games, I find it fun to analyze and try to reverse engineer them, as well as " +
         "appreciate cleverly designed mechanics. It's very inspiring to see all the " +
         "great games that exist, and knowing I've already made one myself only makes " +
-        "that feeling stronger.."
+        "that feeling stronger."
     }
   },
   {
