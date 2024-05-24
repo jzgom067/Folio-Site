@@ -1,10 +1,15 @@
 import Icon from './Icon.js';
 
+// router
+import { Link } from 'react-router-dom'
+
 const NavBar = () => (
   <div className="navbar">
     <div className="navbar-left">
       <div className="name">
-        Jack Zgombic
+        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+          Jack Zgombic
+        </Link>
       </div>
     </div>
     <div className="navbar-right">
