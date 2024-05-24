@@ -81,11 +81,37 @@ const projects = [
       'MySQL'
     ],
     text: {
-      description: "",
-      contributions: "",
-      learned: "",
-      challenges: "",
-      next: ""
+      description: "CARPI Bot is a Discord bot designed for use by students at " +
+        "Rensselaer Polytechnic Institute. Discord is tightly integrated with the " +
+        "community there, so the bot is made to be a helpful resource on a platform " +
+        "that people are already on. It currently features stores of information like " +
+        "the academic calendar and course catalog, with more features and improvements " +
+        "to come. This project is part of the Rensselaer Center for Open Source (RCOS) " +
+        "program, one that focuses on the development of open source solutions for " +
+        "real world problems.",
+      contributions: "I started contributing to this project in December 2023, " +
+        "creating a proof of concept for migrating existing data to a MySQL database. " +
+        "I officially joined the project in January 2024, converting already-developed " +
+        "features to use a database as a more efficient solution for data storage. " +
+        "Much of my time was spent designing the database that would be used as the " +
+        "foundation for the entire bot from that point forward. After that, I took " +
+        "charge of development on the Course Search feature, which I rewrote from the " +
+        "ground up to use our database instead of scraping data from the unreliable " +
+        "catalog website. This feature was pushed to production in April 2024.",
+      learned: "This was my first project that involved working with a team. It was " +
+        "also my first time using GitHub (or anything really) for version control, so " +
+        "there was a lot to learn in addition to refreshing my Python knowledge. I was " +
+        "also working with a library (Discord.py) that I haven't used before, so a lot " +
+        "adapting was necessary to contribute to this project.",
+      challenges: "The biggest challenge in this project is managing many different " +
+        "interacting libraries, like interfacing with databases and using Discord's " +
+        "API. This means that problems led to situations where we had to decipher " +
+        "whether it was a library bug or a mistake on our part. We've had to change " +
+        "libraries on a few occasions to solve issues like this.",
+      next: "I plan to continue working on this project in future semesters during my " +
+        "time at RPI. I would like to iterate more on the Course Search, as well as " +
+        "update the database structure to include future features of the bot. I look " +
+        "forward to seeing the potential for this bot in the community."
     }
   },
   {
