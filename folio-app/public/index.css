@@ -1,9 +1,9 @@
 body {
-    background-color: #121212;
+  background-color: #121212;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
