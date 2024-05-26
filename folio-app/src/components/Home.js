@@ -9,14 +9,17 @@ import jobs from '../data/jobs.js';
 import ProjGrid from './ProjGrid.js';
 import Experience from './Experience.js';
 
+// styling
+import styles from './Home.module.css';
+
 const Home = () => (
   <>
     {/* <div className="section">
       <h1 className="section-title">About Me</h1>
     </div> */}
-    <div className="section">
+    <div className={styles.section}>
       <h1 
-        className="section-title"
+        className={styles.sectionTitle}
         style={{
           animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
         }}
@@ -25,9 +28,9 @@ const Home = () => (
       </h1>
       <ProjGrid projects={projects} />
     </div>
-    <div className="section">
+    <div className={styles.section}>
       <h1 
-        className="section-title"
+        className={styles.sectionTitle}
         style={{
           animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
         }}

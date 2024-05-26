@@ -10,6 +10,9 @@ import React, { useState, useEffect } from 'react';
 // router
 import { Link } from 'react-router-dom';
 
+// styling
+import styles from './Experience.module.css';
+
 const Experience = ({ jobs }) => {
   const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
@@ -29,31 +32,31 @@ const Experience = ({ jobs }) => {
   })
 
   return (
-    <div className="jobs">
+    <div className={styles.jobs}>
       {jobs.map((job, index) => (
         <Link
           key={index}
-          className="job"
+          className={styles.job}
           style={{
             animationDelay: `${globals.fadeInDelay++ * 0.1}s`
           }}
           to={"/experience/" + job.slug}
         >
-          <div className="job-outline"></div>
-          <div className="job-logo-container">
-            <img className="job-logo" src={job.logo} alt={job.logo_alt}></img>
+          <div className={styles.outline}></div>
+          <div className={styles.logoContainer}>
+            <img className={styles.logo} src={job.logo} alt={job.logo_alt}></img>
           </div>
-          <div className="job-text">
-            <div className="job-title">
+          <div className={styles.text}>
+            <div className={styles.title}>
               {job.name}
             </div>
             <div>
               {job.subtitle}
             </div>
-            <div className="job-date">
+            <div className={styles.date}>
               {job.date_start + ' - ' + job.date_end}
             </div>
-            <div className="job-icons">
+            <div className={styles.tech}>
               {job.tech_stack.map((tech, index) => (
                 <DevIcon tech={tech} size={devIconWidth} key={index} />
               ))}

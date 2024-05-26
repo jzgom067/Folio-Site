@@ -3,18 +3,21 @@ import Icon from './Icon.js';
 // router
 import { Link } from 'react-router-dom'
 
+// styling
+import styles from './NavBar.module.css';
+
 const NavBar = () => (
-  <div className="navbar">
-    <div className="navbar-left">
-      <div className="name">
+  <div className={styles.navbar}>
+    <div className={styles.left}>
+      <div className={styles.name}>
         <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
           Jack Zgombic
         </Link>
       </div>
     </div>
-    <div className="navbar-right">
+    <div className={styles.right}>
       <a
-        className="profile-link"
+        className={styles.link}
         href="https://github.com/jzgom067"
         target="_blank"
         rel="noopener noreferrer"
@@ -23,7 +26,7 @@ const NavBar = () => (
         <Icon name="External Link" color="gray" size="1em"></Icon>
       </a>
       <a
-        className="profile-link"
+        className={styles.link}
         href="https://linkedin.com/in/jack-zgombic"
         target="_blank"
         rel="noopener noreferrer"

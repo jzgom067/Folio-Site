@@ -1,0 +1,96 @@
+.projects {
+  display: grid;
+  color: white;
+  padding: 1rem;
+  max-width: 100rem;
+  margin: auto;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 75rem) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 55rem) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  composes: slideFadeIn from '../Anim.css';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  box-sizing: border-box;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--obj-color);
+  box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project:hover {
+  background-color: var(--obj-highlight-color);
+}
+
+.project:focus {
+  outline: none;
+}
+
+.outline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.75rem;
+}
+
+.project:focus .outline {
+  outline-style: solid;
+}
+
+.logoContainer {
+  width: 10rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: top;
+  box-sizing: border-box;
+  align-self: right;
+  text-align: left;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.date {
+  color: lightgray;
+  font-size: 0.9rem;
+}
+
+.tech {
+  margin-top: auto;
+  justify-content: right;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}

@@ -7,27 +7,27 @@ import globals from './data/globals.js';
 // components
 import NavBar from './components/NavBar.js';
 import Content from './components/Content.js';
+import Footer from './components/Footer.js';
 
 // router
 import { useLocation } from 'react-router-dom';
 
 // styling
-import './App.css';
+import styles from './App.module.css';
+import './Anim.css';
 
 function App() {
+  // detect when the page changes, and reset the fade in delay
   let location = useLocation();
-
   React.useEffect(() => {
     globals.fadeInDelay = 0;
   }, [location]);
 
   return (
-    <div className="main">
+    <div className={styles.main}>
       <NavBar />
       <Content />
-      <footer>
-        🦃🐓🦆🐤🐣🥚
-      </footer>
+      <Footer />
     </div>
   );
 }

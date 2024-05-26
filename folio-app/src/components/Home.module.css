@@ -1,0 +1,10 @@
+.section {
+  border-bottom-style: solid;
+  border-bottom-width: 0.1rem;
+  border-bottom-color: var(--accent-color);
+}
+
+.sectionTitle {
+  composes: slideFadeIn from '../Anim.css';
+  color: var(--accent-color);
+}

@@ -7,6 +7,9 @@ import DevIcon from './DevIcon.js';
 // router
 import { useParams } from 'react-router-dom';
 
+// styling
+import styles from './Project.module.css';
+
 function getProj(slug) {
   return projects.find((proj) => proj.slug === slug);
 }
@@ -16,16 +19,16 @@ function Project() {
   proj = getProj(proj);
 
   return (
-    <div className="section">
-      <h1 className="section-title">
+    <div className={styles.section}>
+      <h1>
         {proj.name}
       </h1>
-      <div className="project-tech">
+      <div className={styles.tech}>
         {proj.tech_stack.map((tech, i) => (
           <DevIcon tech={tech} size="4rem" key={i} />
         ))}
       </div>
-      <div className="project-page-text">
+      <div className={styles.text}>
         <h2>What is {proj.name}?</h2>
         <div>{proj.text.description}</div>
         <h2>What did I contribute?</h2>

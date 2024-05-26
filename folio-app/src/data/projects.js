@@ -115,9 +115,9 @@ const projects = [
     }
   },
   {
-    name: 'This Website',
-    slug: 'website',
-    subtitle: "A portfolio",
+    name: 'Personal Website',
+    slug: 'site',
+    subtitle: "My portfolio website",
     logo: banana,
     logo_alt: 'banana',
     links: [
