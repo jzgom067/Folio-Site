@@ -39,6 +39,7 @@
   left: 0;
   right: 0;
   border-radius: 1rem;
+  pointer-events: none;
 }
 
 .job:focus .outline {
