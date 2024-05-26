@@ -29,16 +29,12 @@ function Project() {
         ))}
       </div>
       <div className={styles.text}>
-        <h2>What is {proj.name}?</h2>
-        <div>{proj.text.description}</div>
-        <h2>What did I contribute?</h2>
-        <div>{proj.text.contributions}</div>
-        <h2>What did I learn?</h2>
-        <div>{proj.text.learned}</div>
-        <h2>What challenges did I face?</h2>
-        <div>{proj.text.challenges}</div>
-        <h2>What's next?</h2>
-        <div>{proj.text.next}</div>
+        {proj.text.map((dict, i) => (
+          <div key={i}>
+            <h2>{dict.title}</h2>
+            <div>{dict.text}</div>
+          </div>
+        ))}
       </div>
     </div>
   );
