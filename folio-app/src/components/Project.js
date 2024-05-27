@@ -1,5 +1,6 @@
 // data
 import projects from '../data/projects.js';
+import globals from '../data/globals.js';
 
 // components
 import DevIcon from './DevIcon.js';
@@ -20,19 +21,43 @@ function Project() {
 
   return (
     <div className={styles.section}>
-      <h1>
+      <h1
+        className={styles.title}
+        style={{
+          animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+        }}
+      >
         {proj.name}
       </h1>
-      <div className={styles.tech}>
+      <div
+        className={styles.tech}
+        style={{
+          animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+        }}
+      >
         {proj.tech_stack.map((tech, i) => (
           <DevIcon tech={tech} size="4rem" key={i} />
         ))}
       </div>
-      <div className={styles.text}>
+      <div className={styles.content}>
         {proj.text.map((dict, i) => (
           <div key={i}>
-            <h2>{dict.title}</h2>
-            <div>{dict.text}</div>
+            <h2
+              className={styles.sectionTitle}
+              style={{
+                animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+              }}
+            >
+              {dict.title}
+            </h2>
+            <div
+              className={styles.text}
+              style={{
+                animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+              }}
+            >
+              {dict.text}
+            </div>
           </div>
         ))}
       </div>
