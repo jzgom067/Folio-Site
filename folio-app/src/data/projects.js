@@ -1,6 +1,7 @@
-import banana from '../img/banan.png';
 import supergolf from '../img/supergolf.png';
 import carpi from '../img/carpi.png';
+import banana from '../img/banan.png';
+import keys from '../img/keys.jpg';
 
 const projects = [
   {
@@ -159,7 +160,7 @@ const projects = [
       }
     ],
     date_start: 'May 2024',
-    date_end: 'May 2024',
+    date_end: 'Present',
     tech_stack: [
       'HTML',
       'CSS',
@@ -173,7 +174,33 @@ const projects = [
         text: "Just a portfolio."
       }
     ]
-  }
+  },
+  {
+    name: 'GPT Thing',
+    slug: 'gpt',
+    subtitle: "A cheaper way to use ChatGPT",
+    logo: keys,
+    logo_alt: 'keys',
+    links: [
+      {
+        name: 'GitHub',
+        link: 'https://github.com/coleritchiee/gpt_thing'
+      }
+    ],
+    date_start: 'May 2024',
+    date_end: 'Present',
+    tech_stack: [
+      'Dart',
+      'Flutter',
+      'Firebase'
+    ],
+    text: [
+      {
+        title: "What is GPT Thing?",
+        text: "A way to make the most of a ChatGPT API key."
+      }
+    ]
+  },
 ]
 
 export default projects;
