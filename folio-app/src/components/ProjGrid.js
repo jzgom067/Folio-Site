@@ -29,8 +29,7 @@ const ProjGrid = ({ projects }) => {
           </div>
           <div className={styles.text}>
             <div className={styles.title}>{proj.name}</div>
-            <div>{proj.subtitle}</div>
-            <div className={styles.date}>{proj.date_start} - {proj.date_end}</div>
+            <div className={styles.subtitle}>{proj.subtitle}</div>
             <div className={styles.tech}>
               {proj.tech_stack.map((tech, index) => (
                 <DevIcon tech={tech} size="2rem" key={index} />
