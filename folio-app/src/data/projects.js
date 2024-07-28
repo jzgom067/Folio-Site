@@ -1,7 +1,7 @@
 import supergolf from '../img/supergolf.png';
 import carpi from '../img/carpi.png';
 import banana from '../img/banan.png';
-import keys from '../img/keys.jpg';
+import chatkeypt from '../img/chatkeypt.png';
 
 const projects = [
   {
@@ -176,11 +176,11 @@ const projects = [
     ]
   },
   {
-    name: 'GPT Thing',
-    slug: 'gpt',
-    subtitle: "A cheaper way to use ChatGPT",
-    logo: keys,
-    logo_alt: 'keys',
+    name: 'ChatKeyPT',
+    slug: 'keypt',
+    subtitle: "An advanced ChatGPT interface",
+    logo: chatkeypt,
+    logo_alt: 'chatkeypt',
     links: [
       {
         name: 'GitHub',
