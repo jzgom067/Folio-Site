@@ -50,8 +50,11 @@ const Experience = ({ jobs }) => {
             <div className={styles.title}>
               {job.name}
             </div>
-            <div className={styles.subtitle}>
+            <div>
               {job.subtitle}
+            </div>
+            <div className={styles.date}>
+              {job.date_start + ' - ' + job.date_end}
             </div>
             <div className={styles.tech}>
               {job.tech_stack.map((tech, index) => (
