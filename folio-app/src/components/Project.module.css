@@ -30,7 +30,6 @@
 }
 
 .title {
-  composes: slideFadeIn from '../Anim.css';
   color: var(--accent-color);
   text-align: left;
   margin-top: 0rem;
@@ -40,7 +39,6 @@
 }
 
 .links {
-  composes: slideFadeIn from '../Anim.css';
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -56,20 +54,18 @@
   color: var(--accent-color);
 }
 
+.date {
+  color: lightgray;
+  text-align: right;
+}
+
 .tech {
-  composes: slideFadeIn from '../Anim.css';
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
-}
-
-.date {
-  composes: slideFadeIn from '../Anim.css';
-  color: lightgray;
-  text-align: right;
 }
 
 .content {
@@ -79,11 +75,6 @@
   padding: 1rem;
 }
 
-.sectionTitle {
-  composes: slideFadeIn from '../Anim.css';
-}
-
 .text {
-  composes: slideFadeIn from '../Anim.css';
   text-align: justify;
 }
