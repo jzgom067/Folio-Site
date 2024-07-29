@@ -4,6 +4,7 @@ import globals from '../data/globals.js';
 
 // components
 import DevIcon from './DevIcon.js';
+import Icon from './Icon.js';
 
 // router
 import { useParams } from 'react-router-dom';
@@ -21,23 +22,57 @@ function Project() {
 
   return (
     <div className={styles.section}>
-      <h1
-        className={styles.title}
-        style={{
-          animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
-        }}
+      <div className={styles.titleBar}
       >
-        {proj.name}
-      </h1>
-      <div
-        className={styles.tech}
-        style={{
-          animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
-        }}
-      >
-        {proj.tech_stack.map((tech, i) => (
-          <DevIcon tech={tech} size="4rem" key={i} />
-        ))}
+        <div className={styles.titleBarLeft}>
+          <h1
+            className={styles.title}
+            style={{
+              animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+            }}
+          >
+            {proj.name}
+          </h1>
+          <div
+            className={styles.links}
+            style={{
+              animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+            }}
+          >
+            {proj.links.map((link, i) => (
+              <a
+                key={i}
+                className={styles.link}
+                href={link.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>{link.name}</span>
+                <Icon name="External Link" color="gray" size="1em"></Icon>
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className={styles.titleBarRight}>
+          <div
+            className={styles.tech}
+            style={{
+              animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+            }}
+          >
+            {proj.tech_stack.map((tech, i) => (
+              <DevIcon tech={tech} size="3rem" key={i} />
+            ))}
+          </div>
+          <span
+            // className={styles.subtitle}
+            style={{
+              animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+            }}
+          >
+            {proj.date_start} - {proj.date_end}
+          </span>
+        </div>
       </div>
       <div className={styles.content}>
         {proj.text.map((dict, i) => (
