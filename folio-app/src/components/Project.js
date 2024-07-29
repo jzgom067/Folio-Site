@@ -54,6 +54,14 @@ function Project() {
           </div>
         </div>
         <div className={styles.titleBarRight}>
+          <span
+            className={styles.date}
+            style={{
+              animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
+            }}
+          >
+            {proj.date_start} - {proj.date_end}
+          </span>
           <div
             className={styles.tech}
             style={{
@@ -64,14 +72,6 @@ function Project() {
               <DevIcon tech={tech} size="3rem" key={i} />
             ))}
           </div>
-          <span
-            // className={styles.subtitle}
-            style={{
-              animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
-            }}
-          >
-            {proj.date_start} - {proj.date_end}
-          </span>
         </div>
       </div>
       <div className={styles.content}>

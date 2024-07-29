@@ -23,8 +23,8 @@ const projects = [
     date_start: 'January 2022',
     date_end: 'February 2022',
     tech_stack: [
-      'Unity',
       'C#',
+      'Unity',
       'Blender'
     ],
     text: [
@@ -38,7 +38,7 @@ const projects = [
       },
       {
         title: "What did I learn?",
-        text: "At the point of starting this project, I had already been working with Unity for a few years. However, I had only made small prototypes and proofs of concepts, which ultimately amounted to nothing substantial. By committing to finishing this game, I was challenging myself to stick with a project and see it through to the end. Because of this, I learned a lot of concepts that only come up when polishing a game for release. For example, desigining a user interface was new to me, and it was a fun challenge figuring out how to communicate all the necessary information to the player. User testing was integral to getting things right, and made sure I wasn't completely insane when making the game. There were also unique challenges that arose because of the type of game I was making. Things like handling multiple players, score management, and trajectory prediction were challenges all on their own. The amount of work and attention to detail that needed to go into the game gave me a newfound appreciation for the games I play in my free time."
+        text: "At the point of starting this project, I had already been working with Unity for a few years. However, I had only made small prototypes and proofs of concepts, which ultimately amounted to nothing substantial. By committing to finishing this game, I was challenging myself to stick with a project and see it through to the end. Because of this, I learned a lot of concepts that only come up when polishing a game for release. For example, designing a user interface was new to me, and it was a fun challenge figuring out how to communicate all the necessary information to the player. User testing was integral to getting things right, and made sure I wasn't completely insane when making the game. There were also unique challenges that arose because of the type of game I was making. Things like handling multiple players, score management, and trajectory prediction were challenges all on their own. The amount of work and attention to detail that needed to go into the game gave me a newfound appreciation for the games I play in my free time."
       },
       {
         title: "What challenges did I face?",

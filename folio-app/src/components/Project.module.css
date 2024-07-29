@@ -25,16 +25,6 @@
   margin-left: auto;
 }
 
-.tech {
-  composes: slideFadeIn from '../Anim.css';
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .h1 {
   display: inline;
 }
@@ -60,6 +50,26 @@
 .link {
   text-decoration: none;
   color: white;
+}
+
+.link:hover {
+  color: var(--accent-color);
+}
+
+.tech {
+  composes: slideFadeIn from '../Anim.css';
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.date {
+  composes: slideFadeIn from '../Anim.css';
+  color: lightgray;
+  text-align: right;
 }
 
 .content {
