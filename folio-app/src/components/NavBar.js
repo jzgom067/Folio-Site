@@ -1,3 +1,4 @@
+// components
 import Icon from './Icon.js';
 
 // router

@@ -21,7 +21,6 @@
 }
 
 .project {
-  composes: slideFadeIn from '../Anim.css';
   display: flex;
   flex-direction: row;
   justify-content: center;

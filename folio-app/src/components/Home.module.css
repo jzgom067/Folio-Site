@@ -5,6 +5,5 @@
 }
 
 .sectionTitle {
-  composes: slideFadeIn from '../Anim.css';
   color: var(--accent-color);
 }

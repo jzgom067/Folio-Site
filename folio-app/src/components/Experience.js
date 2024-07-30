@@ -1,8 +1,6 @@
-// globals
-import globals from '../data/globals.js';
-
 // components
 import DevIcon from '../components/DevIcon.js';
+import SlideFadeIn from './SlideFadeIn.js';
 
 // react stuff
 import React, { useState, useEffect } from 'react';
@@ -34,35 +32,34 @@ const Experience = ({ jobs }) => {
   return (
     <div className={styles.jobs}>
       {jobs.map((job, index) => (
-        <Link
-          key={index}
-          className={styles.job}
-          style={{
-            animationDelay: `${globals.fadeInDelay++ * 0.1}s`
-          }}
-          to={"/experience/" + job.slug}
-        >
-          <div className={styles.outline}></div>
-          <div className={styles.logoContainer}>
-            <img className={styles.logo} src={job.logo} alt={job.logo_alt}></img>
-          </div>
-          <div className={styles.text}>
-            <div className={styles.title}>
-              {job.name}
+        <SlideFadeIn>
+          <Link
+            key={index}
+            className={styles.job}
+            to={"/experience/" + job.slug}
+          >
+            <div className={styles.outline}></div>
+            <div className={styles.logoContainer}>
+              <img className={styles.logo} src={job.logo} alt={job.logo_alt}></img>
             </div>
-            <div>
-              {job.subtitle}
+            <div className={styles.text}>
+              <div className={styles.title}>
+                {job.name}
+              </div>
+              <div>
+                {job.subtitle}
+              </div>
+              <div className={styles.date}>
+                {job.date_start + ' - ' + job.date_end}
+              </div>
+              <div className={styles.tech}>
+                {job.tech_stack.map((tech, index) => (
+                  <DevIcon tech={tech} size={devIconWidth} key={index} />
+                ))}
+              </div>
             </div>
-            <div className={styles.date}>
-              {job.date_start + ' - ' + job.date_end}
-            </div>
-            <div className={styles.tech}>
-              {job.tech_stack.map((tech, index) => (
-                <DevIcon tech={tech} size={devIconWidth} key={index} />
-              ))}
-            </div>
-          </div>
-        </Link>
+          </Link>
+        </SlideFadeIn>
       ))}
     </div>
     );

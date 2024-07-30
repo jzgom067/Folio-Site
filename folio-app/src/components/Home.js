@@ -1,13 +1,11 @@
-// global variables
-import globals from '../data/globals.js';
-
 // data
 import projects from '../data/projects.js';
 import jobs from '../data/jobs.js';
 
-// modules
+// components
 import ProjGrid from './ProjGrid.js';
 import Experience from './Experience.js';
+import SlideFadeIn from './SlideFadeIn.js';
 
 // styling
 import styles from './Home.module.css';
@@ -18,25 +16,23 @@ const Home = () => (
       <h1 className="section-title">About Me</h1>
     </div> */}
     <div className={styles.section}>
-      <h1 
-        className={styles.sectionTitle}
-        style={{
-          animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
-        }}
-      >
-        Projects
-      </h1>
+      <SlideFadeIn>
+        <h1
+          className={styles.sectionTitle}
+        >
+          Projects
+        </h1>
+      </SlideFadeIn>
       <ProjGrid projects={projects} />
     </div>
     <div className={styles.section}>
-      <h1 
-        className={styles.sectionTitle}
-        style={{
-          animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
-        }}
-      >
-        Experience
-      </h1>
+      <SlideFadeIn>
+        <h1
+          className={styles.sectionTitle}
+        >
+          Experience
+        </h1>
+      </SlideFadeIn>
       <Experience jobs={jobs} />
     </div>
     {/* <div className="section">
