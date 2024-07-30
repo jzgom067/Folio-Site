@@ -86,8 +86,26 @@
 }
 
 .preview {
-  width: 100%;
+  width: 85%;
   border-radius: 0.75rem;
+  transform: translateX(-7.5%);
+  box-shadow: 0.2rem 0rem 0.2rem 0rem var(--obj-shadow-color);
+}
+
+.preview2 {
+  position: absolute;
+  width: 85%;
+  border-radius: 0.75rem;
+  box-shadow: 0.2rem 0rem 0.2rem 0rem var(--obj-shadow-color);
+  clip-path: inset(0 -5% 0 90%); /* need the -5% to not clip the shadow */
+}
+
+.preview3 {
+  position: absolute;
+  width: 85%;
+  border-radius: 0.75rem;
+  transform: translateX(7.5%);
+  clip-path: inset(0 0 0 90%);
 }
 
 .imgTextSection {
