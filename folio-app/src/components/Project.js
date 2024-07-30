@@ -22,8 +22,7 @@ function Project() {
 
   return (
     <div className={styles.section}>
-      <div className={styles.titleBar}
-      >
+      <div className={styles.titleBar}>
         <div className={styles.titleBarLeft}>
           <SlideFadeIn>
             <h1 className={styles.title}>
@@ -63,18 +62,39 @@ function Project() {
         </div>
       </div>
       <div className={styles.content}>
-        {proj.text.map((dict, i) => (
-          <div key={i}>
-            <SlideFadeIn>
-              <h2>{dict.title}</h2>
-            </SlideFadeIn>
-            <SlideFadeIn>
-              <div className={styles.text}>
-                {dict.text}
+        {proj.text.map((dict, i) => {
+          if (i === 0 && proj.images.length > 0) {
+            return (<div className={styles.imageRow}>
+              <div key={i} className={styles.imgTextSection}>
+                <SlideFadeIn>
+                  <h2 className={styles.textHeader}>{dict.title}</h2>
+                </SlideFadeIn>
+                <SlideFadeIn>
+                  <div className={styles.text}>
+                    {dict.text}
+                  </div>
+                </SlideFadeIn>
               </div>
-            </SlideFadeIn>
-          </div>
-        ))}
+              <div className={styles.previewContainer}>
+                <SlideFadeIn>
+                  <img className={styles.preview} src={proj.images[0]} alt="preview" />
+                </SlideFadeIn>
+              </div>
+            </div>)
+          }
+          return (
+            <div key={i}>
+              <SlideFadeIn>
+                <h2 className={styles.textHeader}>{dict.title}</h2>
+              </SlideFadeIn>
+              <SlideFadeIn>
+                <div className={styles.text}>
+                  {dict.text}
+                </div>
+              </SlideFadeIn>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

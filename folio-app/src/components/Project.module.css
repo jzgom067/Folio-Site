@@ -1,6 +1,6 @@
 .section {
   padding-top: 1rem;
-  max-width: 55rem;
+  max-width: 65rem;
   margin: auto;
 }
 
@@ -23,10 +23,6 @@
   flex-direction: column;
   align-items: right;
   margin-left: auto;
-}
-
-.h1 {
-  display: inline;
 }
 
 .title {
@@ -71,8 +67,35 @@
 .content {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
   gap: 1rem;
   padding: 1rem;
+}
+
+.imageRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: top;
+  justify-content: center;
+}
+
+.previewContainer {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.preview {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.imgTextSection {
+  width: 50%;
+}
+
+.textHeader {
+  margin-top: 0.5rem;
 }
 
 .text {

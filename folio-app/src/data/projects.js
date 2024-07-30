@@ -1,6 +1,13 @@
 import supergolf from '../img/supergolf.png';
+import golf1 from '../img/golf/screenshot1.png';
+import golf2 from '../img/golf/screenshot2.png';
+import golf3 from '../img/golf/screenshot3.png';
+import golf4 from '../img/golf/screenshot4.png';
+
 import carpi from '../img/carpi.png';
+
 import banana from '../img/banan.png';
+
 import chatkeypt from '../img/chatkeypt.png';
 
 const projects = [
@@ -26,6 +33,12 @@ const projects = [
       'C#',
       'Unity',
       'Blender'
+    ],
+    images: [
+      golf1,
+      golf2,
+      golf3,
+      golf4
     ],
     text: [
       {
@@ -68,6 +81,7 @@ const projects = [
       'Python',
       'MySQL'
     ],
+    images: [],
     text: [
       {
         title: "What is CARPI Bot?",
@@ -112,6 +126,7 @@ const projects = [
       'React',
       'Node.js'
     ],
+    images: [],
     text: [
       {
         title: "What is this website?",
@@ -138,6 +153,7 @@ const projects = [
       'Flutter',
       'Firebase'
     ],
+    images: [],
     text: [
       {
         title: "What is GPT Thing?",
