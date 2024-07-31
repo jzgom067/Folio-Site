@@ -23,6 +23,11 @@ function Project() {
   return (
     <div className={styles.section}>
       <div className={styles.titleBar}>
+        <SlideFadeIn>
+          <div className={styles.logoContainer}>
+            <img className={styles.logo} src={proj.logo} alt="logo" />
+          </div>
+        </SlideFadeIn>
         <div className={styles.titleBarLeft}>
           <SlideFadeIn>
             <h1 className={styles.title}>

@@ -7,8 +7,18 @@
 .titleBar {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.logoContainer {
+  height: 4.75rem;
+}
+
+.logo {
+  height: 100%;
+  border-radius: 0.5rem;
 }
 
 .titleBarLeft {
