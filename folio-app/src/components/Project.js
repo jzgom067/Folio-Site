@@ -82,7 +82,9 @@ function Project() {
               </div>
               <div className={styles.previewContainer}>
                 <SlideFadeIn>
-                  <div className={styles.previewHover}><span>View Images</span></div>
+                  <div className={styles.previewHover}>
+                    <span>View Images &#40;{proj.images.length}&#41;</span>
+                  </div>
                   <img className={styles.preview2} src={proj.images[1]} alt="preview 2" />
                   <img className={styles.preview} src={proj.images[0]} alt="preview 1" />
                 </SlideFadeIn>
