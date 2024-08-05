@@ -5,6 +5,10 @@ import projects from '../data/projects.js';
 import DevIcon from './DevIcon.js';
 import Icon from './Icon.js';
 import SlideFadeIn from './SlideFadeIn.js';
+import Modal from 'react-modal';
+
+// react stuff
+import React, { useState } from 'react';
 
 // router
 import { useParams } from 'react-router-dom';
@@ -20,8 +24,19 @@ function Project() {
   let { proj } = useParams();
   proj = getProj(proj);
 
+  const [modalOpen, setModal] = useState(false);
+
   return (
     <div className={styles.section}>
+      <Modal
+        isOpen={modalOpen}
+      >
+        <button
+          onClick={() => setModal(false)}
+        >
+          close
+        </button>
+      </Modal>
       <div className={styles.titleBar}>
         <SlideFadeIn>
           <div className={styles.logoContainer}>
@@ -82,7 +97,12 @@ function Project() {
               </div>
               <div className={styles.previewContainer}>
                 <SlideFadeIn>
-                  <div className={styles.previewHover}>
+                  <div
+                    className={styles.previewHover}
+                    onMouseDown={() =>
+                      setModal(true)
+                    }
+                  >
                     <span>View Images &#40;{proj.images.length}&#41;</span>
                   </div>
                   <img className={styles.preview2} src={proj.images[1]} alt="preview 2" />
