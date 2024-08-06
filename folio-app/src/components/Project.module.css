@@ -92,6 +92,7 @@
 
 .previewContainer {
   width: 55%;
+  height: fit-content;
   box-sizing: border-box;
 }
 
