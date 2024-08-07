@@ -17,7 +17,11 @@ function ImageModal() {
         setOpen(true)
       }
     >
-      <Modal isOpen={modalOpen}>
+      <Modal
+        isOpen={modalOpen}
+        className={styles.modalBody}
+        overlayClassName={styles.modalOverlay}
+      >
         <button onClick={() => setOpen(false)}>Close Modal</button>
       </Modal>
     </div>
