@@ -1,4 +1,4 @@
-.main {
+:root {
   /* Define color palette */
   --bg-color: #121212;
   --obj-color: #1e1e1e;
@@ -6,7 +6,9 @@
   --obj-shadow-color: #101010;
   --tooltip-color: #080808;
   --accent-color: #b788f8;
+}
 
+.main {
   text-align: center;
   background-color: var(--bg-color);
   margin: 0;
