@@ -13,11 +13,11 @@ function ImageModal({ images }) {
   const [currentImage, setCurrentImage] = useState(0);
 
   function nextImage() {
-    setCurrentImage(currentImage + 1);
+    setCurrentImage((current) => (current + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentImage(currentImage - 1);
+    setCurrentImage((current) => (current - 1 + images.length) % images.length);
   }
 
   return (
@@ -37,12 +37,12 @@ function ImageModal({ images }) {
       >
         <img className={styles.image} src={images[currentImage]} alt="" />
         <button onClick={() => setOpen(false)}>Close Modal</button>
-        <div onClick={prevImage}>
+        <button className={styles.chevronButton} onClick={prevImage}>
           <Icon name="Left Arrow" size="2rem" stroke="gray"></Icon>
-        </div>
-        <div onClick={nextImage}>
+        </button>
+        <button className={styles.chevronButton} onClick={nextImage}>
           <Icon name="Right Arrow" size="2rem" stroke="gray"></Icon>
-        </div>
+        </button>
       </Modal>
     </div>
   );

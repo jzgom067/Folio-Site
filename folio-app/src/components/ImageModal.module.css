@@ -28,5 +28,9 @@
   max-height: 80vh;
   max-width: 80vw;
   height: auto;
-  object-fit: cover;
+}
+
+.chevronButton {
+  background-color: transparent;
+  border: none;
 }
