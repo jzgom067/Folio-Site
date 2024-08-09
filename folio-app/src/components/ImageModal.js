@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 // styling
 import styles from './ImageModal.module.css';
 
-function ImageModal() {
+function ImageModal({ images }) {
   const [modalOpen, setOpen] = useState(false);
 
   return (
@@ -22,6 +22,7 @@ function ImageModal() {
         className={styles.modalBody}
         overlayClassName={styles.modalOverlay}
       >
+        <img className={styles.image} src={images[0]} alt="" />
         <button onClick={() => setOpen(false)}>Close Modal</button>
       </Modal>
     </div>
