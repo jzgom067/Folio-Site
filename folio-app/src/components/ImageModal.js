@@ -1,5 +1,6 @@
 // components
 import Modal from 'react-modal';
+import Icon from './Icon';
 
 // react stuff
 import React, { useState } from 'react';
@@ -36,8 +37,12 @@ function ImageModal({ images }) {
       >
         <img className={styles.image} src={images[currentImage]} alt="" />
         <button onClick={() => setOpen(false)}>Close Modal</button>
-        <button onClick={prevImage} disabled={currentImage === 0}>Previous</button>
-        <button onClick={nextImage} disabled={currentImage === images.length - 1}>Next</button>
+        <div onClick={prevImage}>
+          <Icon name="Left Arrow" size="2rem" stroke="gray"></Icon>
+        </div>
+        <div onClick={nextImage}>
+          <Icon name="Right Arrow" size="2rem" stroke="gray"></Icon>
+        </div>
       </Modal>
     </div>
   );

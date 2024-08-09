@@ -24,7 +24,7 @@ const NavBar = () => (
         rel="noopener noreferrer"
       >
         <span>GitHub</span>
-        <Icon name="External Link" color="gray" size="1em"></Icon>
+        <Icon name="External Link" stroke="gray" size="1em"></Icon>
       </a>
       <a
         className={styles.link}
@@ -33,7 +33,7 @@ const NavBar = () => (
         rel="noopener noreferrer"
       >
         <span>LinkedIn</span>
-        <Icon name="External Link" color="gray" size="1em"></Icon>
+        <Icon name="External Link" stroke="gray" size="1em"></Icon>
       </a>
     </div>
   </div>
