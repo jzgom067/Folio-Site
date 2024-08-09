@@ -37,7 +37,9 @@ function ImageModal({ images }) {
       >
         <div className={styles.header}>
           <span>Image {currentImage + 1}</span>
-          <button onClick={() => setOpen(false)}>Close Modal</button>
+          <button className={styles.xButton} onClick={() => setOpen(false)}>
+            <Icon name="X" size="2rem" stroke="gray"></Icon>
+          </button>
         </div>
         <div className={styles.imageRow}>
           <button className={styles.chevronButton} onClick={prevImage}>
