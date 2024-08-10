@@ -35,10 +35,22 @@ const projects = [
       'Blender'
     ],
     images: [
-      golf1,
-      golf2,
-      golf3,
-      golf4
+      {
+        title: "Main Menu",
+        img: golf1
+      },
+      {
+        title: "Aiming Shot",
+        img: golf2
+      },
+      {
+        title: "Course Overview",
+        img: golf3
+      },
+      {
+        title: "Time Stop Ability",
+        img: golf4
+      }
     ],
     text: [
       {

@@ -36,7 +36,7 @@ function ImageModal({ images }) {
         overlayClassName={styles.modalOverlay}
       >
         <div className={styles.header}>
-          <span>Image {currentImage + 1}</span>
+          <span>{images[currentImage].title}</span>
           <button className={styles.xButton} onClick={() => setOpen(false)}>
             <Icon name="X" size="2rem" stroke="gray"></Icon>
           </button>
@@ -45,7 +45,7 @@ function ImageModal({ images }) {
           <button className={styles.chevronButton} onClick={prevImage}>
             <Icon name="Left Arrow" size="2rem" stroke="gray"></Icon>
           </button>
-          <img className={styles.image} src={images[currentImage]} alt="" />
+          <img className={styles.image} src={images[currentImage].img} alt="" />
           <button className={styles.chevronButton} onClick={nextImage}>
             <Icon name="Right Arrow" size="2rem" stroke="gray"></Icon>
           </button>
