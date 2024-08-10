@@ -6,6 +6,9 @@
 }
 
 .modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -34,18 +37,9 @@
   font-size: 1.3rem;
 }
 
-.imageRow {
-  padding-top: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.image {
-  max-height: 80vh;
-  max-width: 80vw;
-  height: auto;
+.imageNumber {
+  text-align: center;
+  color: gray;
 }
 
 .xButton {
@@ -61,6 +55,19 @@
 
 .xButton:active {
   filter: brightness(80%);
+}
+
+.imageRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.image {
+  max-height: 80vh;
+  max-width: 80vw;
+  height: auto;
 }
 
 .chevronButton {

@@ -36,7 +36,7 @@ function ImageModal({ images }) {
         overlayClassName={styles.modalOverlay}
       >
         <div className={styles.header}>
-          <span>{images[currentImage].title}</span>
+          {images[currentImage].title}
           <button className={styles.xButton} onClick={() => setOpen(false)}>
             <Icon name="X" size="2rem" stroke="gray"></Icon>
           </button>
@@ -49,6 +49,9 @@ function ImageModal({ images }) {
           <button className={styles.chevronButton} onClick={nextImage}>
             <Icon name="Right Arrow" size="2rem" stroke="gray"></Icon>
           </button>
+        </div>
+        <div className={styles.imageNumber}>
+          ({currentImage + 1}/{images.length})
         </div>
       </Modal>
     </div>
