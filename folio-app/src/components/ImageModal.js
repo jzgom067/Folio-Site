@@ -20,6 +20,17 @@ function ImageModal({ images }) {
     setCurrentImage((current) => (current - 1 + images.length) % images.length);
   }
 
+  document.onkeydown = keyDown;
+
+  function keyDown(e) {
+    if (!modalOpen) return;
+    if (e.key === 'ArrowRight') {
+      nextImage();
+    } else if (e.key === 'ArrowLeft') {
+      prevImage();
+    }
+  }
+
   return (
     <div
       className={styles.modalTrigger}
