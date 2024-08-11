@@ -1,6 +1,7 @@
 // components
 import Modal from 'react-modal';
 import Icon from './Icon';
+import PlaceholderImage from './PlaceholderImage';
 
 // react stuff
 import React, { useState } from 'react';
@@ -56,7 +57,8 @@ function ImageModal({ images }) {
           <button className={styles.chevronButton} onClick={prevImage}>
             <Icon name="Left Arrow" size="2rem" stroke="gray"></Icon>
           </button>
-          <img className={styles.image} src={images[currentImage].img} alt="" />
+          <PlaceholderImage className={styles.image} src={images[currentImage].img} alt="" />
+          {/* <img className={styles.image} src={images[currentImage].img} alt="" /> */}
           <button className={styles.chevronButton} onClick={nextImage}>
             <Icon name="Right Arrow" size="2rem" stroke="gray"></Icon>
           </button>
