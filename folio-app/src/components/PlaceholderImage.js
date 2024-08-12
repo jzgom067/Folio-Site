@@ -5,7 +5,7 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
   const [isLoaded, onLoad] = useState(false);
 
   // function timeout(delay) {
-  //   return new Promise( res => setTimeout(res, delay) );
+  //   return new Promise(res => setTimeout(res, delay));
   // }
 
   // async function loadImg() {
@@ -17,7 +17,7 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
 
   return (
     <div>
-      {!isLoaded && 
+      {!isLoaded &&
         <div className={className}>
           <div
             style={{
@@ -26,13 +26,11 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
               aspectRatio: aspectRatio,
             }}
             className={styles.placeholder}
-          >
-            Loading...
-          </div>
+          />
         </div>
       }
       <img
-        style={ isLoaded ? {} : {display: 'none'} }
+        style={isLoaded ? {} : { display: 'none' }}
         className={className}
         src={src}
         alt={alt}
