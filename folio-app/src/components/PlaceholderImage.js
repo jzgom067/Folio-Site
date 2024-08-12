@@ -1,6 +1,7 @@
 import { useState } from "react";
+import styles from "./PlaceholderImage.module.css";
 
-function PlaceholderImage({ className, src, alt }) {
+function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
   const [isLoaded, onLoad] = useState(false);
 
   // function timeout(delay) {
@@ -18,7 +19,16 @@ function PlaceholderImage({ className, src, alt }) {
     <div>
       {!isLoaded && 
         <div className={className}>
-          <p>Loading...</p>
+          <div
+            style={{
+              width: width,
+              height: height,
+              aspectRatio: aspectRatio,
+            }}
+            className={styles.placeholder}
+          >
+            Loading...
+          </div>
         </div>
       }
       <img

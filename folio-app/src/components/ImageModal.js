@@ -57,8 +57,13 @@ function ImageModal({ images }) {
           <button className={styles.chevronButton} onClick={prevImage}>
             <Icon name="Left Arrow" size="2rem" stroke="gray"></Icon>
           </button>
-          <PlaceholderImage className={styles.image} src={images[currentImage].img} alt="" />
-          {/* <img className={styles.image} src={images[currentImage].img} alt="" /> */}
+          <PlaceholderImage
+            className={styles.image}
+            src={images[currentImage].img}
+            alt=""
+            width="1920px"
+            aspectRatio="16 / 9"
+          />
           <button className={styles.chevronButton} onClick={nextImage}>
             <Icon name="Right Arrow" size="2rem" stroke="gray"></Icon>
           </button>
