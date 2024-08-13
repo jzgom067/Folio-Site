@@ -15,7 +15,7 @@
   transform: translate(-50%, -50%);
   padding: 1rem 1rem;
   background-color: var(--obj-color);
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   max-width: min(90vw, 70rem);
   max-height: 90vh;
 }
