@@ -50,6 +50,7 @@ function ImageModal({ images }) {
         isOpen={modalOpen}
         className={styles.modalBody}
         overlayClassName={styles.modalOverlay}
+        onRequestClose={() => { setOpen(false); }}
       >
         <div className={styles.header}>
           {images[currentImage].title}
