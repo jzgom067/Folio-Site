@@ -29,6 +29,10 @@ function ImageModal({ images }) {
       nextImage();
     } else if (e.key === 'ArrowLeft') {
       prevImage();
+    } else if (e.key === 'Escape') {
+      if (modalOpen) {
+        setOpen(false);
+      }
     }
   }
 
