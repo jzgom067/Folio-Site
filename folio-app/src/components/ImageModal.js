@@ -63,6 +63,7 @@ function ImageModal({ images }) {
             alt=""
             width="1920px"
             aspectRatio="16 / 9"
+            key={images[currentImage].img}
           />
           <button className={styles.chevronButton} onClick={nextImage}>
             <Icon name="Right Arrow" size="2rem" stroke="gray"></Icon>
