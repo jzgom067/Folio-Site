@@ -120,6 +120,7 @@
 }
 
 .preview {
+  overflow: hidden;
   width: 90%;
   border-radius: 0.75rem;
   transform: translateX(-2.5%);
@@ -129,6 +130,7 @@
 
 .preview2 {
   position: absolute;
+  overflow: hidden;
   width: 90%;
   border-radius: 0.75rem;
   transform: translateX(2.5%);
