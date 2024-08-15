@@ -6,6 +6,7 @@ import DevIcon from './DevIcon.js';
 import Icon from './Icon.js';
 import SlideFadeIn from './SlideFadeIn.js';
 import ImageModal from './ImageModal.js';
+import PlaceholderImage from './PlaceholderImage.js';
 
 // react stuff
 import React from 'react';
@@ -90,15 +91,19 @@ function Project() {
                     <span>View Images &#40;{proj.images.length}&#41;</span>
                   </div>
                   <ImageModal images={proj.images} />
-                  <img
+                  <PlaceholderImage
                     className={styles.preview2}
                     src={proj.images[1].img}
                     alt="preview 2"
-                  />
-                  <img
+                    width="1920px"
+                    aspectRatio="16 / 9"
+                    />
+                  <PlaceholderImage
                     className={styles.preview}
                     src={proj.images[0].img}
                     alt="preview 1"
+                    width="1920px"
+                    aspectRatio="16 / 9"
                   />
                 </SlideFadeIn>
               </div>

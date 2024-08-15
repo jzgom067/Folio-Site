@@ -16,7 +16,7 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
   // loadImg();
 
   return (
-    <div>
+    <>
       {!isLoaded &&
         <div className={className}>
           <div
@@ -36,7 +36,7 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
         alt={alt}
         onLoad={() => onLoad(true)}
       />
-    </div>
+    </>
   );
 }
 
