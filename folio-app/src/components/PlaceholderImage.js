@@ -1,11 +1,19 @@
 import { useState } from "react";
 import styles from "./PlaceholderImage.module.css";
 
-function PlaceholderImage({ className, src, alt }) {
+function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
   const [isLoaded, onLoad] = useState(false);
 
-  const img = new Image();
-  img.src = src;
+  // function timeout(delay) {
+  //   return new Promise(res => setTimeout(res, delay));
+  // }
+
+  // async function loadImg() {
+  //   await timeout(5000);
+  //   onLoad(true);
+  // }
+
+  // loadImg();
 
   return (
     <div>
@@ -13,8 +21,9 @@ function PlaceholderImage({ className, src, alt }) {
         <div className={className}>
           <div
             style={{
-              width: img.width,
-              aspectRatio: (img.width / img.height)
+              width: width,
+              height: height,
+              aspectRatio: aspectRatio,
             }}
             className={styles.placeholder}
           />

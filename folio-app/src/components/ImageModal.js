@@ -66,6 +66,8 @@ function ImageModal({ images }) {
             className={styles.image}
             src={images[currentImage].img}
             alt=""
+            width="1920px"
+            aspectRatio="16 / 9"
             key={images[currentImage].img}
           />
           <button className={styles.chevronButton} onClick={nextImage}>
