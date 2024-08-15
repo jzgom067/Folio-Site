@@ -95,17 +95,13 @@ function Project() {
                     className={styles.preview2}
                     src={proj.images[1].img}
                     alt="preview 2"
-                    width="1920px"
                     aspectRatio="16 / 9"
-                    bgColor="var(--bg-color)"
                     />
                   <PlaceholderImage
                     className={styles.preview}
                     src={proj.images[0].img}
                     alt="preview 1"
-                    width="1920px"
                     aspectRatio="16 / 9"
-                    bgColor="var(--bg-color)"
                   />
                 </SlideFadeIn>
               </div>

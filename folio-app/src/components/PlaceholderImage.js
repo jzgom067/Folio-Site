@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import styles from "./PlaceholderImage.module.css";
 
-function PlaceholderImage({ className, src, alt, width, height, aspectRatio, bgColor }) {
+function findAncestorBackground(element) {
+  if (!element || element === document) return null;
+  const bgColor = window.getComputedStyle(element).backgroundColor;
+  if (bgColor && bgColor !== 'rgba(0, 0, 0, 0)' && bgColor !== 'transparent') {
+    return bgColor;
+  }
+  return findAncestorBackground(element.parentElement);
+}
+
+function PlaceholderImage({ className, src, alt, width, height, aspectRatio}) {
   const [isLoaded, onLoad] = useState(false);
+  const [bgColor, setBgColor] = useState(null);
+  const self = useRef(null);
     
   // async function loadImg() {
   //   await new Promise(res => setTimeout(res, 5000));
@@ -10,6 +21,12 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio, bgC
   // }
 
   // loadImg();
+
+  useEffect(() => {
+    if (self.current) {
+      setBgColor(findAncestorBackground(self.current));
+    }
+  }, []);
 
   return (
     <>
@@ -27,11 +44,12 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio, bgC
         </div>
       }
       <img
+        ref={self}
         style={isLoaded ? {} : { display: 'none' }}
         className={className}
         src={src}
         alt={alt}
-        // onLoad={() => onLoad(true)}
+        onLoad={() => onLoad(true)}
       />
     </>
   );
