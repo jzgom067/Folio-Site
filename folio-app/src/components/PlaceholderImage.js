@@ -1,15 +1,11 @@
 import { useState } from "react";
 import styles from "./PlaceholderImage.module.css";
 
-function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
+function PlaceholderImage({ className, src, alt, width, height, aspectRatio, bgColor }) {
   const [isLoaded, onLoad] = useState(false);
-
-  // function timeout(delay) {
-  //   return new Promise(res => setTimeout(res, delay));
-  // }
-
+    
   // async function loadImg() {
-  //   await timeout(5000);
+  //   await new Promise(res => setTimeout(res, 5000));
   //   onLoad(true);
   // }
 
@@ -24,6 +20,7 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
               width: width,
               height: height,
               aspectRatio: aspectRatio,
+              backgroundColor: bgColor,
             }}
             className={styles.placeholder}
           />
@@ -34,7 +31,7 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio }) {
         className={className}
         src={src}
         alt={alt}
-        onLoad={() => onLoad(true)}
+        // onLoad={() => onLoad(true)}
       />
     </>
   );

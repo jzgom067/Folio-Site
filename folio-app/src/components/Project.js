@@ -97,6 +97,7 @@ function Project() {
                     alt="preview 2"
                     width="1920px"
                     aspectRatio="16 / 9"
+                    bgColor="var(--bg-color)"
                     />
                   <PlaceholderImage
                     className={styles.preview}
@@ -104,6 +105,7 @@ function Project() {
                     alt="preview 1"
                     width="1920px"
                     aspectRatio="16 / 9"
+                    bgColor="var(--bg-color)"
                   />
                 </SlideFadeIn>
               </div>
