@@ -102,30 +102,20 @@
 .previewContainer:hover .preview {
   filter: brightness(50%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .preview {
-    transition: filter 0.075s ease-out;
-  }
-  .previewHover {
-    transition: opacity 0.075s ease-out;
-  }
-}
-
+  
 .preview {
   overflow: hidden;
   width: 100%;
   border-radius: 0.75rem;
   pointer-events: none;
+  transition: filter 0.075s ease-out;
 }
 
 .previewContainer:hover .previewHover {
-  visibility: visible;
   opacity: 1;
 }
 
 .previewHover {
-  visibility: hidden;
   opacity: 0;
   position: fixed;
   width: 100%;
@@ -136,6 +126,7 @@
   font-size: 1.25rem;
   text-shadow: 0rem 0rem 1rem black;
   pointer-events: none;
+  transition: opacity 0.075s ease-out;
 }
 
 .imgTextSection {
