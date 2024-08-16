@@ -105,7 +105,10 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .preview {
-    /* transition: transform 0.15s ease-out; */
+    transition: filter 0.075s ease-out;
+  }
+  .previewHover {
+    transition: opacity 0.075s ease-out;
   }
 }
 
@@ -118,10 +121,12 @@
 
 .previewContainer:hover .previewHover {
   visibility: visible;
+  opacity: 1;
 }
 
 .previewHover {
   visibility: hidden;
+  opacity: 0;
   position: fixed;
   width: 100%;
   height: 100%;
