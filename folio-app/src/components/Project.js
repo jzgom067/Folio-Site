@@ -92,15 +92,9 @@ function Project() {
                   </div>
                   <ImageModal images={proj.images} />
                   <PlaceholderImage
-                    className={styles.preview2}
-                    src={proj.images[1].img}
-                    alt="preview 2"
-                    aspectRatio="16 / 9"
-                    />
-                  <PlaceholderImage
                     className={styles.preview}
                     src={proj.images[0].img}
-                    alt="preview 1"
+                    alt="preview image"
                     aspectRatio="16 / 9"
                   />
                 </SlideFadeIn>

@@ -94,47 +94,25 @@
 }
 
 .previewContainer {
-  width: 55%;
+  width: 52.5%;
   height: fit-content;
   box-sizing: border-box;
 }
 
 .previewContainer:hover .preview {
-  transform: translateX(-5%);
-  filter: brightness(50%);
-}
-
-.previewContainer:hover .preview2 {
-  transform: translateX(5%);
   filter: brightness(50%);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .preview {
-    transition: transform 0.15s ease-out;
-  }
-
-  .preview2 {
-    transition: transform 0.15s ease-out;
+    /* transition: transform 0.15s ease-out; */
   }
 }
 
 .preview {
   overflow: hidden;
-  width: 90%;
+  width: 100%;
   border-radius: 0.75rem;
-  transform: translateX(-2.5%);
-  box-shadow: 0.2rem 0rem 0.2rem 0rem var(--obj-shadow-color);
-  pointer-events: none;
-}
-
-.preview2 {
-  position: absolute;
-  overflow: hidden;
-  width: 90%;
-  border-radius: 0.75rem;
-  transform: translateX(2.5%);
-  clip-path: inset(0 0 0 85%);
   pointer-events: none;
 }
 
@@ -156,7 +134,7 @@
 }
 
 .imgTextSection {
-  width: 45%;
+  width: 47.5%;
 }
 
 .textHeader {
