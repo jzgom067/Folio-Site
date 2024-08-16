@@ -111,6 +111,23 @@
   transition: filter 0.075s ease-out;
 }
 
+.previewContainer:hover .previewText {
+  opacity: 0;
+}
+
+.previewText {
+  opacity: 1;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 10;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-shadow: 0rem 0rem 1rem black;
+  pointer-events: none;
+  transition: opacity 0.075s ease-out;
+}
+
 .previewContainer:hover .previewHover {
   opacity: 1;
 }
