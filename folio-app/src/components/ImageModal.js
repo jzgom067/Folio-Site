@@ -37,9 +37,9 @@ function ImageModal({ images }) {
   }
 
   return (
-    <div
+    <button
       className={styles.modalTrigger}
-      onMouseDown={() => {
+      onClick={() => {
         if (!modalOpen) {
           setOpen(true);
           setCurrentImage(0);
@@ -78,7 +78,7 @@ function ImageModal({ images }) {
           ({currentImage + 1}/{images.length})
         </div>
       </Modal>
-    </div>
+    </button>
   );
 }
 
