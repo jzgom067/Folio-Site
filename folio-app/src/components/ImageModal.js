@@ -65,7 +65,7 @@ function ImageModal({ images }) {
           <PlaceholderImage
             className={styles.image}
             src={images[currentImage].img}
-            alt=""
+            alt={images[currentImage].title}
             width="1920px"
             aspectRatio="16 / 9"
             key={images[currentImage].img}
