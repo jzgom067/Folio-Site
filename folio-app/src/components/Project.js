@@ -87,17 +87,20 @@ function Project() {
               </div>
               <div className={styles.previewContainer}>
                 <SlideFadeIn>
-                  <div className={styles.previewText}>
-                    <span>More Images →</span>
-                  </div>
                   <div className={styles.previewHover}>
                     <span>View Images &#40;{proj.images.length}&#41;</span>
                   </div>
                   <ImageModal images={proj.images} />
                   <PlaceholderImage
+                    className={styles.preview2}
+                    src={proj.images[1].img}
+                    alt="preview 2"
+                    aspectRatio="16 / 9"
+                  />
+                  <PlaceholderImage
                     className={styles.preview}
                     src={proj.images[0].img}
-                    alt="preview image"
+                    alt="preview 1"
                     aspectRatio="16 / 9"
                   />
                 </SlideFadeIn>

@@ -95,38 +95,50 @@
 
 .previewContainer {
   position: relative;
-  width: 52.5%;
+  width: 55%;
   height: fit-content;
   box-sizing: border-box;
 }
 
 .previewContainer:hover .preview {
+  transform: translateX(-5%);
   filter: brightness(50%);
+}
+
+.previewContainer:hover .preview2 {
+  transform: translateX(5%);
+  filter: brightness(50%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .preview {
+    transition: transform 0.15s ease-out, filter 0.075s ease-out;
+  }
+  .preview2 {
+    transition: transform 0.15s ease-out, filter 0.075s ease-out;
+  }
+  .previewHover {
+    transition: opacity 0.075s ease-out;
+  }
 }
   
 .preview {
   overflow: hidden;
-  width: 100%;
+  width: 90%;
   border-radius: 0.75rem;
+  transform: translateX(-2.5%);
+  box-shadow: 0.2rem 0rem 0.2rem 0rem var(--obj-shadow-color);
   pointer-events: none;
-  transition: filter 0.075s ease-out;
 }
-
-.previewContainer:hover .previewText {
-  opacity: 0;
-}
-
-.previewText {
-  opacity: 1;
+  
+.preview2 {
   position: absolute;
-  right: 0.5rem;
-  bottom: 0.5rem;
-  z-index: 10;
-  font-weight: 500;
-  font-size: 1.1rem;
-  text-shadow: 0rem 0rem 1rem black;
+  overflow: hidden;
+  width: 90%;
+  border-radius: 0.75rem;
+  transform: translateX(2.5%);
+  clip-path: inset(0 0 0 85%);
   pointer-events: none;
-  transition: opacity 0.075s ease-out;
 }
 
 .previewContainer:hover .previewHover {
@@ -144,11 +156,10 @@
   font-size: 1.25rem;
   text-shadow: 0rem 0rem 1rem black;
   pointer-events: none;
-  transition: opacity 0.075s ease-out;
 }
 
 .imgTextSection {
-  width: 47.5%;
+  width: 45%;
 }
 
 .textHeader {
