@@ -85,6 +85,24 @@
   padding: 1rem;
 }
 
+@media only screen and (max-width: 40rem) {
+  .imageRow {
+    flex-direction: column !important;
+  }
+  .previewContainer {
+    width: 100% !important;
+  }
+  .imgTextSection {
+    width: 100% !important;
+  }
+  .preview {
+    transform: translateX(-5%) !important;
+  }
+  .preview2 {
+    transform: translateX(5%) !important;
+  }
+}
+
 .imageRow {
   display: flex;
   flex-direction: row;
