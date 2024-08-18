@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.tooltip {
+  font-size: 0.9rem;
+  background-color: var(--tooltip-color);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  pointer-events: none;
+  text-wrap: nowrap;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tooltip {
+    transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+  }
+}
+
+.container:hover .icon {
+  filter: brightness(80%);
+}
+
+.container:hover .tooltip {
+  z-index: 15;
+  opacity: 1;
+  transform: translateY(-0.25rem);
+}

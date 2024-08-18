@@ -1,0 +1,9 @@
+.section {
+  border-bottom-style: solid;
+  border-bottom-width: 0.1rem;
+  border-bottom-color: var(--accent-color);
+}
+
+.sectionTitle {
+  color: var(--accent-color);
+}

@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  background-color: var(--bg-color);
+
+  border-bottom-style: solid;
+  border-bottom-color: var(--accent-color);
+  border-bottom-width: 0.1rem;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: left;
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  align-self: center;
+  padding: 0.5rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0rem;
+}
+
+.link:hover {
+  background-color: var(--obj-color);
+}

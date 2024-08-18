@@ -1,9 +1,12 @@
+import hiveclass from '../img/hiveclass.png';
+
 const jobs = [
   {
     name: 'Hiveclass',
-    description: "Developer",
-    img: require('../img/hiveclass.png'),
-    img_alt: 'hiveclass',
+    slug: 'hiveclass',
+    subtitle: "Developer",
+    logo: hiveclass,
+    logo_alt: 'hiveclass',
     links: [
       {
         name: 'Hiveclass',
