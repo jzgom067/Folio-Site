@@ -26,7 +26,6 @@ const Experience = ({ jobs }) => {
 
   useEffect(() => {
     window.addEventListener('resize', updateVariable);
-    updateVariable();
   })
 
   return (

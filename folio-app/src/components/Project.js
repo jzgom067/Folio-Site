@@ -72,45 +72,33 @@ function Project() {
         </div>
       </div>
       <div className={styles.content}>
+        {proj.images.length > 0 &&
+          <div className={styles.previewContainer}>
+            <SlideFadeIn>
+              <div className={styles.previewHover}>
+                <span>View Images &#40;{proj.images.length}&#41;</span>
+              </div>
+              <ImageModal images={proj.images} />
+              <PlaceholderImage
+                className={styles.preview2}
+                src={proj.images[1].img}
+                alt={proj.images[1].title}
+                aspectRatio="16 / 9"
+              />
+              <PlaceholderImage
+                className={styles.preview}
+                src={proj.images[0].img}
+                alt={proj.images[0].title}
+                aspectRatio="16 / 9"
+              />
+            </SlideFadeIn>
+          </div>
+        }
         {proj.text.map((dict, i) => {
-          if (i === 0 && proj.images.length > 0) {
-            return (<div className={styles.imageRow}>
-              <div key={i} className={styles.imgTextSection}>
-                <SlideFadeIn>
-                  <h2 className={styles.textHeader}>{dict.title}</h2>
-                </SlideFadeIn>
-                <SlideFadeIn>
-                  <div className={styles.text}>
-                    {dict.text}
-                  </div>
-                </SlideFadeIn>
-              </div>
-              <div className={styles.previewContainer}>
-                <SlideFadeIn>
-                  <div className={styles.previewHover}>
-                    <span>View Images &#40;{proj.images.length}&#41;</span>
-                  </div>
-                  <ImageModal images={proj.images} />
-                  <PlaceholderImage
-                    className={styles.preview2}
-                    src={proj.images[1].img}
-                    alt={proj.images[1].title}
-                    aspectRatio="16 / 9"
-                  />
-                  <PlaceholderImage
-                    className={styles.preview}
-                    src={proj.images[0].img}
-                    alt={proj.images[0].title}
-                    aspectRatio="16 / 9"
-                  />
-                </SlideFadeIn>
-              </div>
-            </div>)
-          }
           return (
-            <div key={i}>
+            <div className={styles.textSection} key={i}>
               <SlideFadeIn>
-                <h2 className={styles.textHeader}>{dict.title}</h2>
+                <h2>{dict.title}</h2>
               </SlideFadeIn>
               <SlideFadeIn>
                 <div className={styles.text}>
