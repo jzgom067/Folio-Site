@@ -87,9 +87,11 @@
     float: none !important;
   }
   .preview {
+    width: 90% !important;
     transform: translateX(-5%) !important;
   }
   .preview2 {
+    width: 90% !important;
     transform: translateX(5%) !important;
   }
 }
@@ -128,9 +130,9 @@
   
 .preview {
   overflow: hidden;
-  width: 90%;
+  width: 85%;
   border-radius: 0.75rem;
-  transform: translateX(-2.5%);
+  transform: translateX(-3%);
   box-shadow: 0.2rem 0rem 0.2rem 0rem var(--obj-shadow-color);
   pointer-events: none;
 }
@@ -138,9 +140,9 @@
 .preview2 {
   position: absolute;
   overflow: hidden;
-  width: 90%;
+  width: 85%;
   border-radius: 0.75rem;
-  transform: translateX(2.5%);
+  transform: translateX(3%);
   clip-path: inset(0 0 0 85%);
   pointer-events: none;
 }
