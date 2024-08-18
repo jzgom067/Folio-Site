@@ -35,7 +35,10 @@ const Experience = ({ jobs }) => {
           <Link
             key={index}
             className={styles.job}
-            to={"/experience/" + job.slug}
+            // to={"/experience/" + job.slug}
+            to={job.links[0].link}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <div className={styles.outline}></div>
             <div className={styles.logoContainer}>
