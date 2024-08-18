@@ -81,21 +81,6 @@
   padding: 1rem;
 }
 
-@media only screen and (max-width: 40rem) {
-  .previewContainer {
-    width: 100% !important;
-    float: none !important;
-  }
-  .preview {
-    width: 90% !important;
-    transform: translateX(-5%) !important;
-  }
-  .preview2 {
-    width: 90% !important;
-    transform: translateX(5%) !important;
-  }
-}
-
 .previewContainer {
   position: relative;
   width: 55%;
@@ -106,22 +91,37 @@
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 40rem) {
+  .previewContainer {
+    width: 100% !important;
+    float: none !important;
+  }
+  .preview {
+    width: 90% !important;
+    left: -3% !important;
+  }
+  .preview2 {
+    width: 90% !important;
+    right: 2% !important;
+  }
+}
+
 .previewContainer:hover .preview {
-  transform: translateX(-5%);
+  left: -5%;
   filter: brightness(50%);
 }
 
 .previewContainer:hover .preview2 {
-  transform: translateX(5%);
+  right: 2.5%;
   filter: brightness(50%);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .preview {
-    transition: transform 0.15s ease-out, filter 0.075s ease-out;
+    transition: left 0.15s ease-out, filter 0.075s ease-out;
   }
   .preview2 {
-    transition: transform 0.15s ease-out, filter 0.075s ease-out;
+    transition: right 0.15s ease-out, filter 0.075s ease-out;
   }
   .previewHover {
     transition: opacity 0.075s ease-out;
@@ -129,10 +129,11 @@
 }
   
 .preview {
+  position: relative;
   overflow: hidden;
   width: 85%;
   border-radius: 0.75rem;
-  transform: translateX(-3%);
+  left: -2.5%;
   box-shadow: 0.2rem 0rem 0.2rem 0rem var(--obj-shadow-color);
   pointer-events: none;
 }
@@ -142,7 +143,8 @@
   overflow: hidden;
   width: 85%;
   border-radius: 0.75rem;
-  transform: translateX(3%);
+  right: 5%;
+  /* z-index: -1; */
   clip-path: inset(0 0 0 85%);
   pointer-events: none;
 }
