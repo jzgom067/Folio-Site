@@ -99,29 +99,33 @@
   .preview {
     width: 90% !important;
     left: -3% !important;
+    rotate: unset !important;
   }
   .preview2 {
     width: 90% !important;
     right: 2% !important;
+    rotate: unset !important;
   }
 }
 
 .previewContainer:hover .preview {
   left: -5%;
   filter: brightness(50%);
+  rotate: -1.5deg;
 }
 
 .previewContainer:hover .preview2 {
   right: 2.5%;
   filter: brightness(50%);
+  rotate: 1.5deg;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .preview {
-    transition: left 0.15s ease-out, filter 0.075s ease-out;
+    transition: left 0.15s ease-out, filter 0.075s ease-out, rotate 0.15s ease-out;
   }
   .preview2 {
-    transition: right 0.15s ease-out, filter 0.075s ease-out;
+    transition: right 0.15s ease-out, filter 0.075s ease-out, rotate 0.15s ease-out;
   }
   .previewHover {
     transition: opacity 0.075s ease-out;
@@ -144,8 +148,7 @@
   width: 85%;
   border-radius: 0.75rem;
   right: 5%;
-  /* z-index: -1; */
-  clip-path: inset(0 0 0 85%);
+  /* clip-path: inset(0 0 0 85%); */
   pointer-events: none;
 }
 
