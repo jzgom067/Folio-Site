@@ -13,8 +13,8 @@ const jobs = [
         link: 'https://www.hiveclass.co/'
       }
     ],
-    date_start: 'January 2022',
-    date_end: 'February 2022',
+    date_start: 'June 2023',
+    date_end: 'Present',
     tech_stack: [
       'MySQL',
       'Alpine.js',
