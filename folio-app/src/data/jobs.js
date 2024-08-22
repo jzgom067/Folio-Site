@@ -20,6 +20,13 @@ const jobs = [
       'Alpine.js',
       'Tailwind CSS',
       'Looker/LookML',
+    ],
+    images: [],
+    text: [
+      {
+        title: "What is Hiveclass?",
+        text: "A digital physical education platform."
+      }
     ]
   }
 ]
