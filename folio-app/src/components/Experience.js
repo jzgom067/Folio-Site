@@ -15,14 +15,16 @@ import PlaceholderImage from './PlaceholderImage.js';
 const Experience = ({ jobs }) => {
   const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-  const [devIconWidth, setDevIconWidth] = useState('2.5rem');
+  function checkSingleColumn() {
+    return window.innerWidth <= 55 * rem;
+  }
+
+  const [isSingleColumn, setsingleColumn] = useState(checkSingleColumn());
 
   const updateVariable = () => {
-    if (window.innerWidth <= 55 * rem) {
-      setDevIconWidth('2rem');
-    } else {
-      setDevIconWidth('2.5rem');
-    }
+    // don't need to check if the value is changed, since React won't rerender unless
+    // the value has changed
+    setsingleColumn(checkSingleColumn());
   };
 
   useEffect(() => {
@@ -44,7 +46,7 @@ const Experience = ({ jobs }) => {
                 className={styles.logo}
                 src={job.logo}
                 alt={job.logo_alt}
-                width="9.75rem"
+                width={isSingleColumn ? "7.5rem" : "9.75rem"}
                 aspectRatio="1"
               />
             </div>
@@ -60,7 +62,11 @@ const Experience = ({ jobs }) => {
               </div>
               <div className={styles.tech}>
                 {job.tech_stack.map((tech, index) => (
-                  <DevIcon tech={tech} size={devIconWidth} key={index} />
+                  <DevIcon
+                    tech={tech}
+                    size={isSingleColumn ? "2rem" : "2.5rem"}
+                    key={index}
+                  />
                 ))}
               </div>
             </div>
