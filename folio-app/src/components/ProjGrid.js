@@ -1,6 +1,7 @@
 // modules
 import DevIcon from './DevIcon.js';
 import SlideFadeIn from './SlideFadeIn.js';
+import PlaceholderImage from './PlaceholderImage.js';
 
 // router
 import { Link } from 'react-router-dom';
@@ -23,7 +24,13 @@ const ProjGrid = ({ projects }) => {
           >
             <div className={styles.outline}></div>
             <div className={styles.logoContainer}>
-              <img src={proj.logo} className={styles.logo} alt={proj.logo_alt} />
+              <PlaceholderImage
+                src={proj.logo}
+                className={styles.logo}
+                alt={proj.logo_alt}
+                width="7.5rem"
+                aspectRatio="1"
+              />
             </div>
             <div className={styles.text}>
               <div className={styles.title}>{proj.name}</div>

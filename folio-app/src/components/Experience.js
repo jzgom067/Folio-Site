@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 
 // styling
 import styles from './Experience.module.css';
+import PlaceholderImage from './PlaceholderImage.js';
 
 const Experience = ({ jobs }) => {
   const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
@@ -39,7 +40,13 @@ const Experience = ({ jobs }) => {
           >
             <div className={styles.outline}></div>
             <div className={styles.logoContainer}>
-              <img className={styles.logo} src={job.logo} alt={job.logo_alt}></img>
+              <PlaceholderImage
+                className={styles.logo}
+                src={job.logo}
+                alt={job.logo_alt}
+                width="9.75rem"
+                aspectRatio="1"
+              />
             </div>
             <div className={styles.text}>
               <div className={styles.title}>
