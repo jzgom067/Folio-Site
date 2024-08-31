@@ -37,30 +37,36 @@ var stack = {
 const TechStack = () => {
   return (
     <div className={styles.stack}>
-      <h2>Languages</h2>
-      <div className={styles.icons}>
-        {stack.lang.map((tech, index) => (
-          <SlideFadeIn>
+      <SlideFadeIn>
+        <h2>Languages</h2>
+      </SlideFadeIn>
+      <SlideFadeIn>
+        <div className={styles.icons}>
+          {stack.lang.map((tech, index) => (
             <DevIcon tech={tech} size="4rem" key={index} />
-          </SlideFadeIn>
-        ))}
-      </div>
-      <h2>Libraries/Frameworks</h2>
-      <div className={styles.icons}>
-        {stack.frames.map((tech, index) => (
-          <SlideFadeIn>
+          ))}
+        </div>
+      </SlideFadeIn>
+      <SlideFadeIn>
+        <h2>Libraries/Frameworks</h2>
+      </SlideFadeIn>
+      <SlideFadeIn>
+        <div className={styles.icons}>
+          {stack.frames.map((tech, index) => (
             <DevIcon tech={tech} size="4rem" key={index} />
-          </SlideFadeIn>
-        ))}
-      </div>
-      <h2>Tools/Software</h2>
-      <div className={styles.icons}>
-        {stack.tools.map((tech, index) => (
-          <SlideFadeIn>
+          ))}
+        </div>
+      </SlideFadeIn>
+      <SlideFadeIn>
+        <h2>Tools/Software</h2>
+      </SlideFadeIn>
+      <SlideFadeIn>
+        <div className={styles.icons}>
+          {stack.tools.map((tech, index) => (
             <DevIcon tech={tech} size="4rem" key={index} />
-          </SlideFadeIn>
-        ))}
-      </div>
+          ))}
+        </div>
+      </SlideFadeIn>
     </div>
   );
 }
