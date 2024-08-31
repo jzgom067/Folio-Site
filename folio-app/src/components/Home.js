@@ -41,7 +41,7 @@ const Home = () => (
         <h1
           className={styles.sectionTitle}
         >
-          Tech Stack
+          Tech
         </h1>
       </SlideFadeIn>
       <TechStack />

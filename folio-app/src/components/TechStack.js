@@ -8,11 +8,28 @@ import styles from './TechStack.module.css';
 var stack = {
   lang: [
     "Python",
+    "C#",
+    "Java",
+    "MySQL",
+    "C",
+    "C++",
+    "Looker/LookML",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Dart",
   ],
   frames: [
+    "Alpine.js",
+    "Tailwind CSS",
+    "React",
     "Node.js",
+    "Flutter",
   ],
   tools: [
+    "Visual Studio Code",
+    "Unity",
+    "Blender",
     "Firebase",
   ]
 }
