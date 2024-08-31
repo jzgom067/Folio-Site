@@ -46,7 +46,7 @@ const Experience = ({ jobs }) => {
                 className={styles.logo}
                 src={job.logo}
                 alt={job.logo_alt}
-                width={isSingleColumn ? "7.5rem" : "9.75rem"}
+                width="100%"
                 aspectRatio="1"
               />
             </div>

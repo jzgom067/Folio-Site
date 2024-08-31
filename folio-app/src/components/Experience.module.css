@@ -48,6 +48,7 @@
 
 .logoContainer {
   width: 12rem;
+  aspect-ratio: 1;
   border-radius: 0.75rem;
   box-sizing: border-box;
   overflow: hidden;

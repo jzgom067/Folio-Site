@@ -60,6 +60,7 @@
 
 .logoContainer {
   width: 10rem;
+  aspect-ratio: 1;
   border-radius: 0.5rem;
   box-sizing: border-box;
   overflow: hidden;
