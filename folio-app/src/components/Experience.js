@@ -46,7 +46,6 @@ const Experience = ({ jobs }) => {
                 className={styles.logo}
                 src={job.logo}
                 alt={job.logo_alt}
-                width="100%"
                 aspectRatio="1"
               />
             </div>

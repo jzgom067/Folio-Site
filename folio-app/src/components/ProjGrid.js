@@ -28,7 +28,6 @@ const ProjGrid = ({ projects }) => {
                 src={proj.logo}
                 className={styles.logo}
                 alt={proj.logo_alt}
-                width="100%"
                 aspectRatio="1"
               />
             </div>
