@@ -48,11 +48,12 @@
 
 .logoContainer {
   width: 12rem;
+  border-radius: 0.75rem;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .logo {
-  border-radius: 0.75rem;
   width: 100%;
 }
 
@@ -97,7 +98,7 @@
   .outline {
     border-radius: 0.75rem !important;
   }
-  .logo {
+  .logoContainer {
     border-radius: 0.5rem !important;
   }
 }
