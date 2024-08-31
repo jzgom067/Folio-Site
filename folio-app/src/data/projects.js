@@ -156,7 +156,11 @@ const projects = [
       {
         name: 'GitHub',
         link: 'https://github.com/coleritchiee/gpt_thing'
-      }
+      },
+      {
+        name: 'Website',
+        link: 'https://www.chatkeypt.com/'
+      },
     ],
     date_start: 'May 2024',
     date_end: 'Present',

@@ -30,7 +30,13 @@ function Project() {
       <div className={styles.titleBar}>
         <SlideFadeIn>
           <div className={styles.logoContainer}>
-            <img className={styles.logo} src={proj.logo} alt="logo" />
+            <PlaceholderImage
+              className={styles.logo}
+              src={proj.logo}
+              alt="logo"
+              width="4.75rem"
+              aspectRatio="1"
+            />
           </div>
         </SlideFadeIn>
         <div className={styles.titleBarLeft}>
