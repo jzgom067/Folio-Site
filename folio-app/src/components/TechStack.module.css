@@ -1,0 +1,11 @@
+.stack {
+  max-width: 70rem;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

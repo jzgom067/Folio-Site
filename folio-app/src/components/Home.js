@@ -9,6 +9,7 @@ import SlideFadeIn from './SlideFadeIn.js';
 
 // styling
 import styles from './Home.module.css';
+import TechStack from './TechStack.js';
 
 const Home = () => (
   <>
@@ -35,9 +36,16 @@ const Home = () => (
       </SlideFadeIn>
       <Experience jobs={jobs} />
     </div>
-    {/* <div className="section">
-      <h1 className="section-title">Tech Stack</h1>
-    </div> */}
+    <div className={styles.section}>
+      <SlideFadeIn>
+        <h1
+          className={styles.sectionTitle}
+        >
+          Tech Stack
+        </h1>
+      </SlideFadeIn>
+      <TechStack />
+    </div>
   </>
 );
 
