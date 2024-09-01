@@ -6,7 +6,6 @@
   max-width: 45rem;
   margin: auto;
   text-align: left;
-  overflow: auto;
 }
 
 .picContainerContainer {
@@ -24,4 +23,8 @@
 
 .pic {
   width: 100%;
+}
+
+.picClear {
+  clear: left;
 }

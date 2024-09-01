@@ -20,7 +20,11 @@ const AboutMe = () => (
     <div className={styles.picContainerContainer}>
       <SlideFadeIn>
         <div className={styles.picContainer}>
-          <PlaceholderImage className={styles.pic} src={me} />
+          <PlaceholderImage
+            src={me}
+            className={styles.pic}
+            aspectRatio="3 / 4"
+          />
         </div>
       </SlideFadeIn>
     </div>
@@ -29,6 +33,7 @@ const AboutMe = () => (
         <p>{content}</p>
       </SlideFadeIn>
     ))}
+    <div className={styles.picClear}></div>
   </div>
 );
 
