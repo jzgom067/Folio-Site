@@ -3,24 +3,28 @@ import projects from '../data/projects.js';
 import jobs from '../data/jobs.js';
 
 // components
+import AboutMe from './AboutMe.js';
 import ProjGrid from './ProjGrid.js';
 import Experience from './Experience.js';
+import TechStack from './TechStack.js';
 import SlideFadeIn from './SlideFadeIn.js';
 
 // styling
 import styles from './Home.module.css';
-import TechStack from './TechStack.js';
 
 const Home = () => (
   <>
-    {/* <div className="section">
-      <h1 className="section-title">About Me</h1>
-    </div> */}
     <div className={styles.section}>
       <SlideFadeIn>
-        <h1
-          className={styles.sectionTitle}
-        >
+        <h1 className={styles.sectionTitle}>
+          About Me
+        </h1>
+      </SlideFadeIn>
+      <AboutMe/>
+    </div>
+    <div className={styles.section}>
+      <SlideFadeIn>
+        <h1 className={styles.sectionTitle}>
           Projects
         </h1>
       </SlideFadeIn>
@@ -28,9 +32,7 @@ const Home = () => (
     </div>
     <div className={styles.section}>
       <SlideFadeIn>
-        <h1
-          className={styles.sectionTitle}
-        >
+        <h1 className={styles.sectionTitle}>
           Experience
         </h1>
       </SlideFadeIn>
@@ -38,9 +40,7 @@ const Home = () => (
     </div>
     <div className={styles.section}>
       <SlideFadeIn>
-        <h1
-          className={styles.sectionTitle}
-        >
+        <h1 className={styles.sectionTitle}>
           Tech
         </h1>
       </SlideFadeIn>
