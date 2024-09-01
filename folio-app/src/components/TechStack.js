@@ -37,36 +37,48 @@ var stack = {
 const TechStack = () => {
   return (
     <div className={styles.stack}>
-      <SlideFadeIn>
-        <h2>Languages</h2>
-      </SlideFadeIn>
-      <SlideFadeIn>
-        <div className={styles.icons}>
-          {stack.lang.map((tech, index) => (
-            <DevIcon tech={tech} size="4rem" key={index} />
-          ))}
-        </div>
-      </SlideFadeIn>
-      <SlideFadeIn>
-        <h2>Libraries/Frameworks</h2>
-      </SlideFadeIn>
-      <SlideFadeIn>
-        <div className={styles.icons}>
-          {stack.frames.map((tech, index) => (
-            <DevIcon tech={tech} size="4rem" key={index} />
-          ))}
-        </div>
-      </SlideFadeIn>
-      <SlideFadeIn>
-        <h2>Tools/Software</h2>
-      </SlideFadeIn>
-      <SlideFadeIn>
-        <div className={styles.icons}>
-          {stack.tools.map((tech, index) => (
-            <DevIcon tech={tech} size="4rem" key={index} />
-          ))}
-        </div>
-      </SlideFadeIn>
+      <div style={{ zIndex: "5" }}>
+        <SlideFadeIn>
+          <h2>Languages</h2>
+        </SlideFadeIn>
+      </div>
+      <div style={{ zIndex: "4" }}>
+        <SlideFadeIn>
+          <div className={styles.icons}>
+            {stack.lang.map((tech, index) => (
+              <DevIcon tech={tech} size="4rem" key={index} />
+            ))}
+          </div>
+        </SlideFadeIn>
+      </div>
+      <div style={{ zIndex: "3" }}>
+        <SlideFadeIn>
+          <h2>Libraries/Frameworks</h2>
+        </SlideFadeIn>
+      </div>
+      <div style={{ zIndex: "2" }}>
+        <SlideFadeIn>
+          <div className={styles.icons}>
+            {stack.frames.map((tech, index) => (
+              <DevIcon tech={tech} size="4rem" key={index} />
+            ))}
+          </div>
+        </SlideFadeIn>
+      </div>
+      <div style={{ zIndex: "1" }}>
+        <SlideFadeIn>
+          <h2>Tools/Software</h2>
+        </SlideFadeIn>
+      </div>
+      <div style={{ zIndex: "0" }}>
+        <SlideFadeIn>
+          <div className={styles.icons}>
+            {stack.tools.map((tech, index) => (
+              <DevIcon tech={tech} size="4rem" key={index} />
+            ))}
+          </div>
+        </SlideFadeIn>
+      </div>
     </div>
   );
 }
