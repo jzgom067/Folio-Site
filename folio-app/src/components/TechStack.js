@@ -50,7 +50,7 @@ const TechStack = () => {
         <>
           <div style={{ zIndex: `${stack.length - i}` }}>
             <SlideFadeIn>
-              <h2>{group.name}</h2>
+              <h2 className={styles.groupName}>{group.name}</h2>
             </SlideFadeIn>
           </div>
           <div style={{ zIndex: `${stack.length - i}` }}>

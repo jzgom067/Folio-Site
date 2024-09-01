@@ -6,4 +6,5 @@
 
 .sectionTitle {
   color: var(--accent-color);
+  margin-bottom: 0.75rem;
 }
