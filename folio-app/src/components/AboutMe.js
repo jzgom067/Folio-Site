@@ -24,13 +24,11 @@ const AboutMe = () => (
         </div>
       </SlideFadeIn>
     </div>
-    <div className={styles.text}>
-      {text.map((content, i) => (
-        <SlideFadeIn key={i}>
-          <p>{content}</p>
-        </SlideFadeIn>
-      ))}
-    </div>
+    {text.map((content, i) => (
+      <SlideFadeIn key={i}>
+        <p>{content}</p>
+      </SlideFadeIn>
+    ))}
   </div>
 );
 

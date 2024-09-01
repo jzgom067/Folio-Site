@@ -1,19 +1,19 @@
 .row {
-  display: flex;
-  flex-direction: row;
   gap: 2rem;
   padding-bottom: 1rem;
-  max-width: 50rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 45rem;
   margin: auto;
-}
-
-.text {
-  flex: 3;
   text-align: left;
+  overflow: auto;
 }
 
-.picContainerContainer {  
-  flex: 2;
+.picContainerContainer {
+  width: 35%;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .picContainer {  
