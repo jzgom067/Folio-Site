@@ -161,9 +161,13 @@ const projects = [
         name: 'Website',
         link: 'https://www.chatkeypt.com/'
       },
+      {
+        name: 'App Store',
+        link: 'https://apps.apple.com/us/app/chatkeypt/id6608961477'
+      },
     ],
     date_start: 'May 2024',
-    date_end: 'Present',
+    date_end: 'August 2024',
     tech_stack: [
       'Dart',
       'Flutter',
@@ -172,8 +176,8 @@ const projects = [
     images: [],
     text: [
       {
-        title: "What is GPT Thing?",
-        text: "A way to make the most of a ChatGPT API key."
+        title: "What is ChatKeyPT?",
+        text: "ChatKeyPT is a platform that takes a user-supplied OpenAI API key and provides a familiar interface to take advantage of it. The idea behind this project was to make the API's pay-as-you-go model available to a wider audience, giving access to features gated behind ChatGPT Plus's hefty monthly fee."
       }
     ]
   },
