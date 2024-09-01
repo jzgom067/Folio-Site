@@ -1,5 +1,27 @@
 .row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
   padding-bottom: 1rem;
-  max-width: 65rem;
+  max-width: 50rem;
   margin: auto;
+}
+
+.text {
+  flex: 3;
+  text-align: left;
+}
+
+.picContainerContainer {  
+  flex: 2;
+}
+
+.picContainer {  
+  aspect-ratio: 3 / 4;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.pic {
+  width: 100%;
 }

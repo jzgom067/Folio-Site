@@ -1,8 +1,12 @@
 // components
 import SlideFadeIn from './SlideFadeIn.js';
+import PlaceholderImage from './PlaceholderImage.js';
 
 // styling
 import styles from './AboutMe.module.css';
+
+// images
+import me from '../img/me.jpg';
 
 var text = [
   "Hi! I'm Jack Zgombic, a current undergrad at RPI pursuing a dual degree in Computer Science and Information Technology & Web Science.",
@@ -13,11 +17,20 @@ var text = [
 
 const AboutMe = () => (
   <div className={styles.row}>
-    {text.map((content, i) => (
-      <SlideFadeIn key={i}>
-        <p>{content}</p>
+    <div className={styles.picContainerContainer}>
+      <SlideFadeIn>
+        <div className={styles.picContainer}>
+          <PlaceholderImage className={styles.pic} src={me} />
+        </div>
       </SlideFadeIn>
-    ))}
+    </div>
+    <div className={styles.text}>
+      {text.map((content, i) => (
+        <SlideFadeIn key={i}>
+          <p>{content}</p>
+        </SlideFadeIn>
+      ))}
+    </div>
   </div>
 );
 
