@@ -8,3 +8,9 @@
   color: var(--accent-color);
   margin-bottom: 0.75rem;
 }
+
+.footer {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  color: gray;
+}

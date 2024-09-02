@@ -7,7 +7,6 @@ import globals from './data/globals.js';
 // components
 import NavBar from './components/NavBar.js';
 import Content from './components/Content.js';
-import Footer from './components/Footer.js';
 
 // router
 import { useLocation } from 'react-router-dom';
@@ -27,7 +26,6 @@ function App() {
     <div className={styles.main}>
       <NavBar />
       <Content />
-      <Footer />
     </div>
   );
 }

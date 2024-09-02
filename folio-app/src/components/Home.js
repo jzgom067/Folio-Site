@@ -46,6 +46,9 @@ const Home = () => (
       </SlideFadeIn>
       <TechStack />
     </div>
+    <div className={styles.footer}>
+      Made with React over Summer 2024.
+    </div>
   </>
 );
 
