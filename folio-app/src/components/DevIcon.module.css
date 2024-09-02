@@ -16,6 +16,7 @@
   pointer-events: none;
   text-wrap: nowrap;
   opacity: 0;
+  z-index: 15;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -29,7 +30,6 @@
 }
 
 .container:hover .tooltip {
-  z-index: 15;
   opacity: 1;
   transform: translateY(-0.25rem);
 }

@@ -1,0 +1,61 @@
+.row {
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 37.5rem;
+  margin: auto;
+  text-align: left;
+}
+
+.picContainerContainer {
+  position: relative;
+  width: 35%;
+  float: right;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.picContainer {  
+  aspect-ratio: 3 / 4;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.pic {
+  width: 100%;
+}
+
+.cutout {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 1.5rem;
+}
+
+.firstName {
+  position: fixed;
+  top: -4rem;
+  left: -15.75rem;
+  font-size: 4rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
+}
+
+.lastName {
+  position: fixed;
+  top: -3rem;
+  left: -21rem;
+  font-size: 8rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
+}
+
+.picClear {
+  clear: both;
+}
+
+.text {
+  padding: 1rem;
+  padding-top: 9rem;
+  padding-bottom: 0;
+}

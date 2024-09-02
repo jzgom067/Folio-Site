@@ -14,11 +14,12 @@
 
 .logoContainer {
   height: 4.75rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .logo {
   height: 100%;
-  border-radius: 0.5rem;
 }
 
 .titleBarLeft {

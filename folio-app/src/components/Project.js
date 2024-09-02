@@ -7,6 +7,7 @@ import Icon from './Icon.js';
 import SlideFadeIn from './SlideFadeIn.js';
 import ImageModal from './ImageModal.js';
 import PlaceholderImage from './PlaceholderImage.js';
+import HomeButton from './HomeButton.js';
 
 // react stuff
 import React from 'react';
@@ -90,12 +91,13 @@ function Project() {
                 src={proj.images[1].img}
                 alt={proj.images[1].title}
                 aspectRatio="16 / 9"
-              />
+                />
               <PlaceholderImage
                 className={styles.preview}
                 src={proj.images[0].img}
                 alt={proj.images[0].title}
                 aspectRatio="16 / 9"
+                tempStyle={{ left: "5%" }}
               />
             </SlideFadeIn>
           </div>
@@ -114,6 +116,9 @@ function Project() {
             </div>
           );
         })}
+        <SlideFadeIn>
+          <HomeButton/>
+        </SlideFadeIn>
       </div>
     </div>
   );

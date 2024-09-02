@@ -13,22 +13,41 @@
 
 .left {
   margin-right: auto;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+  justify-self: center;
+  padding: 0.25rem;
+  text-decoration: none;
+}
+
+.logo {
+  height: 2.5rem;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+}
+
+.firstName {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.lastName {
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .right {
   margin-left: auto;
-
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: left;
-}
-
-.name {
-  font-size: 1.75rem;
-  font-weight: 600;
-  align-self: center;
-  padding: 0.5rem;
 }
 
 .link {

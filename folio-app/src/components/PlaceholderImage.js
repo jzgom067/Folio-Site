@@ -10,11 +10,19 @@ function findAncestorBackground(element) {
   return findAncestorBackground(element.parentElement);
 }
 
-function PlaceholderImage({ className, src, alt, width, height, aspectRatio}) {
+function PlaceholderImage({
+  className,
+  src,
+  alt,
+  width,
+  height,
+  aspectRatio,
+  tempStyle
+}) {
   const [isLoaded, onLoad] = useState(false);
   const [bgColor, setBgColor] = useState(null);
   const self = useRef(null);
-    
+
   // async function loadImg() {
   //   await new Promise(res => setTimeout(res, 5000));
   //   onLoad(true);
@@ -31,7 +39,7 @@ function PlaceholderImage({ className, src, alt, width, height, aspectRatio}) {
   return (
     <>
       {!isLoaded &&
-        <div className={className}>
+        <div style={isLoaded ? null : tempStyle} className={className}>
           <div
             style={{
               width: width,
