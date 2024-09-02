@@ -91,12 +91,13 @@ function Project() {
                 src={proj.images[1].img}
                 alt={proj.images[1].title}
                 aspectRatio="16 / 9"
-              />
+                />
               <PlaceholderImage
                 className={styles.preview}
                 src={proj.images[0].img}
                 alt={proj.images[0].title}
                 aspectRatio="16 / 9"
+                tempStyle={{ left: "5%" }}
               />
             </SlideFadeIn>
           </div>
