@@ -6,7 +6,7 @@ import golf4 from '../img/golf/screenshot4.png';
 
 import carpi from '../img/carpi.png';
 
-import banana from '../img/banan.png';
+import duck from '../img/duck.svg';
 
 import chatkeypt from '../img/chatkeypt.png';
 
@@ -121,8 +121,8 @@ const projects = [
     name: 'Personal Website',
     slug: 'site',
     subtitle: "My portfolio website",
-    logo: banana,
-    logo_alt: 'banana',
+    logo: duck,
+    logo_alt: 'duck',
     links: [
       {
         name: 'GitHub',
