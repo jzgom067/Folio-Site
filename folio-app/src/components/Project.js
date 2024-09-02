@@ -7,6 +7,7 @@ import Icon from './Icon.js';
 import SlideFadeIn from './SlideFadeIn.js';
 import ImageModal from './ImageModal.js';
 import PlaceholderImage from './PlaceholderImage.js';
+import HomeButton from './HomeButton.js';
 
 // react stuff
 import React from 'react';
@@ -114,6 +115,9 @@ function Project() {
             </div>
           );
         })}
+        <SlideFadeIn>
+          <HomeButton/>
+        </SlideFadeIn>
       </div>
     </div>
   );

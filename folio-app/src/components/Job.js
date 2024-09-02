@@ -4,13 +4,16 @@ import jobs from '../data/jobs.js';
 // router
 import { useParams } from 'react-router-dom';
 
-// styling
-import styles from './Project.module.css'; // TEMPORARY
+// components
 import SlideFadeIn from './SlideFadeIn.js';
 import ImageModal from './ImageModal.js';
 import PlaceholderImage from './PlaceholderImage.js';
 import Icon from './Icon.js';
 import DevIcon from './DevIcon.js';
+import HomeButton from './HomeButton.js';
+
+// styling
+import styles from './Project.module.css'; // TEMPORARY
 
 function getJob(slug) {
   return jobs.find((job) => job.slug === slug);
@@ -103,6 +106,9 @@ function Job() {
             </div>
           );
         })}
+        <SlideFadeIn>
+          <HomeButton/>
+        </SlideFadeIn>
       </div>
     </div>
   );
