@@ -1,3 +1,6 @@
+// images
+import duck from '../img/duck.svg';
+
 // components
 import Icon from './Icon.js';
 
@@ -9,13 +12,13 @@ import styles from './NavBar.module.css';
 
 const NavBar = () => (
   <div className={styles.navbar}>
-    <div className={styles.left}>
+    <Link to="/" className={styles.left}>
+      <img className={styles.logo} src={duck} alt="logo" />
       <div className={styles.name}>
-        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-          Jack Zgombic
-        </Link>
+        <div className={styles.firstName}>Jack</div>
+        <div className={styles.lastName}>Zgombic</div>
       </div>
-    </div>
+    </Link>
     <div className={styles.right}>
       <a
         className={styles.link}
