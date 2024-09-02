@@ -15,11 +15,6 @@ import styles from './Home.module.css';
 const Home = () => (
   <>
     <div className={styles.section}>
-      <SlideFadeIn>
-        <h1 className={styles.sectionTitle}>
-          About Me
-        </h1>
-      </SlideFadeIn>
       <AboutMe/>
     </div>
     <div className={styles.section}>

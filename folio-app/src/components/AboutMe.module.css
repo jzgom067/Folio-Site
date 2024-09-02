@@ -1,18 +1,16 @@
 .row {
   gap: 2rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
   max-width: 45rem;
   margin: auto;
   text-align: left;
 }
 
 .picContainerContainer {
+  position: relative;
   width: 35%;
-  float: left;
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
+  float: right;
+  padding-top: 3rem;
 }
 
 .picContainer {  
@@ -25,6 +23,32 @@
   width: 100%;
 }
 
+.cutout {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 1.5rem;
+}
+
+.firstName {
+  position: fixed;
+  top: -4rem;
+  left: -13.75rem;
+  font-size: 4rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
+}
+
+.lastName {
+  position: fixed;
+  top: -3rem;
+  left: -19rem;
+  font-size: 8rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
+}
+
 .picClear {
-  clear: left;
+  clear: both;
 }

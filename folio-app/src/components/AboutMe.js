@@ -7,6 +7,7 @@ import styles from './AboutMe.module.css';
 
 // images
 import me from '../img/me.jpg';
+import cutout from '../img/me cutout.png';
 
 var text = [
   "Hi! I'm Jack Zgombic, a current undergrad at RPI pursuing a dual degree in Computer Science and Information Technology & Web Science.",
@@ -25,14 +26,29 @@ const AboutMe = () => (
             className={styles.pic}
             aspectRatio="3 / 4"
           />
+          <div className={styles.firstName}>
+            <SlideFadeIn>
+              Jack
+            </SlideFadeIn>
+          </div>
+          <div className={styles.lastName}>
+            <SlideFadeIn>
+              Zgombic
+            </SlideFadeIn>
+          </div>
+          <PlaceholderImage
+            src={cutout}
+            className={styles.cutout}
+            aspectRatio="3 / 4"
+          />
         </div>
       </SlideFadeIn>
     </div>
-    {text.map((content, i) => (
+    {/* {text.map((content, i) => (
       <SlideFadeIn key={i}>
         <p>{content}</p>
       </SlideFadeIn>
-    ))}
+    ))} */}
     <div className={styles.picClear}></div>
   </div>
 );
