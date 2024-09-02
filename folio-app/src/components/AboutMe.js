@@ -44,11 +44,13 @@ const AboutMe = () => (
         </div>
       </SlideFadeIn>
     </div>
-    {/* {text.map((content, i) => (
-      <SlideFadeIn key={i}>
-        <p>{content}</p>
-      </SlideFadeIn>
-    ))} */}
+    <div className={styles.text}>
+      {text.map((content, i) => (
+        <SlideFadeIn key={i}>
+          <p>{content}</p>
+        </SlideFadeIn>
+      ))}
+    </div>
     <div className={styles.picClear}></div>
   </div>
 );
