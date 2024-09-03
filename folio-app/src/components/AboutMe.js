@@ -1,6 +1,5 @@
 // components
 import SlideFadeIn from './SlideFadeIn.js';
-import PlaceholderImage from './PlaceholderImage.js';
 
 // styling
 import styles from './AboutMe.module.css';
@@ -21,10 +20,10 @@ const AboutMe = () => (
     <div className={styles.picContainerContainer}>
       <SlideFadeIn>
         <div className={styles.picContainer}>
-          <PlaceholderImage
+          <img
             src={me}
+            alt="portrait background"
             className={styles.pic}
-            aspectRatio="3 / 4"
           />
           <div className={styles.firstName}>
             <SlideFadeIn>
@@ -36,10 +35,10 @@ const AboutMe = () => (
               Zgombic
             </SlideFadeIn>
           </div>
-          <PlaceholderImage
+          <img
             src={cutout}
+            alt="portrait cutout"
             className={styles.cutout}
-            aspectRatio="3 / 4"
           />
         </div>
       </SlideFadeIn>
