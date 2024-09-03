@@ -4,10 +4,6 @@ import SlideFadeIn from './SlideFadeIn.js';
 // styling
 import styles from './AboutMe.module.css';
 
-// images
-import me from '../img/me.jpg';
-import cutout from '../img/me cutout.png';
-
 var text = [
   "I'm a current undergrad at RPI pursuing a dual degree in Computer Science and Information Technology & Web Science.",
   "Stemming from a childhood of video games, I'm drawn to the creative problem solving involved in programming. Many would say my passion started in 10th grade with Computer Science 1, but the real beginning was trying to code snake on my TI-84 in middle school.",
@@ -21,7 +17,7 @@ const AboutMe = () => (
       <SlideFadeIn>
         <div className={styles.picContainer}>
           <img
-            src={me}
+            src="/me.jpg"
             alt="portrait background"
             className={styles.pic}
           />
@@ -36,7 +32,7 @@ const AboutMe = () => (
             </SlideFadeIn>
           </div>
           <img
-            src={cutout}
+            src="/me cutout.png"
             alt="portrait cutout"
             className={styles.cutout}
           />
