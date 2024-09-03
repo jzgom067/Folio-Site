@@ -20,6 +20,7 @@ function App() {
   let location = useLocation();
   React.useEffect(() => {
     globals.fadeInDelay = 0;
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (
