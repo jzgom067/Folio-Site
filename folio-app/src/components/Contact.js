@@ -1,19 +1,24 @@
 // components
-// import SlideFadeIn from './SlideFadeIn.js';
+import SlideFadeIn from './SlideFadeIn.js';
 
 // styling
-// import styles from './Home.module.css';
+import styles from './Contact.module.css';
 
 const Contact = () => (
-  <div>
-    <h2>Looking for my resume?</h2>
-    <a
-      href={process.env.PUBLIC_URL + "/resume.pdf"}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Here's a copy
-    </a>
+  <div className={styles.contact}>
+    <SlideFadeIn>
+      <h2 className={styles.subtitle}>Looking for my resume?</h2>
+    </SlideFadeIn>
+    <SlideFadeIn>
+      <a
+        className={styles.resume}
+        href={process.env.PUBLIC_URL + "/resume.pdf"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Here's a copy
+      </a>
+    </SlideFadeIn>
   </div>
 );
 

@@ -1,0 +1,16 @@
+.contact {
+  padding-bottom: 1rem;
+}
+
+.subtitle {
+  margin-top: 0;
+}
+
+.resume {
+  color: white;
+  text-decoration: none;
+}
+
+.resume:hover {
+  color: var(--accent-color);
+}
