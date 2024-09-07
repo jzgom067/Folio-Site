@@ -19,6 +19,19 @@ const Contact = () => (
         Here's a copy
       </a>
     </SlideFadeIn>
+    <SlideFadeIn>
+      <h2>What about my email?</h2>
+    </SlideFadeIn>
+    <SlideFadeIn>
+      <a
+        className={styles.resume}
+        href="mailto:jzgombic7@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Send me one here
+      </a>
+    </SlideFadeIn>
   </div>
 );
 
