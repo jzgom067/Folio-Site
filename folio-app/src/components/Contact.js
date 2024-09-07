@@ -32,6 +32,14 @@ const Contact = () => (
         Send me one here
       </a>
     </SlideFadeIn>
+    <SlideFadeIn>
+      <div
+        className={styles.resume}
+        onClick={() => navigator.clipboard.writeText('jzgombic7@gmail.com')}
+      >
+        (Or copy the address)
+      </div>
+    </SlideFadeIn>
   </div>
 );
 
