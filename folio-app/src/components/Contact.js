@@ -12,7 +12,7 @@ const Contact = () => (
       </SlideFadeIn>
       <SlideFadeIn>
         <a
-          className={styles.resume}
+          className={styles.linkButton}
           href={process.env.PUBLIC_URL + "/resume.pdf"}
           target="_blank"
           rel="noopener noreferrer"
@@ -27,7 +27,7 @@ const Contact = () => (
       </SlideFadeIn>
       <SlideFadeIn>
         <a
-          className={styles.resume}
+          className={styles.linkButton}
           href="mailto:jzgombic7@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Contact = () => (
       </SlideFadeIn>
       <SlideFadeIn>
         <div
-          className={styles.resume}
+          className={styles.copy}
           onClick={() => navigator.clipboard.writeText('jzgombic7@gmail.com')}
         >
           (Or copy the address)

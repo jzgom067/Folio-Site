@@ -11,11 +11,24 @@
   text-align: center;
 }
 
-.resume {
+.linkButton {
+  background-color: var(--obj-highlight-color);
   color: white;
   text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.resume:hover {
+.linkButton:hover {
+  background-color: var(--accent-color);
+}
+
+.copy {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.copy:hover {
   color: var(--accent-color);
 }
