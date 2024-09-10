@@ -1,5 +1,6 @@
 // components
 import SlideFadeIn from './SlideFadeIn.js';
+import Icon from './Icon.js';
 
 // styling
 import styles from './Contact.module.css';
@@ -18,6 +19,7 @@ const Contact = () => (
           rel="noopener noreferrer"
         >
           Here's a copy
+          <Icon name="External Link" stroke="lightgray" size="1em" />
         </a>
       </SlideFadeIn>
     </div>
@@ -33,6 +35,7 @@ const Contact = () => (
           rel="noopener noreferrer"
         >
           Send me one here
+          <Icon name="External Link" stroke="lightgray" size="1em" />
         </a>
       </SlideFadeIn>
       <SlideFadeIn>

@@ -12,11 +12,15 @@
 }
 
 .linkButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: var(--obj-highlight-color);
   color: white;
   text-decoration: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  transition: background-color 0.1s;
 }
 
 .linkButton:hover {
