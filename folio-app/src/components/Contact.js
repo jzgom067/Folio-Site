@@ -27,25 +27,27 @@ const Contact = () => (
       <SlideFadeIn>
         <h2>What about my email?</h2>
       </SlideFadeIn>
-      <SlideFadeIn>
-        <a
-          className={styles.linkButton}
-          href="mailto:jzgombic7@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Send me one here
-          <Icon name="External Link" stroke="lightgray" size="1em" />
-        </a>
-      </SlideFadeIn>
-      <SlideFadeIn>
-        <div
-          className={styles.copy}
-          onClick={() => navigator.clipboard.writeText('jzgombic7@gmail.com')}
-        >
-          (Or copy the address)
-        </div>
-      </SlideFadeIn>
+      <div>
+        <SlideFadeIn>
+          <a
+            className={styles.linkButton}
+            href="mailto:jzgombic7@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Send me one here
+            <Icon name="External Link" stroke="lightgray" size="1em" />
+          </a>
+        </SlideFadeIn>
+        <SlideFadeIn>
+          <div
+            className={styles.copy}
+            onClick={() => navigator.clipboard.writeText('jzgombic7@gmail.com')}
+          >
+            (Or copy the address)
+          </div>
+        </SlideFadeIn>
+      </div>
     </div>
   </div>
 );
