@@ -1,3 +1,19 @@
-.anim {
-  composes: slideFadeIn from '../Anim.css';
+@media (prefers-reduced-motion: no-preference) {
+  .anim {
+    animation: slideFadeIn normal 0.75s ease-out forwards;
+  }
+  .toBeAnimated {
+    opacity: 0;
+  }
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-2rem, 0rem);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+  }
 }

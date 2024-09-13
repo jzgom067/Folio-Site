@@ -8,6 +8,7 @@ import ProjGrid from './ProjGrid.js';
 import Experience from './Experience.js';
 import TechStack from './TechStack.js';
 import SlideFadeIn from './SlideFadeIn.js';
+import Contact from './Contact.js';
 
 // styling
 import styles from './Home.module.css';
@@ -40,6 +41,14 @@ const Home = () => (
         </h1>
       </SlideFadeIn>
       <TechStack />
+    </div>
+    <div className={styles.section}>
+      <SlideFadeIn>
+        <h1 className={styles.sectionTitle}>
+          Contact
+        </h1>
+      </SlideFadeIn>
+      <Contact />
     </div>
     <div className={styles.footer}>
       Made with React over Summer 2024.

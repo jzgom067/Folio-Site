@@ -7,7 +7,6 @@
 }
 
 .picContainerContainer {
-  position: relative;
   width: 35%;
   float: right;
   padding: 1rem;
@@ -15,25 +14,26 @@
 }
 
 .picContainer {  
+  position: relative;
   aspect-ratio: 3 / 4;
   border-radius: 1.5rem;
-  overflow: hidden;
 }
 
 .pic {
   width: 100%;
+  border-radius: 1.5rem;
 }
 
 .cutout {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 3px;
   left: 0;
   border-radius: 1.5rem;
 }
 
 .firstName {
-  position: fixed;
+  position: absolute;
   top: -4rem;
   left: -15.75rem;
   font-size: 4rem;
@@ -42,7 +42,7 @@
 }
 
 .lastName {
-  position: fixed;
+  position: absolute;
   top: -3rem;
   left: -21rem;
   font-size: 8rem;

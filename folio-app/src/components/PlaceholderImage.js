@@ -1,4 +1,7 @@
+// react
 import { useState, useRef, useEffect } from "react";
+
+// styling
 import styles from "./PlaceholderImage.module.css";
 
 function findAncestorBackground(element) {
