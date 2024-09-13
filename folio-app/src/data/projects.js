@@ -12,6 +12,112 @@ import chatkeypt from '../img/chatkeypt.png';
 
 const projects = [
   {
+    name: 'ChatKeyPT',
+    slug: 'keypt',
+    subtitle: "An advanced ChatGPT interface",
+    logo: chatkeypt,
+    logo_alt: 'chatkeypt',
+    links: [
+      {
+        name: 'GitHub',
+        link: 'https://github.com/coleritchiee/gpt_thing'
+      },
+      {
+        name: 'Website',
+        link: 'https://www.chatkeypt.com/'
+      },
+      {
+        name: 'App Store',
+        link: 'https://apps.apple.com/us/app/chatkeypt/id6608961477'
+      },
+    ],
+    date_start: 'May 2024',
+    date_end: 'August 2024',
+    tech_stack: [
+      'Dart',
+      'Flutter',
+      'Firebase'
+    ],
+    images: [],
+    text: [
+      {
+        title: "What is ChatKeyPT?",
+        text: "ChatKeyPT is a platform that takes a user-supplied OpenAI API key and provides a familiar interface to take advantage of it. The idea behind this project was to make the API's pay-as-you-go model available to a wider audience, giving access to features gated behind ChatGPT Plus's hefty monthly fee."
+      }
+    ]
+  },
+  {
+    name: 'This Website',
+    slug: 'site',
+    subtitle: "My portfolio website",
+    logo: duck,
+    logo_alt: 'duck',
+    links: [
+      {
+        name: 'GitHub',
+        link: 'https://github.com/jzgom067/Folio-Site'
+      }
+    ],
+    date_start: 'May 2024',
+    date_end: 'Present',
+    tech_stack: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Node.js'
+    ],
+    images: [],
+    text: [
+      {
+        title: "What is this website?",
+        text: "Just a portfolio."
+      }
+    ]
+  },
+  {
+    name: 'CARPI Bot',
+    slug: 'carpi',
+    subtitle: "A Discord bot for RPI students",
+    logo: carpi,
+    logo_alt: 'carpi',
+    links: [
+      {
+        name: 'GitHub',
+        link: 'https://github.com/SameriteRL/CARPI-Bot'
+      }
+    ],
+    date_start: 'December 2023',
+    date_end: 'Present',
+    tech_stack: [
+      'Python',
+      'MySQL'
+    ],
+    images: [],
+    text: [
+      {
+        title: "What is CARPI Bot?",
+        text: "CARPI Bot is a Discord bot designed for use by students at Rensselaer Polytechnic Institute. Discord is tightly integrated with the community there, so the bot is made to be a helpful resource on a platform that people are already on. It currently features stores of information like the academic calendar and course catalog, with more features and improvements to come. This project is part of the Rensselaer Center for Open Source (RCOS) program, one that focuses on the development of open source solutions for real world problems."
+      },
+      {
+        title: "What did I contribute?",
+        text: "I started contributing to this project in December 2023, creating a proof of concept for migrating existing data to a MySQL database. I officially joined the project in January 2024, converting already-developed features to use a database as a more efficient solution for data storage. Much of my time was spent designing the database that would be used as the foundation for the entire bot from that point forward. After that, I took charge of development on the Course Search feature, which I rewrote from the ground up to use our database instead of scraping data from the unreliable catalog website. This feature was pushed to production in April 2024."
+      },
+      {
+        title: "What did I learn?",
+        text: "This was my first project that involved working with a team. It was also my first time using GitHub (or anything really) for version control, so there was a lot to learn in addition to refreshing my Python knowledge. I was also working with a library (Discord.py) that I haven't used before, so a lot adapting was necessary to contribute to this project."
+      },
+      {
+        title: "What challenges did I face?",
+        text: "The biggest challenge in this project is managing many different interacting libraries, like interfacing with databases and using Discord's API. This means that problems led to situations where we had to decipher whether it was a library bug or a mistake on our part. We've had to change libraries on a few occasions to solve issues like this."
+      },
+      {
+        title: "What's next?",
+        text: "I plan to continue working on this project in future semesters during my time at RPI. I would like to iterate more on the Course Search, as well as update the database structure to include future features of the bot. I look forward to seeing the potential for this bot in the community."
+      }
+    ]
+  },
+  {
     name: 'Super Golf',
     slug: 'golf',
     subtitle: "A 3D golf game made in Unity",
@@ -72,112 +178,6 @@ const projects = [
       {
         title: "What's next?",
         text: "I've always had a passion for video games and game design, so being able to make my own was like a childhood dream come true. Nowadays when playing games, I find it fun to analyze and try to reverse engineer them, as well as appreciate cleverly designed mechanics. It's very inspiring to see all the great games that exist, and knowing I've already made one myself only makes that feeling stronger."
-      }
-    ]
-  },
-  {
-    name: 'CARPI Bot',
-    slug: 'carpi',
-    subtitle: "A Discord bot for RPI students",
-    logo: carpi,
-    logo_alt: 'carpi',
-    links: [
-      {
-        name: 'GitHub',
-        link: 'https://github.com/SameriteRL/CARPI-Bot'
-      }
-    ],
-    date_start: 'December 2023',
-    date_end: 'Present',
-    tech_stack: [
-      'Python',
-      'MySQL'
-    ],
-    images: [],
-    text: [
-      {
-        title: "What is CARPI Bot?",
-        text: "CARPI Bot is a Discord bot designed for use by students at Rensselaer Polytechnic Institute. Discord is tightly integrated with the community there, so the bot is made to be a helpful resource on a platform that people are already on. It currently features stores of information like the academic calendar and course catalog, with more features and improvements to come. This project is part of the Rensselaer Center for Open Source (RCOS) program, one that focuses on the development of open source solutions for real world problems."
-      },
-      {
-        title: "What did I contribute?",
-        text: "I started contributing to this project in December 2023, creating a proof of concept for migrating existing data to a MySQL database. I officially joined the project in January 2024, converting already-developed features to use a database as a more efficient solution for data storage. Much of my time was spent designing the database that would be used as the foundation for the entire bot from that point forward. After that, I took charge of development on the Course Search feature, which I rewrote from the ground up to use our database instead of scraping data from the unreliable catalog website. This feature was pushed to production in April 2024."
-      },
-      {
-        title: "What did I learn?",
-        text: "This was my first project that involved working with a team. It was also my first time using GitHub (or anything really) for version control, so there was a lot to learn in addition to refreshing my Python knowledge. I was also working with a library (Discord.py) that I haven't used before, so a lot adapting was necessary to contribute to this project."
-      },
-      {
-        title: "What challenges did I face?",
-        text: "The biggest challenge in this project is managing many different interacting libraries, like interfacing with databases and using Discord's API. This means that problems led to situations where we had to decipher whether it was a library bug or a mistake on our part. We've had to change libraries on a few occasions to solve issues like this."
-      },
-      {
-        title: "What's next?",
-        text: "I plan to continue working on this project in future semesters during my time at RPI. I would like to iterate more on the Course Search, as well as update the database structure to include future features of the bot. I look forward to seeing the potential for this bot in the community."
-      }
-    ]
-  },
-  {
-    name: 'Personal Website',
-    slug: 'site',
-    subtitle: "My portfolio website",
-    logo: duck,
-    logo_alt: 'duck',
-    links: [
-      {
-        name: 'GitHub',
-        link: 'https://github.com/jzgom067/Folio-Site'
-      }
-    ],
-    date_start: 'May 2024',
-    date_end: 'Present',
-    tech_stack: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'React',
-      'Node.js'
-    ],
-    images: [],
-    text: [
-      {
-        title: "What is this website?",
-        text: "Just a portfolio."
-      }
-    ]
-  },
-  {
-    name: 'ChatKeyPT',
-    slug: 'keypt',
-    subtitle: "An advanced ChatGPT interface",
-    logo: chatkeypt,
-    logo_alt: 'chatkeypt',
-    links: [
-      {
-        name: 'GitHub',
-        link: 'https://github.com/coleritchiee/gpt_thing'
-      },
-      {
-        name: 'Website',
-        link: 'https://www.chatkeypt.com/'
-      },
-      {
-        name: 'App Store',
-        link: 'https://apps.apple.com/us/app/chatkeypt/id6608961477'
-      },
-    ],
-    date_start: 'May 2024',
-    date_end: 'August 2024',
-    tech_stack: [
-      'Dart',
-      'Flutter',
-      'Firebase'
-    ],
-    images: [],
-    text: [
-      {
-        title: "What is ChatKeyPT?",
-        text: "ChatKeyPT is a platform that takes a user-supplied OpenAI API key and provides a familiar interface to take advantage of it. The idea behind this project was to make the API's pay-as-you-go model available to a wider audience, giving access to features gated behind ChatGPT Plus's hefty monthly fee."
       }
     ]
   },
