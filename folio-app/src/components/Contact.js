@@ -7,7 +7,7 @@ import styles from './Contact.module.css';
 
 const Contact = () => (
   <div className={styles.contact}>
-    <div className={styles.row}>
+    <div className={styles.col}>
       <SlideFadeIn>
         <h2>Looking for my resume?</h2>
       </SlideFadeIn>
@@ -23,7 +23,7 @@ const Contact = () => (
         </a>
       </SlideFadeIn>
     </div>
-    <div className={styles.row}>
+    <div className={styles.col}>
       <SlideFadeIn>
         <h2>What about my email?</h2>
       </SlideFadeIn>

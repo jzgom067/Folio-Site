@@ -2,11 +2,10 @@
   padding-bottom: 1rem;
 }
 
-.row {
+.col {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 1rem; */
   align-items: center;
 }
 
