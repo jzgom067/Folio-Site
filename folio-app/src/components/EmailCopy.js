@@ -1,6 +1,3 @@
-// components
-import SlideFadeIn from './SlideFadeIn.js';
-
 // react
 import { useState } from "react";
 
