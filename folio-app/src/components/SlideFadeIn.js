@@ -1,19 +1,15 @@
-// globals
-import globals from '../data/globals.js'
-
-// styling
-import styles from './SlideFadeIn.module.css';
+// scroll animation
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const SlideFadeIn = (props) => {
   return (
-    <div
-      className={styles.anim}
-      style={{
-        animationDelay: `${(globals.fadeInDelay++) * 0.1}s`
-      }}
+    <ScrollAnimation
+      offset="50"
+      animateIn="slideFadeIn"
+      animateOnce={true}
     >
       {props.children}
-    </div>
+    </ScrollAnimation>
   );
 }
 
