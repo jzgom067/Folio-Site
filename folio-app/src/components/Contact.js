@@ -1,6 +1,7 @@
 // components
 import SlideFadeIn from './SlideFadeIn.js';
 import Icon from './Icon.js';
+import EmailCopy from './EmailCopy.js';
 
 // styling
 import styles from './Contact.module.css';
@@ -49,12 +50,7 @@ const Contact = () => (
           </div>
         </SlideFadeIn>
         <SlideFadeIn>
-          <div
-            className={styles.copy}
-            onClick={() => navigator.clipboard.writeText('jzgombic7@gmail.com')}
-          >
-            Copy the address
-          </div>
+          <EmailCopy />
         </SlideFadeIn>
       </div>
     </div>

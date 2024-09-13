@@ -54,14 +54,3 @@
   margin: auto;
   margin-left: 0.5rem;
 }
-
-.copy {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.copy:hover {
-  color: var(--accent-color);
-}
