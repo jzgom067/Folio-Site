@@ -22,6 +22,15 @@ const NavBar = () => (
     <div className={styles.right}>
       <a
         className={styles.link}
+        href={process.env.PUBLIC_URL + "/resume.pdf"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>Resume</span>
+        <Icon name="External Link" stroke="gray" size="1em"></Icon>
+      </a>
+      <a
+        className={styles.link}
         href="https://github.com/jzgom067"
         target="_blank"
         rel="noopener noreferrer"
