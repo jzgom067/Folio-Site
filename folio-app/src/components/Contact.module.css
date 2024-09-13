@@ -1,5 +1,5 @@
 .contact {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .col {
@@ -7,6 +7,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.emailHeader {
+  margin-top: 0;
 }
 
 .linkButton {

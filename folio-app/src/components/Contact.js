@@ -9,7 +9,7 @@ const Contact = () => (
   <div className={styles.contact}>
     <div className={styles.col}>
       <SlideFadeIn>
-        <h2>Looking for my resume?</h2>
+        <h2 className={styles.emailHeader}>Looking for my resume?</h2>
       </SlideFadeIn>
       <SlideFadeIn>
         <a
@@ -25,7 +25,7 @@ const Contact = () => (
     </div>
     <div className={styles.col}>
       <SlideFadeIn>
-        <h2>What about my email?</h2>
+        <h2>Want to get in touch?</h2>
       </SlideFadeIn>
       <div>
         <SlideFadeIn>
@@ -35,7 +35,7 @@ const Contact = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Get in touch
+            Send an email
             <Icon name="External Link" stroke="lightgray" size="1em" />
           </a>
         </SlideFadeIn>
