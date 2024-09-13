@@ -35,16 +35,25 @@ const Contact = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Send me one here
+            Get in touch
             <Icon name="External Link" stroke="lightgray" size="1em" />
           </a>
+        </SlideFadeIn>
+        <SlideFadeIn>
+          <div
+            className={styles.or}
+          >
+            <hr className={styles.lineLeft}/>
+            OR
+            <hr className={styles.lineRight}/>
+          </div>
         </SlideFadeIn>
         <SlideFadeIn>
           <div
             className={styles.copy}
             onClick={() => navigator.clipboard.writeText('jzgombic7@gmail.com')}
           >
-            (Or copy the address)
+            Copy the address
           </div>
         </SlideFadeIn>
       </div>
