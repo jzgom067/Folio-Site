@@ -13,9 +13,14 @@ const startInterval = () => {
   if (!animInterval) {
     animInterval = setInterval(() => {
       if (animQueue.length > 0) {
-        const element = animQueue.shift();
+        animQueue.sort((a, b) => {
+          if (a.top === b.top) {
+            return a.left - b.left;
+          }
+          return a.top - b.top;
+        });
+        const { element } = animQueue.shift();
         element.classList.add(styles.anim);
-        console.log("something animated");
       } else {
         clearInterval(animInterval);
         animInterval = null;
@@ -28,23 +33,29 @@ const SlideFadeIn = (props) => {
   const ref = useRef(null);
 
   useEffect(() => {
+    const refTemp = ref;
     const observer = new IntersectionObserver((elems) => {
       elems.forEach(elem => {
         if (elem.isIntersecting) {
-          animQueue.push(elem.target);
+          const rect = elem.target.getBoundingClientRect();
+          animQueue.push({
+            element: elem.target,
+            top: rect.top,
+            left: rect.left
+          });
           startInterval();
           observer.unobserve(elem.target);
         }
       });
     });
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (refTemp.current) {
+      observer.observe(refTemp.current);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (refTemp.current) {
+        observer.unobserve(refTemp.current);
       }
     }
   }, []);
