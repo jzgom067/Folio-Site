@@ -79,6 +79,7 @@
 .image {
   max-height: 70vh;
   max-width: calc(min(90vw, 70rem) - 5rem);
+  aspect-ratio: 16 / 9;
   height: auto;
 }
 

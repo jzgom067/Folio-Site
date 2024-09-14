@@ -67,7 +67,8 @@ function ImageModal({ images }) {
             <Icon name="Left Arrow" size="2rem" stroke="gray"></Icon>
           </button>
           {isImage(images[currentImage].img)
-            ? <PlaceholderImage
+            ?
+            <PlaceholderImage
               className={styles.image}
               src={images[currentImage].img}
               alt={images[currentImage].title}
@@ -75,9 +76,16 @@ function ImageModal({ images }) {
               aspectRatio="16 / 9"
               key={images[currentImage].img}
             />
-            : <video className={styles.image} controls>
+            :
+            <video 
+              className={styles.image}
+              key={currentImage}
+              width="1920px"
+              controls
+            >
               <source src={images[currentImage].img} type="video/mp4" />
-              </video>}
+            </video>
+          }
           <button className={styles.chevronButton} onClick={nextImage}>
             <Icon name="Right Arrow" size="2rem" stroke="gray"></Icon>
           </button>
