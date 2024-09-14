@@ -9,6 +9,10 @@ import React, { useState } from 'react';
 // styling
 import styles from './ImageModal.module.css';
 
+function isImage(file) {
+  return file.endsWith('.png');
+}
+
 function ImageModal({ images }) {
   const [modalOpen, setOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
@@ -62,14 +66,18 @@ function ImageModal({ images }) {
           <button className={styles.chevronButton} onClick={prevImage}>
             <Icon name="Left Arrow" size="2rem" stroke="gray"></Icon>
           </button>
-          <PlaceholderImage
-            className={styles.image}
-            src={images[currentImage].img}
-            alt={images[currentImage].title}
-            width="1920px"
-            aspectRatio="16 / 9"
-            key={images[currentImage].img}
-          />
+          {isImage(images[currentImage].img)
+            ? <PlaceholderImage
+              className={styles.image}
+              src={images[currentImage].img}
+              alt={images[currentImage].title}
+              width="1920px"
+              aspectRatio="16 / 9"
+              key={images[currentImage].img}
+            />
+            : <video className={styles.image} controls>
+              <source src={images[currentImage].img} type="video/mp4" />
+              </video>}
           <button className={styles.chevronButton} onClick={nextImage}>
             <Icon name="Right Arrow" size="2rem" stroke="gray"></Icon>
           </button>

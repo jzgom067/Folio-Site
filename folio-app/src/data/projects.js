@@ -1,8 +1,10 @@
 import supergolf from '../img/supergolf.png';
-import golf1 from '../img/golf/screenshot1.png';
-import golf2 from '../img/golf/screenshot2.png';
-import golf3 from '../img/golf/screenshot3.png';
-import golf4 from '../img/golf/screenshot4.png';
+import golf1 from '../img/golf/main menu.png';
+import golf2 from '../img/golf/aiming.png';
+import golf3 from '../img/golf/redirection.mp4';
+import golf4 from '../img/golf/precision.mp4';
+import golf5 from '../img/golf/desperation.mp4';
+import golf6 from '../img/golf/scoreboard.png';
 
 import carpi from '../img/carpi.png';
 
@@ -150,12 +152,20 @@ const projects = [
         img: golf2
       },
       {
-        title: "Course Overview",
+        title: '"Redirection" Ability',
         img: golf3
       },
       {
-        title: "Time Stop Ability",
+        title: '"Precision" Ability',
         img: golf4
+      },
+      {
+        title: '"Desperation" Ability',
+        img: golf5
+      },
+      {
+        title: "Game Over",
+        img: golf6
       }
     ],
     text: [
