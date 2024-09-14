@@ -1,10 +1,11 @@
 import supergolf from '../img/supergolf.png';
 import golf1 from '../img/golf/main menu.png';
 import golf2 from '../img/golf/aiming.png';
-import golf3 from '../img/golf/redirection.mp4';
-import golf4 from '../img/golf/precision.mp4';
-import golf5 from '../img/golf/desperation.mp4';
-import golf6 from '../img/golf/scoreboard.png';
+import golf3 from '../img/golf/multiplayer map.png';
+import golf4 from '../img/golf/redirection.mp4';
+import golf5 from '../img/golf/precision.mp4';
+import golf6 from '../img/golf/desperation.mp4';
+import golf7 from '../img/golf/scoreboard.png';
 
 import carpi from '../img/carpi.png';
 
@@ -152,42 +153,46 @@ const projects = [
         img: golf2
       },
       {
-        title: '"Redirection" Ability',
+        title: "Course Overview",
         img: golf3
       },
       {
-        title: '"Precision" Ability',
+        title: '"Redirection" Ability',
         img: golf4
       },
       {
-        title: '"Desperation" Ability',
+        title: '"Precision" Ability',
         img: golf5
       },
       {
-        title: "Game Over",
+        title: '"Desperation" Ability',
         img: golf6
+      },
+      {
+        title: "Final Scoreboard",
+        img: golf7
       }
     ],
     text: [
       {
         title: "What is Super Golf?",
-        text: "Super Golf is a 3D multiplayer golf game, made in the Unity engine. It features a set of 3 abilities that the player can use to manipulate the trajectory of the ball while midair, which encourages creativity and strategic planning before each shot. Development time for the first release spanned 2 months, and the game was updated about a year later to fix bugs and add minor features."
+        text: "Super Golf is a 3D multiplayer golf game, made in the Unity engine. It features a set of 3 abilities that manipulate the trajectory of the ball while midair, which encourages creativity and strategic planning before each shot. Development time for the first release spanned 2 months, and the game was updated about a year later to fix bugs and add minor features."
       },
       {
         title: "What did I contribute?",
-        text: "This was a solo development project, so besides writing scripts, I designed game mechanics and modeled 3D assets. The project would not be possible without the endless resources from YouTube channels like Brackeys."
+        text: "This was a solo development project, so besides writing scripts, I designed game mechanics and modeled 3D assets. The project would not have been completed without the endless resources from YouTube channels like Brackeys."
       },
       {
         title: "What did I learn?",
-        text: "At the point of starting this project, I had already been working with Unity for a few years. However, I had only made small prototypes and proofs of concepts, which ultimately amounted to nothing substantial. By committing to finishing this game, I was challenging myself to stick with a project and see it through to the end. Because of this, I learned a lot of concepts that only come up when polishing a game for release. For example, designing a user interface was new to me, and it was a fun challenge figuring out how to communicate all the necessary information to the player. User testing was integral to getting things right, and made sure I wasn't completely insane when making the game. There were also unique challenges that arose because of the type of game I was making. Things like handling multiple players, score management, and trajectory prediction were challenges all on their own. The amount of work and attention to detail that needed to go into the game gave me a newfound appreciation for the games I play in my free time."
+        text: "At the point of starting this project, I had already been working with Unity for a few years. However, I had only made small prototypes and proofs of concepts, which amounted to nothing substantial. This project challenged me to commit myself to a game and see it through to the end. Because of this, I learned a lot of concepts that only come up when polishing a game for release. For example, designing a user interface was new to me, and it was a challenge figuring out how to effectively communicate information to the player. Playtesting was integral to getting things right, and it made sure I wasn't completely insane when making the game. There were also challenges that arose from the type of game I was making. For example, multiplayer implementation, score management, and trajectory prediction had very unique problems to solve. The amount of work and attention to detail required gave me a newfound appreciation for the games I play in my free time."
       },
       {
         title: "What challenges did I face?",
-        text: "Because this was a solo project, it meant I had to figure out everything by myself. Any problem I had involved a lot of research and rubber ducks, but making it through to the end was especially empowering, knowing I did it all without someone guiding me through it."
+        text: "Because this was a solo project, I had to figure out everything by myself. Any problem I had involved a lot of research and rubber ducks, but making it through to the end was very empowering, knowing I did it all without someone guiding me through it."
       },
       {
         title: "What's next?",
-        text: "I've always had a passion for video games and game design, so being able to make my own was like a childhood dream come true. Nowadays when playing games, I find it fun to analyze and try to reverse engineer them, as well as appreciate cleverly designed mechanics. It's very inspiring to see all the great games that exist, and knowing I've already made one myself only makes that feeling stronger."
+        text: "I've always had a passion for video games, so having made my own is a childhood dream come true. Nowadays when playing games, I'm able to appreciate cleverly designed mechanics, and I find it fun to try and reverse engineer them. I have plenty of ideas in mind for games I could make in the future, and I look forward to the day that I can execute on them. The satisfaction of seeing other people find fun in something I made is a unbeatable feeling that I can't wait to experience again."
       }
     ]
   },
