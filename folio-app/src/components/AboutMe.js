@@ -1,3 +1,7 @@
+// images
+import jack from '../img/jack.svg';
+import zgombic from '../img/zgombic.svg';
+
 // components
 import SlideFadeIn from './SlideFadeIn.js';
 
@@ -23,12 +27,12 @@ const AboutMe = () => (
           />
           <div className={styles.firstName}>
             <SlideFadeIn>
-              Jack
+              <img src={jack} alt="jack" className={styles.firstNameSvg} />
             </SlideFadeIn>
           </div>
           <div className={styles.lastName}>
             <SlideFadeIn>
-              Zgombic
+              <img src={zgombic} alt="zgombic" className={styles.lastNameSvg} />
             </SlideFadeIn>
           </div>
           <img
