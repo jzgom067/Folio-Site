@@ -8,6 +8,12 @@ import golf6 from '../img/golf/desperation.mp4';
 import golf7 from '../img/golf/scoreboard.png';
 
 import carpi from '../img/carpi.png';
+import carpi1 from '../img/carpi/summary.png';
+import carpi2 from '../img/carpi/commands.png';
+import carpi3 from '../img/carpi/course search.mp4';
+import carpi4 from '../img/carpi/course terms.png';
+import carpi5 from '../img/carpi/calendar.mp4';
+import carpi6 from '../img/carpi/compile.png';
 
 import duck from '../img/duck.svg';
 
@@ -96,7 +102,32 @@ const projects = [
       'Python',
       'MySQL'
     ],
-    images: [],
+    images: [
+      {
+        title: "Discord App Summary",
+        img: carpi1
+      },
+      {
+        title: "Command List",
+        img: carpi2
+      },
+      {
+        title: "Course Search Command",
+        img: carpi3
+      },
+      {
+        title: "Course Terms Command",
+        img: carpi4
+      },
+      {
+        title: "Academic Calendar Command",
+        img: carpi5
+      },
+      {
+        title: "Compiler Command",
+        img: carpi6
+      }
+    ],
     text: [
       {
         title: "What is CARPI Bot?",
