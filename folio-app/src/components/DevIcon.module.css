@@ -31,5 +31,5 @@
 
 .container:hover .tooltip {
   opacity: 1;
-  transform: translateY(-0.25rem);
+  transform: translateY(-0.5rem);
 }
