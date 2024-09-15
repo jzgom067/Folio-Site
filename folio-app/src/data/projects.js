@@ -93,7 +93,11 @@ const projects = [
     links: [
       {
         name: 'GitHub',
-        link: 'https://github.com/SameriteRL/CARPI-Bot'
+        link: 'https://github.com/CARPI-Bot/CARPI-Bot'
+      },
+      {
+        name: 'GitHub (Organization)',
+        link: 'https://github.com/CARPI-Bot'
       }
     ],
     date_start: 'December 2023',
@@ -131,23 +135,23 @@ const projects = [
     text: [
       {
         title: "What is CARPI Bot?",
-        text: "CARPI Bot is a Discord bot designed for use by students at Rensselaer Polytechnic Institute. Discord is tightly integrated with the community there, so the bot is made to be a helpful resource on a platform that people are already on. It currently features stores of information like the academic calendar and course catalog, with more features and improvements to come. This project is part of the Rensselaer Center for Open Source (RCOS) program, one that focuses on the development of open source solutions for real world problems."
+        text: "CARPI Bot is a Discord bot designed for use by students at Rensselaer Polytechnic Institute. There, Discord is tightly integrated with the community, so the bot is a helpful resource on a platform that people are already on. It features stores of information like the academic calendar and course catalog, with more features and improvements currently being developed. This project is part of the Rensselaer Center for Open Source (RCOS) program, which focuses on the development of open source solutions for real world problems."
       },
       {
         title: "What did I contribute?",
-        text: "I started contributing to this project in December 2023, creating a proof of concept for migrating existing data to a MySQL database. I officially joined the project in January 2024, converting already-developed features to use a database as a more efficient solution for data storage. Much of my time was spent designing the database that would be used as the foundation for the entire bot from that point forward. After that, I took charge of development on the Course Search feature, which I rewrote from the ground up to use our database instead of scraping data from the unreliable catalog website. This feature was pushed to production in April 2024."
+        text: "I started contributing to this project in December 2023, creating a proof of concept for migrating existing data to a MySQL database. I officially joined the project in January 2024, converting already-developed features to use a database as a more efficient solution for data storage. Initially, my time was spent designing the database that would be the foundation for the entire bot from that point forward. After that, I took charge of development on the Course Search feature, which I rewrote from the ground up to use our database instead of scraping data from the unreliable catalog website. This feature was pushed to production in April 2024."
       },
       {
         title: "What did I learn?",
-        text: "This was my first project that involved working with a team. It was also my first time using GitHub (or anything really) for version control, so there was a lot to learn in addition to refreshing my Python knowledge. I was also working with a library (Discord.py) that I haven't used before, so a lot adapting was necessary to contribute to this project."
+        text: "This is my first project that involved working with a team and using GitHub for version control. There was a lot to learn in addition to refreshing my Python knowledge from years ago. I was also working with many new libraries, so a lot of adapting was necessary to contribute to this project. Everything in our development process moved quickly, but I had a lot of support from other team members to keep me on track."
       },
       {
         title: "What challenges did I face?",
-        text: "The biggest challenge in this project is managing many different interacting libraries, like interfacing with databases and using Discord's API. This means that problems led to situations where we had to decipher whether it was a library bug or a mistake on our part. We've had to change libraries on a few occasions to solve issues like this."
+        text: "The biggest challenge in this project is managing many different interacting components, like interfacing with databases, implementing external libraries, and using Discord's API. We often had to decipher whether a problem was a bug from a library, or a mistake on our part. We've had to switch out libraries on a few occasions to solve issues like this."
       },
       {
         title: "What's next?",
-        text: "I plan to continue working on this project in future semesters during my time at RPI. I would like to iterate more on the Course Search, as well as update the database structure to include future features of the bot. I look forward to seeing the potential for this bot in the community."
+        text: "I plan to continue working on this project in future semesters during my time at RPI. I would like to iterate more on the Course Search, as well as continue to manage the database to include future features of the bot. I look forward to seeing the potential for this bot in the community."
       }
     ]
   },
