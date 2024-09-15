@@ -83,7 +83,7 @@ function Project() {
           <div className={styles.previewContainer}>
             <SlideFadeIn>
               <div className={styles.previewHover}>
-                <span>View Images &#40;{proj.images.length}&#41;</span>
+                <span>View Media &#40;{proj.images.length}&#41;</span>
               </div>
               <ImageModal images={proj.images} />
               <PlaceholderImage
