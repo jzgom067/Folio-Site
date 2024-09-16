@@ -80,7 +80,23 @@ const projects = [
     text: [
       {
         title: "What is this website?",
-        text: "Just a portfolio."
+        text: "This is a website made to be a portfolio for my projects, but also to introduce myself to web development. I've been told many times that a personal website is a perfect way for a software developer to show off their work, and I finally decided to spend a summer creating one. This was also an opportunity for me to reflect on everything I've done, taking a step back and being proud of how far I've come."
+      },
+      {
+        title: "What did I contribute?",
+        text: "This was another solo project, so I was responsible for everything between design and implementation. This project was done from scratch, and any problems I had required detailed research to solve. Without someone guiding me, I feel like I properly learned how things worked through plenty of experimenting. Once I had a good grasp of web development's (and my own) capabilitites, I started figuring out my plans for the website."
+      },
+      {
+        title: "What did I learn?",
+        text: "Before this, the last time I worked with HTML was sometime in early high school. I don't remember much from that experience, but since then I've learned a lot about the web development process, in terms of frameworks and development methodologies. I decided to use React for its popularity and extensive documentation, but I still had to completely reteach myself how to use HTML and CSS, which are fundamentally different from languages I typically use. It took a bit to wrap my mind around initially, but most things were relatively intuitive, save for a few confusing CSS properties. Deployment was handled by Vercel, which abstracted much of those complications away from me, allowing me to focus on building the website itself."
+      },
+      {
+        title: "What challenges did I face?",
+        text: "I decided to dive right into this project without trying to learn fundamentals first. I've found that I learn very well with hands-on experience, and I wanted to have something presentable by the end of the summer. On top of designing the website, I had to learn 3 different languages at once, that being HTML, CSS, and JavaScript. I feel like React's concepts were very intuitive, making easily reusable components, and it definitely simplified the entire process. However, I think what gave me the most trouble was accounting for mobile users and accessibility settings. There's a delicate balance that needs to be struck between creative expression and making sure the website is accessible."
+      },
+      {
+        title: "What's next?",
+        text: "While this website definitely isn't perfect, I'm quite satisfied with the result, considering I've never done web development before. I don't think I'll be making another personal website anytime soon, but I'll keep this updated with any future projects and experience."
       }
     ]
   },
