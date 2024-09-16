@@ -100,12 +100,12 @@
   }
   .preview {
     width: 90% !important;
-    left: -3% !important;
+    left: -5% !important;
     rotate: unset !important;
   }
   .preview2 {
     width: 90% !important;
-    right: 2% !important;
+    right: 0% !important;
     rotate: unset !important;
   }
 }
