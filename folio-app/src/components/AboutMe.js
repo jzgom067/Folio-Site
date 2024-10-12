@@ -32,7 +32,7 @@ const AboutMe = () => (
             </SlideFadeIn>
           </div>
           <img
-            src="/me cutout.png"
+            src="/cutout.png"
             alt="portrait cutout"
             className={styles.cutout}
           />
