@@ -17,7 +17,7 @@ const AboutMe = () => (
       <SlideFadeIn>
         <div className={styles.picContainer}>
           <img
-            src="/me.jpg"
+            src="/me.jpeg"
             alt="portrait background"
             className={styles.pic}
           />
