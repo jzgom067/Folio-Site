@@ -18,6 +18,10 @@ import carpi6 from '../img/carpi/compile.png';
 import duck from '../img/duck.svg';
 
 import chatkeypt from '../img/chatkeypt.png';
+import keypt1 from '../img/keypt/mitochondria.png';
+import keypt2 from '../img/keypt/python.png';
+import keypt3 from '../img/keypt/stocks.png';
+import keypt4 from '../img/keypt/duck.png';
 
 const projects = [
   {
@@ -47,7 +51,24 @@ const projects = [
       'Flutter',
       'Firebase'
     ],
-    images: [],
+    images: [
+      {
+        title: "Basic Prompt",
+        img: keypt1
+      },
+      {
+        title: "Code Generation",
+        img: keypt2
+      },
+      {
+        title: "System Prompt Usage",
+        img: keypt3
+      },
+      {
+        title: "Image Generation",
+        img: keypt4
+      }
+    ],
     text: [
       {
         title: "What is ChatKeyPT?",
