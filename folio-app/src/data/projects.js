@@ -68,7 +68,7 @@ const projects = [
       {
         title: "What's next?",
         text: "While the first release of ChatKeyPT wasn't at the original scope we planned, we wanted to make sure that at least the core functionality was robust before publishing. We have many ideas for features that leverage the OpenAI API and perform tasks unique to our platform. For now, we're very proud of the fact that we were able to take an idea from conception and publish on the App Store in just a few months."
-      },
+      }
     ]
   },
   {
