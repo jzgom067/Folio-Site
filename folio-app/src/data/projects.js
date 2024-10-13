@@ -51,8 +51,24 @@ const projects = [
     text: [
       {
         title: "What is ChatKeyPT?",
-        text: "ChatKeyPT is a platform that takes a user-supplied OpenAI API key and provides a familiar interface to take advantage of it. The idea behind this project was to make the API's pay-as-you-go model available to a wider audience, giving access to features gated behind ChatGPT Plus's hefty monthly fee."
-      }
+        text: "ChatKeyPT is a platform that takes a user-supplied OpenAI API key and provides a familiar interface to take advantage of it. The idea behind this project was to make the API's pay-as-you-go model available to a wider audience, giving access to features and models gated behind ChatGPT Plus's hefty monthly fee."
+      },
+      {
+        title: "What did I contribute?",
+        text: "I worked on this project with a friend of mine, who approached me with the idea in May 2024. When it came to splitting the work, he took charge of the backend, I handled the API calls and internal app logic, and we split the rest of the frontend development between the two of us. Of that, I was responsible for the chat page, which involved laying out most of the app's data and planning ahead to make sure the app was scalable."
+      },
+      {
+        title: "What did I learn?",
+        text: "This project introduced me to Flutter, which is a stark departure from the React web development I was doing on my personal website. I found that while it took some time to adjust, there's a lot of conveniences that come with the framework, like an automatic formatter, strict code linter, and built-in cross platform support. As part of this project, we planned on releasing as both a website and mobile app. While unfortunately the Android version never made it to production, the iOS version was my responsibility. I learned a lot from not just testing on mobile, but also the process of submitting an app to the App Store."
+      },
+      {
+        title: "What challenges did I face?",
+        text: "As said before, the app was released as both a website and mobile app. I find that it's already hard enough making a reactive interface for a website on desktop. During testing, I had to run the same app on a browser, my iPhone, and an Android emulator all at the same time to make sure everything was working smoothly. I also learned a lot about the Flutter community, and how many (seemingly simple) functions of the framework depend on packages maintained by third parties. It was nice to find packages that could accomplish niche things, but typically the documentation was lacking, and many problems took a lot more time than they probably should have to solve."
+      },
+      {
+        title: "What's next?",
+        text: "While the first release of ChatKeyPT wasn't at the original scope we planned, we wanted to make sure that at least the core functionality was robust before publishing. We have many ideas for features that leverage the OpenAI API and perform tasks unique to our platform. For now, we're very proud of the fact that we were able to take an idea from conception and publish on the App Store in just a few months."
+      },
     ]
   },
   {
