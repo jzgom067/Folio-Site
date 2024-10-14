@@ -80,12 +80,28 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: row;
   padding: 1rem;
+  gap: 1rem;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 50%;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 50%;
 }
 
 .previewContainer {
   position: relative;
-  width: 55%;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
   float: right;
@@ -183,4 +199,5 @@
 
 .text {
   text-align: left;
+  line-height: 125%;
 }

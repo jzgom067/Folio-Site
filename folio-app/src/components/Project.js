@@ -79,47 +79,71 @@ function Project() {
         </div>
       </div>
       <div className={styles.content}>
-        {proj.images.length > 0 &&
-          <div className={styles.previewContainer}>
-            <SlideFadeIn>
-              <div className={styles.previewHover}>
-                <span>View Media &#40;{proj.images.length}&#41;</span>
+        <div className={styles.leftCol}>
+          {proj.text.map((dict, i) => {
+            if (i > proj.text.length / 2) {
+              return <></>;
+            }
+            return (
+              <div className={styles.textSection} key={i}>
+                <SlideFadeIn>
+                  <h2>{dict.title}</h2>
+                </SlideFadeIn>
+                <SlideFadeIn>
+                  <div className={styles.text}>
+                    {dict.text}
+                  </div>
+                </SlideFadeIn>
               </div>
-              <ImageModal images={proj.images} />
-              <PlaceholderImage
-                className={styles.preview2}
-                src={proj.images[1].img}
-                alt={proj.images[1].title}
-                aspectRatio="16 / 9"
-                />
-              <PlaceholderImage
-                className={styles.preview}
-                src={proj.images[0].img}
-                alt={proj.images[0].title}
-                aspectRatio="16 / 9"
-                tempStyle={{ left: "5%" }}
-              />
-            </SlideFadeIn>
-          </div>
-        }
-        {proj.text.map((dict, i) => {
-          return (
-            <div className={styles.textSection} key={i}>
+            );
+          })}
+        </div>
+        <div className={styles.rightCol}>
+          {proj.images.length > 0 &&
+            <div className={styles.previewContainer}>
               <SlideFadeIn>
-                <h2>{dict.title}</h2>
-              </SlideFadeIn>
-              <SlideFadeIn>
-                <div className={styles.text}>
-                  {dict.text}
+                <div className={styles.previewHover}>
+                  <span>View Media &#40;{proj.images.length}&#41;</span>
                 </div>
+                <ImageModal images={proj.images} />
+                <PlaceholderImage
+                  className={styles.preview2}
+                  src={proj.images[1].img}
+                  alt={proj.images[1].title}
+                  aspectRatio="16 / 9"
+                />
+                <PlaceholderImage
+                  className={styles.preview}
+                  src={proj.images[0].img}
+                  alt={proj.images[0].title}
+                  aspectRatio="16 / 9"
+                  tempStyle={{ left: "5%" }}
+                />
               </SlideFadeIn>
             </div>
-          );
-        })}
-        <SlideFadeIn>
-          <HomeButton/>
-        </SlideFadeIn>
+          }
+          {proj.text.map((dict, i) => {
+            if (i <= proj.text.length / 2) {
+              return <></>;
+            }
+            return (
+              <div className={styles.textSection} key={i}>
+                <SlideFadeIn>
+                  <h2>{dict.title}</h2>
+                </SlideFadeIn>
+                <SlideFadeIn>
+                  <div className={styles.text}>
+                    {dict.text}
+                  </div>
+                </SlideFadeIn>
+              </div>
+            );
+          })}
+        </div>
       </div>
+      <SlideFadeIn>
+        <HomeButton />
+      </SlideFadeIn>
     </div>
   );
 };

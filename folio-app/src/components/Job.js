@@ -70,46 +70,70 @@ function Job() {
         </div>
       </div>
       <div className={styles.content}>
-        {job.images.length > 0 &&
-          <div className={styles.previewContainer}>
-            <SlideFadeIn>
-              <div className={styles.previewHover}>
-                <span>View Images &#40;{job.images.length}&#41;</span>
+        <div className={styles.leftCol}>
+          {job.text.map((dict, i) => {
+            if (i > job.text.length / 2) {
+              return <></>;
+            }
+            return (
+              <div className={styles.textSection} key={i}>
+                <SlideFadeIn>
+                  <h2>{dict.title}</h2>
+                </SlideFadeIn>
+                <SlideFadeIn>
+                  <div className={styles.text}>
+                    {dict.text}
+                  </div>
+                </SlideFadeIn>
               </div>
-              <ImageModal images={job.images} />
-              <PlaceholderImage
-                className={styles.preview2}
-                src={job.images[1].img}
-                alt={job.images[1].title}
-                aspectRatio="16 / 9"
-              />
-              <PlaceholderImage
-                className={styles.preview}
-                src={job.images[0].img}
-                alt={job.images[0].title}
-                aspectRatio="16 / 9"
-              />
-            </SlideFadeIn>
-          </div>
-        }
-        {job.text.map((dict, i) => {
-          return (
-            <div className={styles.textSection} key={i}>
+            );
+          })}
+        </div>
+        <div className={styles.rightCol}>
+          {job.images.length > 0 &&
+            <div className={styles.previewContainer}>
               <SlideFadeIn>
-                <h2>{dict.title}</h2>
-              </SlideFadeIn>
-              <SlideFadeIn>
-                <div className={styles.text}>
-                  {dict.text}
+                <div className={styles.previewHover}>
+                  <span>View Images &#40;{job.images.length}&#41;</span>
                 </div>
+                <ImageModal images={job.images} />
+                <PlaceholderImage
+                  className={styles.preview2}
+                  src={job.images[1].img}
+                  alt={job.images[1].title}
+                  aspectRatio="16 / 9"
+                />
+                <PlaceholderImage
+                  className={styles.preview}
+                  src={job.images[0].img}
+                  alt={job.images[0].title}
+                  aspectRatio="16 / 9"
+                />
               </SlideFadeIn>
             </div>
-          );
-        })}
-        <SlideFadeIn>
-          <HomeButton/>
-        </SlideFadeIn>
+          }
+          {job.text.map((dict, i) => {
+            if (i <= job.text.length / 2) {
+              return <></>;
+            }
+            return (
+              <div className={styles.textSection} key={i}>
+                <SlideFadeIn>
+                  <h2>{dict.title}</h2>
+                </SlideFadeIn>
+                <SlideFadeIn>
+                  <div className={styles.text}>
+                    {dict.text}
+                  </div>
+                </SlideFadeIn>
+              </div>
+            );
+          })}
+        </div>
       </div>
+      <SlideFadeIn>
+        <HomeButton/>
+      </SlideFadeIn>
     </div>
   );
 };
