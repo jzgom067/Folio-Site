@@ -25,9 +25,12 @@ function getProj(slug) {
 function Project() {
   let { proj } = useParams();
   proj = getProj(proj);
-
-  const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-  console.log(rem);
+  
+  let tempElem = document.createElement('div');
+  tempElem.style.fontSize = 'initial';
+  document.body.appendChild(tempElem);
+  const rem = parseFloat(getComputedStyle(tempElem).fontSize);
+  document.body.removeChild(tempElem);
 
   function checkSingleColumn() {
     return window.innerWidth <= 55 * rem;

@@ -13,7 +13,11 @@ import styles from './Experience.module.css';
 import PlaceholderImage from './PlaceholderImage.js';
 
 const Experience = ({ jobs }) => {
-  const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+  let tempElem = document.createElement('div');
+  tempElem.style.fontSize = 'initial';
+  document.body.appendChild(tempElem);
+  const rem = parseFloat(getComputedStyle(tempElem).fontSize);
+  document.body.removeChild(tempElem);
 
   function checkSingleColumn() {
     return window.innerWidth <= 55 * rem;
