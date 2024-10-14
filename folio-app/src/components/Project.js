@@ -1,5 +1,6 @@
 // data
 import projects from '../data/projects.js';
+import jobs from '../data/jobs.js';
 
 // components
 import DevIcon from './DevIcon.js';
@@ -22,9 +23,18 @@ function getProj(slug) {
   return projects.find((proj) => proj.slug === slug);
 }
 
+function getJob(slug) {
+  return jobs.find((job) => job.slug === slug);
+}
+
 function Project() {
-  let { proj } = useParams();
-  proj = getProj(proj);
+  let { type, slug } = useParams();
+  let data = null;
+  if (type === "project") {
+    data = getProj(slug);
+  } else if (type === "experience") {
+    data = getJob(slug);
+  }
   
   let tempElem = document.createElement('div');
   tempElem.style.fontSize = 'initial';
@@ -55,7 +65,7 @@ function Project() {
           <div className={styles.logoContainer}>
             <PlaceholderImage
               className={styles.logo}
-              src={proj.logo}
+              src={data.logo}
               alt="logo"
               width="4.75rem"
               aspectRatio="1"
@@ -65,12 +75,12 @@ function Project() {
         <div className={styles.titleBarLeft}>
           <SlideFadeIn>
             <h1 className={styles.title}>
-              {proj.name}
+              {data.name}
             </h1>
           </SlideFadeIn>
           <SlideFadeIn>
             <div className={styles.links}>
-              {proj.links.map((link, i) => (
+              {data.links.map((link, i) => (
                 <a
                   key={i}
                   className={styles.link}
@@ -88,12 +98,12 @@ function Project() {
         <div className={styles.titleBarRight}>
           <SlideFadeIn>
             <span className={styles.date}>
-              {proj.date_start} - {proj.date_end}
+              {data.date_start} - {data.date_end}
             </span>
           </SlideFadeIn>
           <SlideFadeIn>
             <div className={styles.tech}>
-              {proj.tech_stack.map((tech, i) => (
+              {data.tech_stack.map((tech, i) => (
                 <DevIcon tech={tech} size="3rem" key={i} />
               ))}
             </div>
@@ -105,25 +115,25 @@ function Project() {
           <div className={styles.previewContainer}>
             <SlideFadeIn>
               <div className={styles.previewHover}>
-                <span>View Media &#40;{proj.images.length}&#41;</span>
+                <span>View Media &#40;{data.images.length}&#41;</span>
               </div>
-              <ImageModal images={proj.images} />
+              <ImageModal images={data.images} />
               <PlaceholderImage
                 className={styles.preview2}
-                src={proj.images[1].img}
-                alt={proj.images[1].title}
+                src={data.images[1].img}
+                alt={data.images[1].title}
                 aspectRatio="16 / 9"
               />
               <PlaceholderImage
                 className={styles.preview}
-                src={proj.images[0].img}
-                alt={proj.images[0].title}
+                src={data.images[0].img}
+                alt={data.images[0].title}
                 aspectRatio="16 / 9"
                 tempStyle={{ left: "5%" }}
               />
             </SlideFadeIn>
           </div>
-          {proj.text.map((dict, i) => {
+          {data.text.map((dict, i) => {
             return (
               <div className={styles.textSection} key={i}>
                 <SlideFadeIn>
@@ -142,8 +152,8 @@ function Project() {
       {!isSingleColumn &&
         <div className={styles.content}>
           <div className={styles.leftCol}>
-            {proj.text.map((dict, i) => {
-              if (i > proj.text.length / 2) {
+            {data.text.map((dict, i) => {
+              if (i > data.text.length / 2) {
                 return <></>;
               }
               return (
@@ -161,31 +171,31 @@ function Project() {
             })}
           </div>
           <div className={styles.rightCol}>
-            {proj.images.length > 0 &&
+            {data.images.length > 0 &&
               <div className={styles.previewContainer}>
                 <SlideFadeIn>
                   <div className={styles.previewHover}>
-                    <span>View Media &#40;{proj.images.length}&#41;</span>
+                    <span>View Media &#40;{data.images.length}&#41;</span>
                   </div>
-                  <ImageModal images={proj.images} />
+                  <ImageModal images={data.images} />
                   <PlaceholderImage
                     className={styles.preview2}
-                    src={proj.images[1].img}
-                    alt={proj.images[1].title}
+                    src={data.images[1].img}
+                    alt={data.images[1].title}
                     aspectRatio="16 / 9"
                   />
                   <PlaceholderImage
                     className={styles.preview}
-                    src={proj.images[0].img}
-                    alt={proj.images[0].title}
+                    src={data.images[0].img}
+                    alt={data.images[0].title}
                     aspectRatio="16 / 9"
                     tempStyle={{ left: "5%" }}
                   />
                 </SlideFadeIn>
               </div>
             }
-            {proj.text.map((dict, i) => {
-              if (i <= proj.text.length / 2) {
+            {data.text.map((dict, i) => {
+              if (i <= data.text.length / 2) {
                 return <></>;
               }
               return (
