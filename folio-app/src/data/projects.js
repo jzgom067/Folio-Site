@@ -105,7 +105,7 @@ const projects = [
       }
     ],
     date_start: 'May 2024',
-    date_end: 'Present',
+    date_end: 'October 2024',
     tech_stack: [
       'HTML',
       'CSS',
