@@ -15,7 +15,7 @@ const Contact = () => (
       <SlideFadeIn>
         <a
           className={styles.linkButton}
-          href={process.env.PUBLIC_URL + "/resume.pdf"}
+          href={process.env.PUBLIC_URL + "/Jack Zgombic Resume.pdf"}
           target="_blank"
           rel="noopener noreferrer"
         >
