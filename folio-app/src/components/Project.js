@@ -35,7 +35,7 @@ function Project() {
   } else if (type === "experience") {
     data = getJob(slug);
   }
-  
+
   let tempElem = document.createElement('div');
   tempElem.style.fontSize = 'initial';
   document.body.appendChild(tempElem);
@@ -112,27 +112,29 @@ function Project() {
       </div>
       {isSingleColumn &&
         <div className={styles.singleCol}>
-          <div className={styles.previewContainer}>
-            <SlideFadeIn>
-              <div className={styles.previewHover}>
-                <span>View Media &#40;{data.images.length}&#41;</span>
-              </div>
-              <ImageModal images={data.images} />
-              <PlaceholderImage
-                className={styles.preview2}
-                src={data.images[1].img}
-                alt={data.images[1].title}
-                aspectRatio="16 / 9"
-              />
-              <PlaceholderImage
-                className={styles.preview}
-                src={data.images[0].img}
-                alt={data.images[0].title}
-                aspectRatio="16 / 9"
-                tempStyle={{ left: "5%" }}
-              />
-            </SlideFadeIn>
-          </div>
+          {data.images.length > 0 &&
+            <div className={styles.previewContainer}>
+              <SlideFadeIn>
+                <div className={styles.previewHover}>
+                  <span>View Media &#40;{data.images.length}&#41;</span>
+                </div>
+                <ImageModal images={data.images} />
+                <PlaceholderImage
+                  className={styles.preview2}
+                  src={data.images[1].img}
+                  alt={data.images[1].title}
+                  aspectRatio="16 / 9"
+                />
+                <PlaceholderImage
+                  className={styles.preview}
+                  src={data.images[0].img}
+                  alt={data.images[0].title}
+                  aspectRatio="16 / 9"
+                  tempStyle={{ left: "5%" }}
+                />
+              </SlideFadeIn>
+            </div>
+          }
           {data.text.map((dict, i) => {
             return (
               <div className={styles.textSection} key={i}>
