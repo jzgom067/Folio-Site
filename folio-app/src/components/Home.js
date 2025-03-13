@@ -37,7 +37,7 @@ const Home = () => (
     <div className={styles.section}>
       <SlideFadeIn>
         <h1 className={styles.sectionTitle}>
-          Tech
+          Expertise
         </h1>
       </SlideFadeIn>
       <TechStack />
