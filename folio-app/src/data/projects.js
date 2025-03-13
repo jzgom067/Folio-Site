@@ -138,9 +138,9 @@ const projects = [
     ]
   },
   {
-    name: 'CARPI Bot',
+    name: 'Project CARPI',
     slug: 'carpi',
-    subtitle: "A Discord bot for RPI students",
+    subtitle: "A central resource for RPI students",
     logo: carpi,
     logo_alt: 'carpi',
     links: [
@@ -183,12 +183,12 @@ const projects = [
     ],
     text: [
       {
-        title: "What is CARPI Bot?",
-        text: "CARPI Bot is a Discord bot designed for use by students at Rensselaer Polytechnic Institute. Discord is tightly integrated with the community there, so the bot is a helpful resource on a platform that people are already on. It currently features information like the academic calendar and course catalog. This project is part of the Rensselaer Center for Open Source (RCOS) program, which focuses on the development of open source solutions for real world problems."
+        title: "What is Project CARPI?",
+        text: "Project CARPI (Cool Academic RPI) is designed to be a central resource for students at Rensselaer Polytechnic Institute. Currently there's not much to show as it's going through a large shift onto a web platform, with the main feature being a 4-year course planner. However, the images here show the Discord bot that the project originally formed around. This project is part of the Rensselaer Center for Open Source (RCOS) program, which focuses on the development of open source solutions for real world problems."
       },
       {
         title: "What did I contribute?",
-        text: "My first contribution was a proof of concept for migrating existing data to a more efficient storage solution using MySQL. I officially joined the project in January 2024, where my first task was to design a database. Afterwards, I took charge of development on the Course Search feature, where I leveraged the database for a new search algorithm. This feature was pushed to production in April 2024."
+        text: "My first contribution was a proof of concept for migrating existing data to a more efficient storage solution using MySQL. I officially joined the project in January 2024, where my first task was to design a database. Afterwards, I took charge of development on the Course Search feature, where I leveraged the database for a new search algorithm. This feature was pushed to production in April 2024. Now, I've been working closely with the project lead to further plan out the database and integrate it directly with our backend service."
       },
       {
         title: "What did I learn?",
@@ -196,11 +196,11 @@ const projects = [
       },
       {
         title: "What challenges did I face?",
-        text: "The biggest challenge in this project is easily the many interacting components. The bot interfaces with databases, implements external libraries, and uses Discord's API. We've often had to decipher whether a problem was a library bug or a mistake on our part, and we've even switched libraries to solve issues like this."
+        text: "The biggest challenge in this project is easily the many interacting components. The platform interfaces with databases, implements external libraries, and uses Discord's API. We've often had to decipher whether a problem was a library bug or a mistake on our part, and we've even switched libraries to solve issues like this. In addition, the team has gotten much bigger since I joined, so we've had to figure out how to properly distribute tasks and ensure proper communication across the team."
       },
       {
         title: "What's next?",
-        text: "I plan to continue working on this project in future semesters during my time at RPI. In particular, I would like to iterate more on the Course Search and keep the database updated to include future features of the bot. I look forward to seeing the potential for this bot in the community."
+        text: "I plan to continue working on this project in future semesters during my time at RPI. In particular, I would like to iterate more on the Course Search and keep the database updated to include future features. I look forward to seeing the potential for this project in the community."
       }
     ]
   },
