@@ -146,11 +146,7 @@ const projects = [
     links: [
       {
         name: 'GitHub',
-        link: 'https://github.com/CARPI-Bot/CARPI-Bot'
-      },
-      {
-        name: 'GitHub (Organization)',
-        link: 'https://github.com/CARPI-Bot'
+        link: 'https://github.com/Project-CARPI'
       }
     ],
     date_start: 'December 2023',
