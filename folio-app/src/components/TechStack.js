@@ -20,6 +20,7 @@ var stack = [
       "CSS",
       "JavaScript",
       "Dart",
+      "PHP",
     ],
   },
   {
@@ -30,6 +31,7 @@ var stack = [
       "React",
       "Node.js",
       "Flutter",
+      "FastAPI",
     ],
   },
   {
