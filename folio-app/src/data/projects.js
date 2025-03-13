@@ -23,7 +23,54 @@ import keypt2 from '../img/keypt/python.png';
 import keypt3 from '../img/keypt/stocks.png';
 import keypt4 from '../img/keypt/duck.png';
 
+import tomeeto from '../img/tomeeto/tomeeto.png';
+
 const projects = [
+  {
+    name: 'tomeeto',
+    slug: 'tomeeto',
+    subtitle: "A platform for event planning",
+    logo: tomeeto,
+    logo_alt: 'tomeeto',
+    links: [
+      {
+        name: 'GitHub',
+        link: 'https://github.com/tomeeto'
+      }
+    ],
+    date_start: 'September 2024',
+    date_end: 'December 2024',
+    tech_stack: [
+      'React',
+      'Tailwind CSS',
+      'Python',
+      'FastAPI',
+      'MySQL'
+    ],
+    images: [],
+    text: [
+      {
+        title: "What is tomeeto?",
+        text: "A planning website."
+      },
+      {
+        title: "What did I contribute?",
+        text: "Everything."
+      },
+      {
+        title: "What did I learn?",
+        text: "Something."
+      },
+      {
+        title: "What challenges did I face?",
+        text: "None."
+      },
+      {
+        title: "What's next?",
+        text: "Not sure yet."
+      }
+    ]
+  },
   {
     name: 'ChatKeyPT',
     slug: 'keypt',
