@@ -200,6 +200,7 @@ const projects = [
     date_end: 'Present',
     tech_stack: [
       'React',
+      'Tailwind CSS',
       'Python',
       'FastAPI',
       'MySQL'
