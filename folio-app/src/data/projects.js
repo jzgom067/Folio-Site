@@ -1,4 +1,4 @@
-import supergolf from '../img/supergolf.png';
+import supergolf from '../img/golf/supergolf.png';
 import golf1 from '../img/golf/main menu.png';
 import golf2 from '../img/golf/aiming.png';
 import golf3 from '../img/golf/multiplayer map.png';
@@ -7,7 +7,7 @@ import golf5 from '../img/golf/precision.mp4';
 import golf6 from '../img/golf/desperation.mp4';
 import golf7 from '../img/golf/scoreboard.png';
 
-import carpi from '../img/carpi.png';
+import carpi from '../img/carpi/carpi.png';
 import carpi1 from '../img/carpi/summary.png';
 import carpi2 from '../img/carpi/commands.png';
 import carpi3 from '../img/carpi/course search.mp4';
@@ -17,7 +17,7 @@ import carpi6 from '../img/carpi/compile.png';
 
 import duck from '../img/duck.svg';
 
-import chatkeypt from '../img/chatkeypt.png';
+import chatkeypt from '../img/keypt/chatkeypt.png';
 import keypt1 from '../img/keypt/mitochondria.png';
 import keypt2 from '../img/keypt/python.png';
 import keypt3 from '../img/keypt/stocks.png';

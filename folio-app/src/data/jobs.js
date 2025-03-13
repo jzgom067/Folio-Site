@@ -1,4 +1,4 @@
-import hiveclass from '../img/hiveclass.png';
+import hiveclass from '../img/hiveclass/hiveclass.png';
 
 const jobs = [
   {
