@@ -152,7 +152,9 @@ const projects = [
     date_start: 'December 2023',
     date_end: 'Present',
     tech_stack: [
+      'React',
       'Python',
+      'FastAPI',
       'MySQL'
     ],
     images: [
