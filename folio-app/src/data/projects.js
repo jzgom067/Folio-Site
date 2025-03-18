@@ -24,6 +24,11 @@ import keypt3 from '../img/keypt/stocks.png';
 import keypt4 from '../img/keypt/duck.png';
 
 import tomeeto from '../img/tomeeto/tomeeto.png';
+import tomeeto1 from '../img/tomeeto/landing.png';
+import tomeeto2 from '../img/tomeeto/login.png';
+import tomeeto3 from '../img/tomeeto/create event.png';
+import tomeeto4 from '../img/tomeeto/availability.png';
+import tomeeto5 from '../img/tomeeto/event demo.mp4';
 
 const projects = [
   {
@@ -47,7 +52,28 @@ const projects = [
       'FastAPI',
       'MySQL'
     ],
-    images: [],
+    images: [
+      {
+        title: "Landing Page",
+        img: tomeeto1
+      },
+      {
+        title: "Login Page",
+        img: tomeeto2
+      },
+      {
+        title: "Event Creation",
+        img: tomeeto3
+      },
+      {
+        title: "Availability Page",
+        img: tomeeto4
+      },
+      {
+        title: "Event Demo",
+        img: tomeeto5
+      }
+    ],
     text: [
       {
         title: "What is tomeeto?",
