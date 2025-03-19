@@ -77,23 +77,23 @@ const projects = [
     text: [
       {
         title: "What is tomeeto?",
-        text: "A planning website."
+        text: "tomeeto is a scheduling platform that simplifies the logistics of finding a time where everyone is available. The simple interface allows users to quickly create and share events, then simply \"paint\" their availability. The platform then compiles the results to show a graph that highlights the best times for an event. This project started as part of the Software Design and Documentation course at RPI."
       },
       {
         title: "What did I contribute?",
-        text: "Everything."
+        text: "Originally, I was responsible for the database of the project, working with the backend developer to ensure consistent and efficient data flow. As the project went on though, more team members were needed for frontend work, leaving me to take care of the backend by myself. In the end, I wrote most of the API logic and database queries that serve as the foundation for the platform."
       },
       {
         title: "What did I learn?",
-        text: "Something."
+        text: "The main goal of this project was to use the Agile development methodology. There was a large focus on proper planning and documentation, which kept the group consistently on the same page when developing. Aside from that, I've never done development on a backend, so I had to teach myself how to use FastAPI. I found it to be very easy to learn, but there was still a lot to figure out when it came to proper network communication."
       },
       {
         title: "What challenges did I face?",
-        text: "None."
+        text: "Because of the focus on documentation, our group ended up stuck in a planning phase for way too long. This led to a lot of rushing by the time deadlines were approaching, and the final product was not as polished as it could have been. As with many of my other projects though, I had to learn the ins and outs of backend implementation on my own, which was definitely a valuable experience."
       },
       {
         title: "What's next?",
-        text: "Not sure yet."
+        text: "Ever since the start of the project, our team felt like tomeeto had a lot of potential, especially within our own community. However, due to the time crunch presented by the class, we weren't able to create a product that lived up to our expectations. Despite the heavy workload of recent semesters, we still plan to continue development to finish what we started, and even potentially expand it past our original proposed scope."
       }
     ]
   },
