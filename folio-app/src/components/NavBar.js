@@ -22,7 +22,7 @@ const NavBar = () => (
     <div className={styles.right}>
       <a
         className={styles.link}
-        href={process.env.PUBLIC_URL + "/resume.pdf"}
+        href={process.env.PUBLIC_URL + "/Jack Zgombic Resume.pdf"}
         target="_blank"
         rel="noopener noreferrer"
       >
