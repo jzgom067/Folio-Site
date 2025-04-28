@@ -293,7 +293,7 @@ const projects = [
       },
       {
         name: 'itch.io',
-        link: 'https://jzgombic.itch.io/golf'
+        link: 'https://honketh.itch.io/golf'
       }
     ],
     date_start: 'January 2022',
