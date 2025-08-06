@@ -1,13 +1,13 @@
 // data
-import projects from '../data/projects.js';
-import jobs from '../data/jobs.js';
+import projects from '../../data/projects.js';
+import jobs from '../../data/jobs.js';
 
 // components
 import AboutMe from './AboutMe.js';
-import ProjGrid from './ProjGrid.js';
+import ProjGrid from './ProjectGrid.js';
 import Experience from './Experience.js';
 import TechStack from './TechStack.js';
-import SlideFadeIn from './SlideFadeIn.js';
+import SlideFadeIn from '../common/SlideFadeIn.js';
 import Contact from './Contact.js';
 
 // styling

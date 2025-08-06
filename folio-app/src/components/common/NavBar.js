@@ -1,5 +1,5 @@
 // images
-import logo from '../img/logo.png';
+import logo from '../../img/logo.png';
 
 // components
 import Icon from './Icon.js';

@@ -1,5 +1,5 @@
 // components
-import SlideFadeIn from './SlideFadeIn.js';
+import SlideFadeIn from '../common/SlideFadeIn.js';
 
 // styling
 import styles from './AboutMe.module.css';

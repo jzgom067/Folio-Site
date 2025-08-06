@@ -1,6 +1,6 @@
 // components
-import SlideFadeIn from './SlideFadeIn.js';
-import Icon from './Icon.js';
+import SlideFadeIn from '../common/SlideFadeIn.js';
+import Icon from '../common/Icon.js';
 import EmailCopy from './EmailCopy.js';
 
 // styling

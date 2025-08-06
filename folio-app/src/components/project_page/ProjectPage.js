@@ -1,14 +1,14 @@
 // data
-import projects from '../data/projects.js';
-import jobs from '../data/jobs.js';
+import projects from '../../data/projects.js';
+import jobs from '../../data/jobs.js';
 
 // components
-import DevIcon from './DevIcon.js';
-import Icon from './Icon.js';
-import SlideFadeIn from './SlideFadeIn.js';
-import ImageModal from './ImageModal.js';
-import PlaceholderImage from './PlaceholderImage.js';
-import HomeButton from './HomeButton.js';
+import DevIcon from '../common/DevIcon.js';
+import Icon from '../common/Icon.js';
+import SlideFadeIn from '../common/SlideFadeIn.js';
+import ImageModal from '../common/ImageModal.js';
+import PlaceholderImage from '../common/PlaceholderImage.js';
+import HomeButton from '../common/HomeButton.js';
 
 // react stuff
 import React, { useState, useEffect } from 'react';
@@ -17,7 +17,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 // styling
-import styles from './Project.module.css';
+import styles from './ProjectPage.module.css';
 
 function getProj(slug) {
   return projects.find((proj) => proj.slug === slug);

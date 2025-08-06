@@ -1,6 +1,6 @@
 // modules
-import DevIcon from './DevIcon.js';
-import SlideFadeIn from './SlideFadeIn.js';
+import DevIcon from '../common/DevIcon.js';
+import SlideFadeIn from '../common/SlideFadeIn.js';
 
 // styling
 import styles from './TechStack.module.css';

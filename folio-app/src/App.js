@@ -2,8 +2,8 @@
 import React from 'react';
 
 // components
-import NavBar from './components/NavBar.js';
-import Content from './components/Content.js';
+import NavBar from './components/common/NavBar.js';
+import Content from './components/home/Content.js';
 
 // router
 import { useLocation } from 'react-router-dom';

@@ -1,6 +1,6 @@
 // components
-import DevIcon from '../components/DevIcon.js';
-import SlideFadeIn from './SlideFadeIn.js';
+import DevIcon from '../common/DevIcon.js';
+import SlideFadeIn from '../common/SlideFadeIn.js';
 
 // react stuff
 import React, { useState, useEffect } from 'react';
@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 // styling
 import styles from './Experience.module.css';
-import PlaceholderImage from './PlaceholderImage.js';
+import PlaceholderImage from '../common/PlaceholderImage.js';
 
 const Experience = ({ jobs }) => {
   let tempElem = document.createElement('div');

@@ -1,13 +1,13 @@
 // modules
-import DevIcon from './DevIcon.js';
-import SlideFadeIn from './SlideFadeIn.js';
-import PlaceholderImage from './PlaceholderImage.js';
+import DevIcon from '../common/DevIcon.js';
+import SlideFadeIn from '../common/SlideFadeIn.js';
+import PlaceholderImage from '../common/PlaceholderImage.js';
 
 // router
 import { Link } from 'react-router-dom';
 
 // styling
-import styles from './ProjGrid.module.css';
+import styles from './ProjectGrid.module.css';
 
 const ProjGrid = ({ projects }) => {
   return (
