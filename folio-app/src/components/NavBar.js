@@ -1,5 +1,5 @@
 // images
-import duck from '../img/duck.svg';
+import logo from '../img/logo.png';
 
 // components
 import Icon from './Icon.js';
@@ -13,7 +13,7 @@ import styles from './NavBar.module.css';
 const NavBar = () => (
   <div className={styles.navbar}>
     <Link to="/" className={styles.left}>
-      <img className={styles.logo} src={duck} alt="logo" />
+      <img className={styles.logo} src={logo} alt="logo" />
       <div className={styles.name}>
         <div className={styles.firstName}>Jack</div>
         <div className={styles.lastName}>Zgombic</div>

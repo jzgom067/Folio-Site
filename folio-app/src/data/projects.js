@@ -15,7 +15,7 @@ import carpi4 from '../img/carpi/course terms.png';
 import carpi5 from '../img/carpi/calendar.mp4';
 import carpi6 from '../img/carpi/compile.png';
 
-import duck from '../img/duck.svg';
+import logo from '../img/logo.png';
 
 import chatkeypt from '../img/keypt/chatkeypt.png';
 import keypt1 from '../img/keypt/mitochondria.png';
@@ -169,8 +169,9 @@ const projects = [
     name: 'This Website',
     slug: 'site',
     subtitle: "My portfolio website",
-    logo: duck,
-    logo_alt: 'duck',
+    iframe: "http://localhost:3000",
+    logo: logo,
+    logo_alt: 'logo',
     links: [
       {
         name: 'GitHub',
