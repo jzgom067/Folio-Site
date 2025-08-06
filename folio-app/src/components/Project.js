@@ -135,6 +135,18 @@ function Project() {
               </SlideFadeIn>
             </div>
           }
+          {data.iframe_link &&
+            <div className={styles.previewContainer}>
+              <SlideFadeIn>
+                <iframe
+                  src={data.iframe_link}
+                  title={data.name}
+                  className={styles.iframe}
+                  allowFullScreen
+                ></iframe>
+              </SlideFadeIn>
+            </div>
+          }
           {data.text.map((dict, i) => {
             return (
               <div className={styles.textSection} key={i}>
@@ -193,6 +205,18 @@ function Project() {
                     aspectRatio="16 / 9"
                     tempStyle={{ left: "5%" }}
                   />
+                </SlideFadeIn>
+              </div>
+            }
+            {data.iframe_link &&
+              <div className={styles.previewContainer}>
+                <SlideFadeIn>
+                  <iframe
+                    src={data.iframe_link}
+                    title={data.name}
+                    className={styles.iframe}
+                    allowFullScreen
+                  ></iframe>
                 </SlideFadeIn>
               </div>
             }

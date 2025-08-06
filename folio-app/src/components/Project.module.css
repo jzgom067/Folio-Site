@@ -118,11 +118,13 @@
     width: 100% !important;
     float: none !important;
   }
+
   .preview {
     width: 90% !important;
     left: -5% !important;
     rotate: unset !important;
   }
+
   .preview2 {
     width: 90% !important;
     right: 0% !important;
@@ -146,14 +148,16 @@
   .preview {
     transition: left 0.15s ease-out, filter 0.075s ease-out, rotate 0.15s ease-out;
   }
+
   .preview2 {
     transition: right 0.15s ease-out, filter 0.075s ease-out, rotate 0.15s ease-out;
   }
+
   .previewHover {
     transition: opacity 0.075s ease-out;
   }
 }
-  
+
 .preview {
   position: relative;
   overflow: hidden;
@@ -195,6 +199,19 @@
   font-size: 1.25rem;
   text-shadow: 0rem 0rem 1rem black;
   pointer-events: none;
+}
+
+.iframe {
+  width: 200%;
+  aspect-ratio: 16 / 9;
+  border-color: gray;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.75rem;
+  box-shadow: 0.2rem 0rem 0.2rem 0rem var(--obj-shadow-color);
+  transform: scale(0.5);
+  transform-origin: top left;
+  margin-bottom: -57.5%;
 }
 
 .textSection {
