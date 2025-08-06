@@ -20,7 +20,6 @@ var stack = [
       "CSS",
       "JavaScript",
       "Dart",
-      "PHP",
     ],
   },
   {
