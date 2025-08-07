@@ -1,0 +1,10 @@
+.commit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: var(--obj-color);
+    box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
+}
