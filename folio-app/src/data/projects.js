@@ -169,7 +169,6 @@ const projects = [
     name: 'This Website',
     slug: 'site',
     subtitle: "My portfolio website",
-    iframe: "http://localhost:3000",
     logo: logo,
     logo_alt: 'logo',
     links: [
