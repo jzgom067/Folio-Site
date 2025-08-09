@@ -11,27 +11,33 @@ const Commit = ({ data }) => {
 
     return (
         <div className={styles.commit}>
-            <PlaceholderImage
-                className={styles.avatar}
-                src={data.author_avatar}
-                alt={data.author_name}
-                aspectRatio="1"
-            />
-            <div className={styles.text}>
-                <div className={styles.titleLine}>
-                    <div className={styles.summary}>
-                        {summary}
-                    </div>
-                    <div className={styles.author}>
-                        {data.author_name}, {new Date(data.timestamp).toLocaleDateString()}
+            <div className={styles.mainRow}>
+                <PlaceholderImage
+                    className={styles.avatar}
+                    src={data.author_avatar}
+                    alt={data.author_name}
+                    aspectRatio="1"
+                />
+                <div className={styles.content}>
+                    <div className={styles.text}>
+                        <div className={styles.titleLine}>
+                            <div className={styles.summary}>
+                                {summary}
+                            </div>
+                        </div>
+                        {message && <div className={styles.message}>{message}</div>}
                     </div>
                     <div className={styles.linesChanged}>
-                        <span className={styles.additions}>+{data.stats.additions}</span>
-                        <span className={styles.deletions}>-{data.stats.deletions}</span>
-                        lines changed
+                        <div className={styles.linesChangedValues}>
+                            <span className={styles.additions}>+{data.stats.additions}</span>
+                            <span className={styles.deletions}>-{data.stats.deletions}</span>
+                        </div>
                     </div>
                 </div>
-                {message && <div className={styles.message}>{message}</div>}
+            </div>
+            <div className={styles.footerRow}>
+                <span>@{data.author_name}{data.repo && <> - {data.repo}</>}</span>
+                <span>{new Date(data.timestamp).toLocaleDateString()}</span>
             </div>
         </div>
     );
