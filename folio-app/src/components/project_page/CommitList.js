@@ -5,13 +5,13 @@ import Commit from './Commit';
 // styling
 import styles from './CommitList.module.css';
 
-function CommitList({ owner, repo, count = 5 }) {
+function CommitList({ owner, repo }) {
   const [commits, setCommits] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=${count}`)
+    fetch(`/api/commits?owner=${owner}&repo=${repo}`)
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch commits');
         return res.json();
@@ -24,7 +24,7 @@ function CommitList({ owner, repo, count = 5 }) {
         setError(err.message);
         setLoading(false);
       });
-  }, [owner, repo, count]);
+  }, [owner, repo]);
 
   return (
     <div className={styles.commitList}>
@@ -35,7 +35,7 @@ function CommitList({ owner, repo, count = 5 }) {
         {!loading && !error && commits.length === 0 && <>No commits found.</>}
       </div>
       {commits.map(commit => (
-        <SlideFadeIn key={commit.sha}>
+        <SlideFadeIn>
           <Commit data={commit} />
         </SlideFadeIn>
       ))}
