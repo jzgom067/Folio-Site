@@ -35,6 +35,7 @@ export default async function handler(req, res) {
                 );
                 const details = await detailsRes.json();
                 return {
+                    sha: commit.sha,
                     author_name: commit.author?.login || commit.commit.author.name,
                     author_avatar: commit.author?.avatar_url,
                     timestamp: commit.commit.author.date,
