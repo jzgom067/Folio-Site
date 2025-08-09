@@ -25,6 +25,11 @@ const Commit = ({ data }) => {
                     <div className={styles.author}>
                         {data.author_name}, {new Date(data.timestamp).toLocaleDateString()}
                     </div>
+                    <div className={styles.linesChanged}>
+                        <span className={styles.additions}>+{data.stats.additions}</span>
+                        <span className={styles.deletions}>-{data.stats.deletions}</span>
+                        lines changed
+                    </div>
                 </div>
                 {message && <div className={styles.message}>{message}</div>}
             </div>

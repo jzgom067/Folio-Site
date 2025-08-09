@@ -2,15 +2,15 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 0.75rem;
     background-color: var(--obj-color);
     box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
 }
 
 .avatar {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 0.5rem;
     background-color: var(--avatar-bg-color);
     display: flex;
@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 .titleLine {
@@ -30,6 +31,7 @@
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 0.1rem;
+    width: 100%;
 }
 
 .summary {
@@ -39,6 +41,25 @@
 .author {
     font-size: 0.9rem;
     color: lightgray;
+}
+
+.linesChanged {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.additions {
+    font-weight: bold;
+    color: #3fb950;
+}
+
+.deletions {
+    font-weight: bold;
+    color: #f85149;
 }
 
 .message {
