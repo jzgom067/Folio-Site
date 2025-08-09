@@ -5,13 +5,17 @@ import Commit from './Commit';
 // styling
 import styles from './CommitList.module.css';
 
-function CommitList({ owner, repo }) {
+function CommitList({ type = 'repo', owner, repo }) {
   const [commits, setCommits] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`/api/commits?owner=${owner}&repo=${repo}`)
+    const params = new URLSearchParams();
+    if (type) params.append('type', type);
+    if (owner) params.append('owner', owner);
+    if (repo) params.append('repo', repo);
+    fetch(`/api/commits?${params.toString()}`)
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch commits');
         return res.json();
@@ -24,7 +28,7 @@ function CommitList({ owner, repo }) {
         setError(err.message);
         setLoading(false);
       });
-  }, [owner, repo]);
+  }, [type, owner, repo]);
 
   return (
     <div className={styles.commitList}>
