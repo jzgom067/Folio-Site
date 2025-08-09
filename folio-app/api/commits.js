@@ -21,7 +21,6 @@ export default async function handler(req, res) {
         ? { Authorization: `token ${GITHUB_TOKEN}` }
         : {};
 
-
     if (type === 'repo') {
         try {
             const commitsRes = await fetch(
@@ -57,7 +56,7 @@ export default async function handler(req, res) {
         }
     } else {
         try {
-            const orgRes = await fetch(`https://api.github.com/orgs/${owner}/repos?per_page=${MAX_COMMITS}`,
+            const orgRes = await fetch(`https://api.github.com/orgs/${owner}/repos`,
                 { headers }
             );
             const repos = await orgRes.json();
