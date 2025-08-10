@@ -15,6 +15,12 @@ const jobs = [
       'Tailwind CSS',
       'Looker/LookML',
     ],
+    bullets: [
+      'Did a thing',
+      'Also did another thing',
+      'Nuked the database',
+      'Got fired',
+    ]
   }
 ]
 
