@@ -8,7 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 const Content = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/:type/:slug" element={<Project />} />
+    <Route path="/project/:slug" element={<Project />} />
   </Routes>
 );
 

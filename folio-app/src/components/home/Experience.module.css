@@ -20,30 +20,6 @@
   border-radius: 1rem;
   background-color: var(--obj-color);
   box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.job:hover {
-  background-color: var(--obj-highlight-color);
-}
-
-.job:focus {
-  outline: none;
-}
-
-.outline {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 1rem;
-  pointer-events: none;
-}
-
-.job:focus .outline {
-  outline-style: solid;
 }
 
 .logoContainer {

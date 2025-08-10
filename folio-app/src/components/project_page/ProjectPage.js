@@ -1,6 +1,5 @@
 // data
 import projects from '../../data/projects.js';
-import jobs from '../../data/jobs.js';
 
 // components
 import DevIcon from '../common/DevIcon.js';
@@ -24,18 +23,10 @@ function getProj(slug) {
   return projects.find((proj) => proj.slug === slug);
 }
 
-function getJob(slug) {
-  return jobs.find((job) => job.slug === slug);
-}
-
 function Project() {
-  let { type, slug } = useParams();
+  let { slug } = useParams();
   let data = null;
-  if (type === "project") {
-    data = getProj(slug);
-  } else if (type === "experience") {
-    data = getJob(slug);
-  }
+  data = getProj(slug);
 
   let tempElem = document.createElement('div');
   tempElem.style.fontSize = 'initial';

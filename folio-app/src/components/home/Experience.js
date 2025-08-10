@@ -5,9 +5,6 @@ import SlideFadeIn from '../common/SlideFadeIn.js';
 // react stuff
 import React, { useState, useEffect } from 'react';
 
-// router
-import { Link } from 'react-router-dom';
-
 // styling
 import styles from './Experience.module.css';
 import PlaceholderImage from '../common/PlaceholderImage.js';
@@ -38,12 +35,8 @@ const Experience = ({ jobs }) => {
   return (
     <div className={styles.jobs}>
       {jobs.map((job, index) => (
-        <SlideFadeIn>
-          <Link
-            key={index}
-            className={styles.job}
-            to={"/experience/" + job.slug}
-          >
+        <SlideFadeIn key={index}>
+          <div className={styles.job}>
             <div className={styles.outline}></div>
             <div className={styles.logoContainer}>
               <PlaceholderImage
@@ -73,11 +66,11 @@ const Experience = ({ jobs }) => {
                 ))}
               </div>
             </div>
-          </Link>
+          </div>
         </SlideFadeIn>
       ))}
     </div>
-    );
+  );
 }
 
 export default Experience;
