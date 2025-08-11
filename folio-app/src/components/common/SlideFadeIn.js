@@ -9,6 +9,13 @@ let animInterval = null;
 
 const delay = 100; // milliseconds
 
+const getDocumentPos = (element) => {
+  const rect = element.getBoundingClientRect();
+  const top = rect.top + (window.scrollY || window.pageYOffset || 0);
+  const left = rect.left + (window.scrollX || window.pageXOffset || 0);
+  return { top, left };
+}
+
 const startInterval = () => {
   if (!animInterval) {
     animInterval = setInterval(() => {
@@ -37,11 +44,11 @@ const SlideFadeIn = (props) => {
     const observer = new IntersectionObserver((elems) => {
       elems.forEach(elem => {
         if (elem.isIntersecting) {
-          const rect = elem.target.getBoundingClientRect();
+          const { top, left } = getDocumentPos(elem.target);
           animQueue.push({
             element: elem.target,
-            top: rect.top,
-            left: rect.left
+            top,
+            left
           });
           startInterval();
           observer.unobserve(elem.target);
