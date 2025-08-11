@@ -10,7 +10,7 @@ import PlaceholderImage from '../common/PlaceholderImage.js';
 import HomeButton from '../common/HomeButton.js';
 
 // react stuff
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 // router
 import { useParams } from 'react-router-dom';
@@ -27,28 +27,6 @@ function Project() {
   let { slug } = useParams();
   let data = null;
   data = getProj(slug);
-
-  let tempElem = document.createElement('div');
-  tempElem.style.fontSize = 'initial';
-  document.body.appendChild(tempElem);
-  const rem = parseFloat(getComputedStyle(tempElem).fontSize);
-  document.body.removeChild(tempElem);
-
-  function checkSingleColumn() {
-    return window.innerWidth <= 55 * rem;
-  }
-
-  const [isSingleColumn, setsingleColumn] = useState(checkSingleColumn());
-
-  const updateVariable = () => {
-    // don't need to check if the value is changed, since React won't rerender unless
-    // the value has changed
-    setsingleColumn(checkSingleColumn());
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateVariable);
-  })
 
   return (
     <div className={styles.section}>
@@ -102,102 +80,48 @@ function Project() {
           </SlideFadeIn>
         </div>
       </div>
-      {isSingleColumn &&
-        <div className={styles.singleCol}>
-          {data.images.length > 0 &&
-            <div className={styles.previewContainer}>
-              <SlideFadeIn>
-                <div className={styles.previewHover}>
-                  <span>View Media &#40;{data.images.length}&#41;</span>
-                </div>
-                <ImageModal images={data.images} />
-                <PlaceholderImage
-                  className={styles.preview2}
-                  src={data.images[1].img}
-                  alt={data.images[1].title}
-                  aspectRatio="16 / 9"
-                />
-                <PlaceholderImage
-                  className={styles.preview}
-                  src={data.images[0].img}
-                  alt={data.images[0].title}
-                  aspectRatio="16 / 9"
-                  tempStyle={{ left: "5%" }}
-                />
-              </SlideFadeIn>
-            </div>
-          }
-          {data.iframe_link &&
-            <div className={styles.previewContainer}>
-              <SlideFadeIn>
-                <iframe
-                  src={data.iframe_link}
-                  title={data.name}
-                  className={styles.iframe}
-                  allowFullScreen
-                ></iframe>
-              </SlideFadeIn>
-            </div>
-          }
-          <div className={styles.textSection}>
+      <div className={styles.content}>
+        <div className={styles.text}>
+          <SlideFadeIn className={styles.text}>
+            {data.description}
+          </SlideFadeIn>
+        </div>
+        {data.images.length > 0 &&
+          <div className={styles.previewContainer}>
             <SlideFadeIn>
-              <div className={styles.text}>
-                {data.description}
+              <div className={styles.previewHover}>
+                <span>View Media &#40;{data.images.length}&#41;</span>
               </div>
+              <ImageModal images={data.images} />
+              <PlaceholderImage
+                className={styles.preview2}
+                src={data.images[1].img}
+                alt={data.images[1].title}
+                aspectRatio="16 / 9"
+              />
+              <PlaceholderImage
+                className={styles.preview1}
+                src={data.images[0].img}
+                alt={data.images[0].title}
+                aspectRatio="16 / 9"
+                tempStyle={{ left: "5%" }}
+              />
             </SlideFadeIn>
           </div>
-        </div>
-      }
-      {!isSingleColumn &&
-        <div className={styles.content}>
-          <div className={styles.leftCol}>
-            <div className={styles.textSection}>
-              <SlideFadeIn>
-                <div className={styles.text}>
-                  {data.description}
-                </div>
-              </SlideFadeIn>
-            </div>
+        }
+        {data.iframe_link &&
+          <div className={styles.previewContainer}>
+            <SlideFadeIn>
+              <iframe
+                src={data.iframe_link}
+                title={data.name}
+                className={styles.iframe}
+                allowFullScreen
+              ></iframe>
+            </SlideFadeIn>
           </div>
-          <div className={styles.rightCol}>
-            {data.images.length > 0 &&
-              <div className={styles.previewContainer}>
-                <SlideFadeIn>
-                  <div className={styles.previewHover}>
-                    <span>View Media &#40;{data.images.length}&#41;</span>
-                  </div>
-                  <ImageModal images={data.images} />
-                  <PlaceholderImage
-                    className={styles.preview2}
-                    src={data.images[1].img}
-                    alt={data.images[1].title}
-                    aspectRatio="16 / 9"
-                  />
-                  <PlaceholderImage
-                    className={styles.preview}
-                    src={data.images[0].img}
-                    alt={data.images[0].title}
-                    aspectRatio="16 / 9"
-                    tempStyle={{ left: "5%" }}
-                  />
-                </SlideFadeIn>
-              </div>
-            }
-            {data.iframe_link &&
-              <div className={styles.previewContainer}>
-                <SlideFadeIn>
-                  <iframe
-                    src={data.iframe_link}
-                    title={data.name}
-                    className={styles.iframe}
-                    allowFullScreen
-                  ></iframe>
-                </SlideFadeIn>
-              </div>
-            }
-          </div>
-        </div>
-      }
+        }
+      </div>
       {data.github &&
         <SlideFadeIn>
           <CommitList type={data.github.type} owner={data.github.owner} repo={data.github.repo} />
