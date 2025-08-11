@@ -139,42 +139,25 @@ function Project() {
               </SlideFadeIn>
             </div>
           }
-          {data.text.map((dict, i) => {
-            return (
-              <div className={styles.textSection} key={i}>
-                <SlideFadeIn>
-                  <h2>{dict.title}</h2>
-                </SlideFadeIn>
-                <SlideFadeIn>
-                  <div className={styles.text}>
-                    {dict.text}
-                  </div>
-                </SlideFadeIn>
+          <div className={styles.textSection}>
+            <SlideFadeIn>
+              <div className={styles.text}>
+                {data.description}
               </div>
-            );
-          })}
+            </SlideFadeIn>
+          </div>
         </div>
       }
       {!isSingleColumn &&
         <div className={styles.content}>
           <div className={styles.leftCol}>
-            {data.text.map((dict, i) => {
-              if (i > data.text.length / 2) {
-                return <></>;
-              }
-              return (
-                <div className={styles.textSection} key={i}>
-                  <SlideFadeIn>
-                    <h2>{dict.title}</h2>
-                  </SlideFadeIn>
-                  <SlideFadeIn>
-                    <div className={styles.text}>
-                      {dict.text}
-                    </div>
-                  </SlideFadeIn>
+            <div className={styles.textSection}>
+              <SlideFadeIn>
+                <div className={styles.text}>
+                  {data.description}
                 </div>
-              );
-            })}
+              </SlideFadeIn>
+            </div>
           </div>
           <div className={styles.rightCol}>
             {data.images.length > 0 &&
@@ -212,23 +195,6 @@ function Project() {
                 </SlideFadeIn>
               </div>
             }
-            {data.text.map((dict, i) => {
-              if (i <= data.text.length / 2) {
-                return <></>;
-              }
-              return (
-                <div className={styles.textSection} key={i}>
-                  <SlideFadeIn>
-                    <h2>{dict.title}</h2>
-                  </SlideFadeIn>
-                  <SlideFadeIn>
-                    <div className={styles.text}>
-                      {dict.text}
-                    </div>
-                  </SlideFadeIn>
-                </div>
-              );
-            })}
           </div>
         </div>
       }
