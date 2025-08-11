@@ -10,17 +10,19 @@ const Experience = ({ jobs }) => {
   return (
     <div className={styles.jobs}>
       {jobs.map((job, index) => (
-        <SlideFadeIn key={index}>
-          <div className={styles.job}>
-            <div className={styles.logoContainer}>
+        <div className={styles.job} key={index}>
+          <div className={styles.logoContainer}>
+            <SlideFadeIn>
               <PlaceholderImage
                 className={styles.logo}
                 src={job.logo}
                 alt={job.logo_alt}
                 aspectRatio="1"
               />
-            </div>
-            <div className={styles.content}>
+            </SlideFadeIn>
+          </div>
+          <div className={styles.content}>
+            <SlideFadeIn>
               <div className={styles.titleBar}>
                 <div className={styles.title}>
                   {job.name}
@@ -35,16 +37,18 @@ const Experience = ({ jobs }) => {
                 </div>
               </div>
               <hr className={styles.divider} />
-              <div className={styles.bullets}>
-                {job.bullets.map((bullet, i) => (
-                  <div key={i} className={styles.bullet}>
+            </SlideFadeIn>
+            <div className={styles.bullets}>
+              {job.bullets.map((bullet, i) => (
+                <SlideFadeIn key={i}>
+                  <div className={styles.bullet}>
                     <span>• {bullet}</span>
                   </div>
-                ))}
-              </div>
+                </SlideFadeIn>
+              ))}
             </div>
           </div>
-        </SlideFadeIn>
+        </div>
       ))}
     </div>
   );
