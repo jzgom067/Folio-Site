@@ -11,16 +11,16 @@ const Experience = ({ jobs }) => {
     <div className={styles.jobs}>
       {jobs.map((job, index) => (
         <div className={styles.job} key={index}>
-          <div className={styles.logoContainer}>
-            <SlideFadeIn>
+          <SlideFadeIn>
+            <div className={styles.logoContainer}>
               <PlaceholderImage
                 className={styles.logo}
                 src={job.logo}
                 alt={job.logo_alt}
                 aspectRatio="1"
               />
-            </SlideFadeIn>
-          </div>
+            </div>
+          </SlideFadeIn>
           <div className={styles.content}>
             <SlideFadeIn>
               <div className={styles.titleBar}>
