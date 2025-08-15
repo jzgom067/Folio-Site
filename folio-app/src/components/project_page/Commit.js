@@ -25,7 +25,12 @@ const Commit = ({ data }) => {
     const message = data.message.split('\n').slice(1).join('\n');
 
     return (
-        <div className={styles.commit}>
+        <a
+            className={styles.commit}
+            href={data.url}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             <div className={styles.mainRow}>
                 <PlaceholderImage
                     className={styles.avatar}
@@ -54,7 +59,7 @@ const Commit = ({ data }) => {
                 <span>@{data.author_name}{data.repo && <> - {data.repo}</>}</span>
                 <span className={styles.timeAgo}>{timeAgo(data.timestamp)}</span>
             </div>
-        </div>
+        </a>
     );
 };
 

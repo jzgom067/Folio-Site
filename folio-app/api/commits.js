@@ -45,6 +45,7 @@ export default async function handler(req, res) {
                         author_avatar: commit.author?.avatar_url,
                         timestamp: commit.commit.author.date,
                         message: commit.commit.message,
+                        url: commit.html_url,
                         stats: details.stats
                     };
                 })
@@ -101,6 +102,7 @@ export default async function handler(req, res) {
                         author_avatar: commit.author?.avatar_url,
                         timestamp: commit.commit.author.date,
                         message: commit.commit.message,
+                        url: commit.html_url,
                         stats: details.stats
                     };
                 })

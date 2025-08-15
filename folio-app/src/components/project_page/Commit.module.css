@@ -6,6 +6,12 @@
     border-radius: 0.75rem;
     background-color: var(--obj-color);
     box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
+    text-decoration: none;
+    color: white;
+}
+
+.commit:hover {
+    background-color: var(--obj-highlight-color);
 }
 
 .mainRow {
