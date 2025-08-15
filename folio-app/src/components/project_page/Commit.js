@@ -50,10 +50,8 @@ const Commit = ({ data }) => {
                         {message && <div className={styles.message}>{message}</div>}
                     </div>
                     <div className={styles.linesChanged}>
-                        <div className={styles.linesChangedValues}>
-                            <span className={styles.additions}>+{data.stats.additions}</span>
-                            <span className={styles.deletions}>-{data.stats.deletions}</span>
-                        </div>
+                        <span className={styles.additions}>+{data.stats.additions}</span>
+                        <span className={styles.deletions}>-{data.stats.deletions}</span>
                     </div>
                 </div>
             </div>
