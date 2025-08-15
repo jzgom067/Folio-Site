@@ -1,4 +1,5 @@
 // modules
+import Icon from '../common/Icon.js'
 import PlaceholderImage from '../common/PlaceholderImage.js';
 
 // styling
@@ -44,6 +45,7 @@ const Commit = ({ data }) => {
                             <div className={styles.summary}>
                                 {summary}
                             </div>
+                            <Icon name="External Link" stroke="gray" size="1em" />
                         </div>
                         {message && <div className={styles.message}>{message}</div>}
                     </div>
