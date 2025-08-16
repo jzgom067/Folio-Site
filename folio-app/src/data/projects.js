@@ -75,7 +75,7 @@ const projects = [
   {
     name: 'ChatKeyPT',
     slug: 'keypt',
-    subtitle: "An advanced ChatGPT interface",
+    subtitle: "An alternative ChatGPT interface",
     logo: chatkeypt,
     logo_alt: 'chatkeypt',
     tags: ['Website', 'Mobile App'],
@@ -150,7 +150,7 @@ const projects = [
       'React',
       'Vercel'
     ],
-    description: "This website is mainly a project portfolio, but it was also a way to introduce myself to web development. I've been told countless times that a personal website is the perfect way to show off coding projects, and I finally decided to spend a summer creating one. This was also an opportunity for me to reflect on everything I've done, taking a step back and seeing how far I've come.",
+    description: "This website is just my personal portfolio, meant to show off my projects and expertise. It was my first foray into frontend development, and I learned a lot about accessibility and reactive interface design through hands-on experience.",
     images: [],
     iframe_link: 'https://jackzgom.com',
   },
@@ -180,7 +180,7 @@ const projects = [
       'FastAPI',
       'MySQL'
     ],
-    description: "Project CARPI (Cool Academic RPI) is designed to be a central resource for students at Rensselaer Polytechnic Institute. Currently there's not much to show as it's going through a large shift onto a web platform, with the main feature being a 4-year course planner. However, the images here show the Discord bot that the project originally formed around. This project is part of the Rensselaer Center for Open Source (RCOS) program, which focuses on the development of open source solutions for real world problems.",
+    description: "Project CARPI (Cool Academic RPI) is designed to be a central resource for students at Rensselaer Polytechnic Institute. The project is currently going through a large shift onto a web platform, with the main feature being a 4-year course planner. However, the images show the Discord bot that the project originally formed around. This project is part of the Rensselaer Center for Open Source (RCOS) program, which focuses on the development of open source solutions for real world problems.",
     images: [
       {
         title: "Discord App Summary",
@@ -237,7 +237,7 @@ const projects = [
       'Unity',
       'Blender'
     ],
-    description: "Super Golf is a 3D multiplayer golf game made in the Unity engine. The main feature is a set of 3 abilities that manipulate the trajectory of the ball while midair, encouraging creativity and strategic planning before each shot. The first release was developed over 2 months, and the game was updated about a year later to fix bugs and add minor features.",
+    description: "Super Golf is a 3D golf game made in Unity, played with up to 4 players locally. The main feature is a set of 3 abilities that manipulate the trajectory of the ball, encouraging creativity and strategic planning before each shot. The first release was developed over 2 months, and the game was updated about a year later to fix bugs and add minor features.",
     images: [
       {
         title: "Main Menu",
