@@ -147,14 +147,18 @@ const icons = {
 }
 
 const Icon = ({ name, size, stroke, fill }) => (
-  <svg
-    height={size}
-    width={size}
-    stroke={stroke}
-    fill={fill}
+  <div
+    style={{ display: 'flex' }}
   >
-    {icons[name]}
-  </svg>
+    <svg
+      height={size}
+      width={size}
+      stroke={stroke}
+      fill={fill}
+    >
+      {icons[name]}
+    </svg>
+  </div>
 )
 
 export default Icon;
