@@ -36,7 +36,7 @@ function multilineTruncate(element, originalMsg, lines) {
         element.textContent = text + '…';
         truncated = true;
     }
-    if (truncated) {
+    if (truncated && text.length > 0) {
         // Remove an extra character just to be safe
         text = text.slice(0, -1);
         element.textContent = text + '…';
