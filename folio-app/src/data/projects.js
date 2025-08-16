@@ -103,7 +103,8 @@ const projects = [
     tech_stack: [
       'Dart',
       'Flutter',
-      'Firebase'
+      'Firebase',
+      "Vercel"
     ],
     description: "ChatKeyPT is a platform that takes a user-supplied OpenAI API key and provides a familiar interface to take advantage of it. The idea behind this project is to make the API's pay-as-you-go model available to a wider audience, giving access to features and models gated behind ChatGPT Plus's hefty monthly fee.",
     images: [
@@ -151,6 +152,7 @@ const projects = [
       'JavaScript',
       'React',
       'Node.js'
+      'Vercel'
     ],
     description: "This website is mainly a project portfolio, but it was also a way to introduce myself to web development. I've been told countless times that a personal website is the perfect way to show off coding projects, and I finally decided to spend a summer creating one. This was also an opportunity for me to reflect on everything I've done, taking a step back and seeing how far I've come.",
     images: [],

@@ -38,6 +38,7 @@ var stack = [
       "Unity",
       "Blender",
       "Looker",
+      "Vercel",
       "Firebase",
       "Omni Analytics",
       "Supabase",
