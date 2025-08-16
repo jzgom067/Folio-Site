@@ -6,8 +6,7 @@ import styles from './AboutMe.module.css';
 
 var text = [
   "I'm a current undergrad at RPI pursuing a degree in Computer Science, with a minor in Information Technology & Web Science.",
-  "Stemming from a childhood of video games, I'm drawn to the creative problem-solving involved in programming. It's easy to think that 10th grade Computer Science 1 was the spark, but it really started with trying to code Snake on my TI-84 in middle school.",
-  "I guess it's only natural that I would make my own original game years later.",
+  "The creative problem-solving involved in programming is what motivates me to write robust and maintainable code. I may have experience with a variety of technology now, but my career peaked when coding Snake on my TI-84 in middle school.",
   "When away from the computer, I spend my time practicing diabolo tricks and learning about photography.",
 ];
 
