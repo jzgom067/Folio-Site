@@ -147,11 +147,7 @@ const projects = [
     date_start: 'May 2024',
     date_end: 'October 2024',
     tech_stack: [
-      'HTML',
-      'CSS',
-      'JavaScript',
       'React',
-      'Node.js'
       'Vercel'
     ],
     description: "This website is mainly a project portfolio, but it was also a way to introduce myself to web development. I've been told countless times that a personal website is the perfect way to show off coding projects, and I finally decided to spend a summer creating one. This was also an opportunity for me to reflect on everything I've done, taking a step back and seeing how far I've come.",
