@@ -1,0 +1,45 @@
+.commitChart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.commitChartTitle {
+    margin-bottom: 0rem;
+}
+
+.subtext {
+    color: gray;
+}
+
+.chartRow {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--obj-highlight-color);
+}
+
+.chartCell {
+    flex: 1;
+    padding: 0.75rem 0 0 0;
+    border-left: 1px solid var(--obj-highlight-color);
+    font-size: 0.75rem;
+    align-content: center;
+}
+
+.chartCellContent {
+    height: 1rem;
+    margin: 0 0 0.75rem 0;
+}
+
+.chartDate {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    color: gray;
+}
