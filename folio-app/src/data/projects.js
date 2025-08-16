@@ -49,11 +49,12 @@ const projects = [
     date_start: 'September 2024',
     date_end: 'Present',
     tech_stack: [
-      'React',
+      'Next.js',
       'Tailwind CSS',
       'Python',
-      'FastAPI',
-      'MySQL'
+      'Django',
+      'Supabase',
+      'PostgreSQL'
     ],
     description: "Plancake is a scheduling platform that simplifies the logistics of finding a time where everyone is available. The intuitive interface allows users to quickly create and share events, then simply \"paint\" their availability. The platform then compiles the results and highlights the best times for an event. This project started as part of the Software Design and Documentation course at RPI. This is still a work-in-progress, so the images shown are from our original prototype that was named \"tomeeto\".",
     images: [

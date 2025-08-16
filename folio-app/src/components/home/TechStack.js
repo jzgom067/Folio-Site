@@ -12,10 +12,9 @@ var stack = [
       "Python",
       "C#",
       "Java",
-      "MySQL",
+      "SQL",
       "C",
       "C++",
-      "Looker/LookML",
       "HTML",
       "CSS",
       "JavaScript",
@@ -25,12 +24,11 @@ var stack = [
   {
     name: "Libraries/Frameworks",
     tech: [
-      "Alpine.js",
-      "Tailwind CSS",
       "React",
       "Node.js",
       "Flutter",
       "FastAPI",
+      "Django",
     ],
   },
   {
@@ -39,7 +37,11 @@ var stack = [
       "Visual Studio Code",
       "Unity",
       "Blender",
+      "Looker",
       "Firebase",
+      "Omni Analytics",
+      "Supabase",
+      "AWS"
     ]
   }
 ];

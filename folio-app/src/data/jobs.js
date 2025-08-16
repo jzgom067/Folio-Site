@@ -10,10 +10,10 @@ const jobs = [
     date_start: 'June 2023',
     date_end: 'Present',
     tech_stack: [
-      'MySQL',
-      'Alpine.js',
-      'Tailwind CSS',
-      'Looker/LookML',
+      'SQL',
+      'Looker',
+      'JavaScript',
+      'Omni Analytics'
     ],
     bullets: [
       'Did a thing',
