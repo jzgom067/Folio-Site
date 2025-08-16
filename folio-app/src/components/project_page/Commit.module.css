@@ -40,39 +40,38 @@
 
 .content {
     display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.text {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 100%;
+    min-width: 0;
 }
 
 .titleLine {
     display: flex;
     flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.titleLeft {
+    display: flex;
     align-items: center;
     gap: 0.25rem;
-    margin-bottom: 0.1rem;
-    width: 100%;
+    font-weight: bold;
+    min-width: 0;
 }
 
 .summary {
-    font-weight: bold;
-    text-align: start;
-    max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .linesChanged {
-    font-size: 0.9rem;
     display: flex;
     flex-direction: row;
+    font-size: 0.9rem;
     gap: 0.5rem;
+    margin-left: auto;
 }
 
 .additions {

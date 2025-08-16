@@ -78,23 +78,21 @@ const Commit = ({ data }) => {
                     aspectRatio="1"
                 />
                 <div className={styles.content}>
-                    <div className={styles.text}>
-                        <div className={styles.titleLine}>
-                            <div className={styles.summary}>
-                                {summary}
-                            </div>
+                    <div className={styles.titleLine}>
+                        <div className={styles.titleLeft}>
+                            <span className={styles.summary}>{summary}</span>
                             <Icon name="External Link" stroke="gray" size="1em" />
                         </div>
-                        {message &&
-                            <div className={styles.message} ref={messageRef}>
-                                {message}
-                            </div>
-                        }
+                        <div className={styles.linesChanged}>
+                            <span className={styles.additions}>+{data.stats.additions}</span>
+                            <span className={styles.deletions}>-{data.stats.deletions}</span>
+                        </div>
                     </div>
-                    <div className={styles.linesChanged}>
-                        <span className={styles.additions}>+{data.stats.additions}</span>
-                        <span className={styles.deletions}>-{data.stats.deletions}</span>
-                    </div>
+                    {message &&
+                        <div className={styles.message} ref={messageRef}>
+                            {message}
+                        </div>
+                    }
                 </div>
             </div>
             <div className={styles.footerRow}>
