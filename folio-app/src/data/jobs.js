@@ -4,7 +4,7 @@ const jobs = [
   {
     name: 'Hiveclass',
     slug: 'hiveclass',
-    subtitle: "Developer",
+    subtitle: "Backend Software Engineer",
     logo: hiveclass,
     logo_alt: 'hiveclass',
     date_start: 'June 2023',
@@ -16,10 +16,10 @@ const jobs = [
       'Omni Analytics'
     ],
     bullets: [
-      'Did a thing',
-      'Also did another thing',
-      'Nuked the database',
-      'Got fired',
+      "Analyzing database information using SQL and Omni Analytics to present business insights",
+      "Writing endpoints using JavaScript to create a secure client-facing product API",
+      "Designing foundational database schemas to support a completely overhauled product",
+      "Collaborating with and training non-technical superiors to automate workflows"
     ]
   }
 ]
