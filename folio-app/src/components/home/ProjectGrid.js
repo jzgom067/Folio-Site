@@ -10,6 +10,13 @@ import { Link } from 'react-router-dom';
 import styles from './ProjectGrid.module.css';
 
 const ProjGrid = ({ projects }) => {
+  const tagColors = {
+    'Website': '#22948e',
+    'Mobile App': '#cf864b',
+    'Game': '#d34747',
+    'Discord Bot': '#5865F2'
+  };
+
   return (
     <div className={styles.projects}>
       {projects.map((proj, index) => (
@@ -41,6 +48,17 @@ const ProjGrid = ({ projects }) => {
                     <DevIcon tech={tech} size="2rem" key={index} />
                   ))}
                 </div>
+              </div>
+              <div className={styles.tags}>
+                {proj.tags.map((tag, index) => (
+                  <div
+                    key={index}
+                    className={styles.tag}
+                    style={{ backgroundColor: tagColors[tag] }}
+                  >
+                    {tag}
+                  </div>
+                ))}
               </div>
             </Link>
           </SlideFadeIn>

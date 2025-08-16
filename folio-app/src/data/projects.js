@@ -37,6 +37,7 @@ const projects = [
     subtitle: "A platform for event planning",
     logo: tomeeto,
     logo_alt: 'tomeeto',
+    tags: ['Website'],
     github: {
       type: 'org',
       owner: 'plan-cake'
@@ -86,6 +87,7 @@ const projects = [
     subtitle: "An advanced ChatGPT interface",
     logo: chatkeypt,
     logo_alt: 'chatkeypt',
+    tags: ['Website', 'Mobile App'],
     github: {
       type: 'repo',
       owner: 'coleritchiee',
@@ -138,6 +140,7 @@ const projects = [
     subtitle: "My portfolio website",
     logo: logo,
     logo_alt: 'logo',
+    tags: ['Website'],
     github: {
       type: 'repo',
       owner: 'jzgom067',
@@ -168,6 +171,7 @@ const projects = [
     subtitle: "A central resource for RPI students",
     logo: carpi,
     logo_alt: 'carpi',
+    tags: ['Website', 'Discord Bot'],
     github: {
       type: 'org',
       owner: 'Project-CARPI'
@@ -221,6 +225,7 @@ const projects = [
     subtitle: "A 3D golf game made in Unity",
     logo: supergolf,
     logo_alt: 'golf',
+    tags: ['Game'],
     github: {
       type: 'repo',
       owner: 'jzgom067',
