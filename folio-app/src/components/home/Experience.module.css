@@ -37,6 +37,11 @@
   flex: 1;
 }
 
+.tooltipOverlap {
+  position: relative;
+  z-index: 1;
+}
+
 .titleBar {
   display: flex;
   flex-direction: row;

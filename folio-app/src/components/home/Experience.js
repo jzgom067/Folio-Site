@@ -22,22 +22,24 @@ const Experience = ({ jobs }) => {
             </div>
           </SlideFadeIn>
           <div className={styles.content}>
-            <SlideFadeIn>
-              <div className={styles.titleBar}>
-                <div className={styles.title}>
-                  {job.name}
-                  <div className={styles.subtitle}>
-                    {job.subtitle}, {job.date_start} - {job.date_end}
+            <div className={styles.tooltipOverlap}>
+              <SlideFadeIn>
+                <div className={styles.titleBar}>
+                  <div className={styles.title}>
+                    {job.name}
+                    <div className={styles.subtitle}>
+                      {job.subtitle}, {job.date_start} - {job.date_end}
+                    </div>
+                  </div>
+                  <div className={styles.tech}>
+                    {job.tech_stack.map((tech, i) => (
+                      <DevIcon tech={tech} size="2.5rem" key={i} />
+                    ))}
                   </div>
                 </div>
-                <div className={styles.tech}>
-                  {job.tech_stack.map((tech, i) => (
-                    <DevIcon tech={tech} size="2.5rem" key={i} />
-                  ))}
-                </div>
-              </div>
-              <hr className={styles.divider} />
-            </SlideFadeIn>
+                <hr className={styles.divider} />
+              </SlideFadeIn>
+            </div>
             <div className={styles.bullets}>
               {job.bullets.map((bullet, i) => (
                 <SlideFadeIn key={i}>
