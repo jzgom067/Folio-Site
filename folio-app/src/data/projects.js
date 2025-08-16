@@ -23,20 +23,18 @@ import keypt2 from '../img/keypt/python.png';
 import keypt3 from '../img/keypt/stocks.png';
 import keypt4 from '../img/keypt/duck.png';
 
-import tomeeto from '../img/tomeeto/tomeeto.png';
-import tomeeto1 from '../img/tomeeto/landing.png';
-import tomeeto2 from '../img/tomeeto/login.png';
-import tomeeto3 from '../img/tomeeto/create event.png';
-import tomeeto4 from '../img/tomeeto/availability.png';
-import tomeeto5 from '../img/tomeeto/event demo.mp4';
+import plancake from '../img/plancake/plancake.png';
+import plancake1 from '../img/plancake/availability.png';
+import plancake2 from '../img/plancake/create event.png';
+import plancake3 from '../img/plancake/event demo.mp4';
 
 const projects = [
   {
-    name: 'tomeeto',
-    slug: 'tomeeto',
+    name: 'Plancake',
+    slug: 'plancake',
     subtitle: "A platform for event planning",
-    logo: tomeeto,
-    logo_alt: 'tomeeto',
+    logo: plancake,
+    logo_alt: 'plancake',
     tags: ['Website'],
     github: {
       type: 'org',
@@ -45,11 +43,11 @@ const projects = [
     links: [
       {
         name: 'GitHub',
-        link: 'https://github.com/tomeeto'
+        link: 'https://github.com/plan-cake'
       }
     ],
     date_start: 'September 2024',
-    date_end: 'December 2024',
+    date_end: 'Present',
     tech_stack: [
       'React',
       'Tailwind CSS',
@@ -57,27 +55,19 @@ const projects = [
       'FastAPI',
       'MySQL'
     ],
-    description: "tomeeto is a scheduling platform that simplifies the logistics of finding a time where everyone is available. The intuitive interface allows users to quickly create and share events, then simply \"paint\" their availability. The platform then compiles the results and highlights the best times for an event. This project started as part of the Software Design and Documentation course at RPI.",
+    description: "Plancake is a scheduling platform that simplifies the logistics of finding a time where everyone is available. The intuitive interface allows users to quickly create and share events, then simply \"paint\" their availability. The platform then compiles the results and highlights the best times for an event. This project started as part of the Software Design and Documentation course at RPI. This is still a work-in-progress, so the images shown are from our original prototype that was named \"tomeeto\".",
     images: [
       {
-        title: "Landing Page",
-        img: tomeeto1
-      },
-      {
-        title: "Login Page",
-        img: tomeeto2
+        title: "Availability Page",
+        img: plancake1
       },
       {
         title: "Event Creation",
-        img: tomeeto3
-      },
-      {
-        title: "Availability Page",
-        img: tomeeto4
+        img: plancake2
       },
       {
         title: "Event Demo",
-        img: tomeeto5
+        img: plancake3
       }
     ],
   },
