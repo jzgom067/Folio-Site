@@ -171,7 +171,7 @@ const projects = [
     subtitle: "A central resource for RPI students",
     logo: carpi,
     logo_alt: 'carpi',
-    tags: ['Website', 'Discord Bot'],
+    tags: ['Website', 'Discord App'],
     github: {
       type: 'org',
       owner: 'Project-CARPI'
