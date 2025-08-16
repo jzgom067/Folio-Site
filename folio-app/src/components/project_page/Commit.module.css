@@ -90,6 +90,7 @@
     font-size: 0.9rem;
     color: gray;
     text-align: start;
+    line-height: 1.2em; /* Default, but necessary to specify for multi-line truncation */
 }
 
 .timeAgo {

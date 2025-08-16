@@ -1,9 +1,13 @@
 // modules
-import Icon from '../common/Icon.js'
+import Icon from '../common/Icon.js';
 import PlaceholderImage from '../common/PlaceholderImage.js';
+
+// react stuff
+import { useEffect, useRef } from 'react';
 
 // styling
 import styles from './Commit.module.css';
+
 
 function timeAgo(date) {
     const seconds = Math.floor((Date.now() - new Date(date)) / 1000);
@@ -20,10 +24,44 @@ function timeAgo(date) {
     return `${years} year${years !== 1 ? 's' : ''} ago`;
 }
 
+function multilineTruncate(element, originalMsg, lines) {
+    const lineHeight = parseFloat(getComputedStyle(element).lineHeight);
+    const maxHeight = lineHeight * lines;
+    element.textContent = originalMsg;
+    let text = originalMsg;
+
+    let truncated = false;
+    while (element.clientHeight > maxHeight && text.length > 0) {
+        text = text.slice(0, -1);
+        element.textContent = text + '…';
+        truncated = true;
+    }
+    if (truncated) {
+        // Remove an extra character just to be safe
+        text = text.slice(0, -1);
+        element.textContent = text + '…';
+    }
+}
+
 const Commit = ({ data }) => {
     // Get only the first line of the commit message
     const summary = data.message.split('\n')[0];
     const message = data.message.split('\n').slice(1).join('\n');
+
+    const messageRef = useRef(null);
+    useEffect(() => {
+        function truncate() {
+            if (messageRef.current) {
+                multilineTruncate(messageRef.current, message, 2);
+            }
+        }
+        truncate();
+
+        window.addEventListener('resize', truncate);
+        return () => {
+            window.removeEventListener('resize', truncate);
+        };
+    }, [message]);
 
     return (
         <a
@@ -47,7 +85,7 @@ const Commit = ({ data }) => {
                             </div>
                             <Icon name="External Link" stroke="gray" size="1em" />
                         </div>
-                        {message && <div className={styles.message}>{message}</div>}
+                        {message && <div className={styles.message} ref={messageRef}>{message}</div>}
                     </div>
                     <div className={styles.linesChanged}>
                         <span className={styles.additions}>+{data.stats.additions}</span>
