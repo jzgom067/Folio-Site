@@ -8,13 +8,13 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media only screen and (max-width: 75rem) {
+@media only screen and (max-width: 80rem) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media only screen and (max-width: 55rem) {
+@media only screen and (max-width: 60rem) {
   .projects {
     grid-template-columns: 1fr;
   }
