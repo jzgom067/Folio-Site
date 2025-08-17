@@ -19,10 +19,15 @@
 .chartRow {
     display: flex;
     flex-direction: row;
+}
+
+.chartXAxis {
     border-bottom: 1px solid var(--obj-highlight-color);
 }
 
 .chartCell {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     font-size: 0.75rem;
     align-content: center;
@@ -41,9 +46,8 @@
 .chartDate {
     display: flex;
     flex-direction: column;
-    position: absolute;
     bottom: 0;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%);
     color: gray;
 }
 

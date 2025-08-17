@@ -105,34 +105,28 @@ function CommitChart({ type = 'repo', owner, repo }) {
             <div
               key={idx}
               className={styles.chartCell}
-              style={{ border: idx === 0 ? 'none' : '' }}
             >
-              {item.projects.map((project, idx) => (
-                <div key={idx} onMouseEnter={cellMouseEnter(item.month, project)}>
-                  {idx === 0 &&
+              <div className={styles.chartXAxis}>
+                {item.projects.map((project, idx) => (
+                  <div key={idx} onMouseEnter={cellMouseEnter(item.month, project)}>
+                    {idx === 0 &&
+                      <div className={styles.chartCellSpacer} />
+                    }
+                    <div
+                      className={styles.chartCellContent}
+                      style={{
+                        backgroundColor: project.commits > 0 ? 'red' : 'transparent',
+                        borderLeft: project.commits > 0 ? 'none' : ''
+                      }}
+                    />
                     <div className={styles.chartCellSpacer} />
-                  }
-                  <div
-                    className={styles.chartCellContent}
-                    style={{
-                      backgroundColor: project.commits > 0 ? 'red' : 'transparent',
-                      borderLeft: project.commits > 0 ? 'none' : ''
-                    }}
-                  />
-                  <div className={styles.chartCellSpacer} />
-                </div>
-              ))}
+                  </div>
+                ))}
+              </div>
               <div className={styles.chartDate}>
                 <span>{getMonthInitial(item.month)}</span>
                 <span>{getYear(item.month, idx)}</span>
               </div>
-            </div>
-          ))}
-        </div>
-        <div className={styles.xAxis}>
-          {data.map((item, idx) => (
-            <div key={idx} className={styles.xAxisTick}>
-              {item.date}
             </div>
           ))}
         </div>
