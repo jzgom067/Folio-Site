@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import SlideFadeIn from '../common/SlideFadeIn';
 
 // styling
@@ -8,6 +8,39 @@ function CommitChart({ type = 'repo', owner, repo }) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [tooltipVisible, setTooltipVisible] = useState(false);
+  const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
+  const [tooltipData, setTooltipData] = useState([]);
+  const chartRef = useRef(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const offset = chartRef.current.getBoundingClientRect();
+      setTooltipPos({ x: e.clientX - offset.left, y: e.clientY - offset.top });
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  const chartMouseEnter = (e) => {
+    setTooltipVisible(true);
+  };
+
+  const chartMouseLeave = (e) => {
+    setTooltipVisible(false);
+  };
+
+  const cellMouseEnter = (item) => (e) => {
+    let dataVal = [item.month];
+    if (item.commits) {
+      dataVal.push(item.commits + ' commit' + (item.commits > 1 ? 's' : ''));
+    } else {
+      dataVal.push('No commits');
+    }
+    setTooltipData(dataVal);
+  };
 
   useEffect(() => {
     const params = new URLSearchParams();
@@ -55,7 +88,7 @@ function CommitChart({ type = 'repo', owner, repo }) {
   }
 
   return (
-    <div className={styles.commitChart}>
+    <div className={styles.commitChart} ref={chartRef}>
       <h2 className={styles.commitChartTitle}>Timeline</h2>
       <div className={styles.subtext}>
         {loading && <>Loading...</>}
@@ -63,19 +96,22 @@ function CommitChart({ type = 'repo', owner, repo }) {
         {!loading && !error && data.length === 0 && <>No commits found.</>}
       </div>
       <SlideFadeIn>
-        <div className={styles.chartRow}>
+        <div
+          className={styles.chartRow}
+          onMouseEnter={chartMouseEnter}
+          onMouseLeave={chartMouseLeave}
+        >
           {data.map((item, idx) => (
             <div
               key={idx}
               className={styles.chartCell}
               style={{ border: idx === 0 ? 'none' : '' }}
+              onMouseEnter={cellMouseEnter(item)}
             >
               <div
                 className={styles.chartCellContent}
                 style={{ backgroundColor: item.commits > 0 ? 'red' : 'transparent' }}
-              >
-                {/* <span>{item.commits}</span> */}
-              </div>
+              />
               <div className={styles.chartDate}>
                 <span>{getMonthInitial(item.month)}</span>
                 <span>{getYear(item.month, idx)}</span>
@@ -91,6 +127,19 @@ function CommitChart({ type = 'repo', owner, repo }) {
           ))}
         </div>
       </SlideFadeIn>
+      {tooltipVisible &&
+        <div
+          className={styles.tooltip}
+          style={{
+            left: tooltipPos.x,
+            top: tooltipPos.y + 20,
+          }}
+        >
+          {tooltipData.map((line, index) => (
+            <div key={index}>{line}</div>
+          ))}
+        </div>
+      }
     </div>
   );
 };

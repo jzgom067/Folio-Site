@@ -43,3 +43,15 @@
     transform: translate(-50%, 100%);
     color: gray;
 }
+
+.tooltip {
+    position: fixed;
+    background: var(--obj-highlight-color);
+    color: white;
+    pointer-events: none;
+    z-index: 10;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
