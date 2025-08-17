@@ -77,7 +77,7 @@ export default async function handler(req, res) {
 
             const returnData = months.map(month => ({
                 month,
-                commits: aggregate[month]
+                projects: [{ commits: aggregate[month] }],
             }));
 
             res.status(200).json(returnData);
@@ -119,7 +119,7 @@ export default async function handler(req, res) {
 
             const returnData = months.map(month => ({
                 month,
-                ...aggregate[month]
+                projects: [{ ...aggregate[month] }]
             }));
             res.status(200).json(returnData);
         } catch (err) {

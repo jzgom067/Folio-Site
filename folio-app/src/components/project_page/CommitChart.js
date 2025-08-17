@@ -32,10 +32,10 @@ function CommitChart({ type = 'repo', owner, repo }) {
     setTooltipVisible(false);
   };
 
-  const cellMouseEnter = (item) => (e) => {
-    let dataVal = [item.month];
-    if (item.commits) {
-      dataVal.push(item.commits + ' commit' + (item.commits > 1 ? 's' : ''));
+  const cellMouseEnter = (month, project) => (e) => {
+    let dataVal = [month];
+    if (project.commits) {
+      dataVal.push(project.commits + ' commit' + (project.commits > 1 ? 's' : ''));
     } else {
       dataVal.push('No commits');
     }
@@ -106,12 +106,22 @@ function CommitChart({ type = 'repo', owner, repo }) {
               key={idx}
               className={styles.chartCell}
               style={{ border: idx === 0 ? 'none' : '' }}
-              onMouseEnter={cellMouseEnter(item)}
             >
-              <div
-                className={styles.chartCellContent}
-                style={{ backgroundColor: item.commits > 0 ? 'red' : 'transparent' }}
-              />
+              {item.projects.map((project, idx) => (
+                <div key={idx} onMouseEnter={cellMouseEnter(item.month, project)}>
+                  {idx === 0 &&
+                    <div className={styles.chartCellSpacer} />
+                  }
+                  <div
+                    className={styles.chartCellContent}
+                    style={{
+                      backgroundColor: project.commits > 0 ? 'red' : 'transparent',
+                      borderLeft: project.commits > 0 ? 'none' : ''
+                    }}
+                  />
+                  <div className={styles.chartCellSpacer} />
+                </div>
+              ))}
               <div className={styles.chartDate}>
                 <span>{getMonthInitial(item.month)}</span>
                 <span>{getYear(item.month, idx)}</span>
