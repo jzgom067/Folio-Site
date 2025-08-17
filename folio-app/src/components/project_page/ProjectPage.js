@@ -18,6 +18,7 @@ import { useParams } from 'react-router-dom';
 // styling
 import styles from './ProjectPage.module.css';
 import CommitList from './CommitList.js';
+import CommitChart from './CommitChart.js';
 
 function getProj(slug) {
   return projects.find((proj) => proj.slug === slug);
@@ -123,9 +124,14 @@ function Project() {
         }
       </div>
       {data.github &&
-        <SlideFadeIn>
-          <CommitList type={data.github.type} owner={data.github.owner} repo={data.github.repo} />
-        </SlideFadeIn>
+        <>
+          <SlideFadeIn>
+            <CommitChart type={data.github.type} owner={data.github.owner} repo={data.github.repo} />
+          </SlideFadeIn>
+          <SlideFadeIn>
+            <CommitList type={data.github.type} owner={data.github.owner} repo={data.github.repo} />
+          </SlideFadeIn>
+        </>
       }
       <SlideFadeIn>
         <HomeButton />
