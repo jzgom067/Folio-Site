@@ -18,6 +18,7 @@ var stack = [
       "HTML",
       "CSS",
       "JavaScript",
+      "TypeScript",
       "Dart",
     ],
   },
@@ -29,6 +30,8 @@ var stack = [
       "Flutter",
       "FastAPI",
       "Django",
+      "Next.js",
+      "Tailwind CSS",
     ],
   },
   {
