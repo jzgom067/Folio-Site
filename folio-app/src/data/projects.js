@@ -24,9 +24,9 @@ import keypt3 from '../img/keypt/stocks.png';
 import keypt4 from '../img/keypt/duck.png';
 
 import plancake from '../img/plancake/plancake.png';
-import plancake1 from '../img/plancake/availability.png';
-import plancake2 from '../img/plancake/create event.png';
-import plancake3 from '../img/plancake/event demo.mp4';
+import plancake1 from '../img/plancake/results.png';
+import plancake2 from '../img/plancake/dashboard.png';
+import plancake3 from '../img/plancake/demo.mp4';
 
 const projects = [
   {
@@ -60,18 +60,18 @@ const projects = [
       'Supabase',
       'PostgreSQL'
     ],
-    description: "Plancake is a scheduling platform that simplifies the logistics of finding a time where everyone is available. The intuitive interface allows users to quickly create and share events, then simply \"paint\" their availability. The platform then compiles the results and highlights the best times for an event. This project started as part of the Software Design and Documentation course at RPI. This is still a work-in-progress, so the images shown are from our original prototype that was named \"tomeeto\".",
+    description: "Plancake is a scheduling platform that simplifies the logistics of finding a time where everyone is available. The intuitive interface allows users to quickly create and share events, then simply \"paint\" their availability. The platform then compiles the results and highlights the best times for an event. This project started as part of the Software Design and Documentation course at RPI.",
     images: [
       {
-        title: "Availability Page",
+        title: "Event Results",
         img: plancake1
       },
       {
-        title: "Event Creation",
+        title: "Dashboard",
         img: plancake2
       },
       {
-        title: "Event Demo",
+        title: "Demo",
         img: plancake3
       }
     ],
