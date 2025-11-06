@@ -44,6 +44,10 @@ const projects = [
       {
         name: 'GitHub',
         link: 'https://github.com/plan-cake'
+      },
+      {
+        name: 'Website',
+        link: 'https://plancake.org/'
       }
     ],
     date_start: 'September 2024',
