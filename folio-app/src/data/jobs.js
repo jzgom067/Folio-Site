@@ -11,15 +11,16 @@ const jobs = [
     date_end: 'Present',
     tech_stack: [
       'SQL',
-      'Looker',
-      'JavaScript',
-      'Omni Analytics'
+      'Omni Analytics',
+      'TypeScript',
+      'Drizzle ORM',
     ],
     bullets: [
-      "Analyzing database information using SQL and Omni Analytics to present business insights",
-      "Writing endpoints using JavaScript to create a secure client-facing product API",
-      "Designing foundational database schemas to support a completely overhauled product",
-      "Collaborating with and training non-technical superiors to automate workflows"
+      "Designing a foundational database schema with 25+ tables to support an overhauled product",
+      "Orchestrating a database migration using TypeScript to bring client data to a new back-end",
+      "Writing JavaScript to create 20+ endpoints for a consistent and secure client-facing API",
+      "Analyzing data using SQL and Omni Analytics to compile 2M+ rows for business insights",
+      "Collaborating with non-technical superiors to automate previously manual workflows",
     ]
   }
 ]
