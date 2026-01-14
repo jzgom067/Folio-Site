@@ -32,6 +32,7 @@ var stack = [
       "Django",
       "Next.js",
       "Tailwind CSS",
+      "Drizzle ORM",
     ],
   },
   {
