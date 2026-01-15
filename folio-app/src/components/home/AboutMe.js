@@ -5,9 +5,9 @@ import SlideFadeIn from '../common/SlideFadeIn.js';
 import styles from './AboutMe.module.css';
 
 var text = [
-  "I'm a current undergrad at RPI pursuing a degree in Computer Science, with a minor in Information Technology & Web Science.",
+  "I'm an RPI graduate with a bachelor's in Computer Science and a minor in Information Technology & Web Science.",
   "The creative problem-solving involved in programming is what motivates me to write robust and maintainable code. I may have experience with a variety of technology now, but my career peaked when coding Snake on my TI-84 in middle school.",
-  "When away from the computer, I spend my time practicing diabolo tricks and learning about photography.",
+  "When away from the computer, I enjoy exploring photography and have recently developed a strong interest in cooking."
 ];
 
 const AboutMe = () => (
