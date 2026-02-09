@@ -86,12 +86,12 @@ const projects = [
     github: {
       type: 'repo',
       owner: 'coleritchiee',
-      repo: 'gpt_thing'
+      repo: 'ChatKeyPT'
     },
     links: [
       {
         name: 'GitHub',
-        link: 'https://github.com/coleritchiee/gpt_thing'
+        link: 'https://github.com/coleritchiee/ChatKeyPT'
       },
       {
         name: 'Website',
