@@ -8,12 +8,12 @@ import golf6 from '../img/golf/desperation.mp4';
 import golf7 from '../img/golf/scoreboard.png';
 
 import carpi from '../img/carpi/carpi.png';
-import carpi1 from '../img/carpi/summary.png';
-import carpi2 from '../img/carpi/commands.png';
-import carpi3 from '../img/carpi/course search.mp4';
-import carpi4 from '../img/carpi/course terms.png';
-import carpi5 from '../img/carpi/calendar.mp4';
-import carpi6 from '../img/carpi/compile.png';
+import carpi1 from '../img/carpi/example schedule.png';
+import carpi2 from '../img/carpi/drag and drop.mp4';
+import carpi3 from '../img/carpi/search filters.mp4';
+import carpi4 from '../img/carpi/course search.mp4';
+import carpi5 from '../img/carpi/bot summary.png';
+import carpi6 from '../img/carpi/bot course search.mp4';
 
 import logo from '../img/logo.png';
 
@@ -254,27 +254,27 @@ const projects = [
     description: "CARPI Course Planner is a web interface for students to lay out courses for their time at RPI. The project originally formed around a Discord bot that offered convenient resources on a platform students were already on. Now, it's shifted to a web platform to offer a richer and more accessible experience. This project is part of the Rensselaer Center for Open Source (RCOS) program, which focuses on the development of open source solutions for real world problems.",
     images: [
       {
-        title: "Discord App Summary",
+        title: "Example Schedule",
         img: carpi1
       },
       {
-        title: "Command List",
+        title: "Drag and Drop Functionality",
         img: carpi2
       },
       {
-        title: "Course Search Command",
+        title: "Search Filters",
         img: carpi3
       },
       {
-        title: "Course Terms Command",
+        title: "Course Search",
         img: carpi4
       },
       {
-        title: "Academic Calendar Command",
+        title: "Discord App Summary",
         img: carpi5
       },
       {
-        title: "Compiler Command",
+        title: "Discord App Course Search",
         img: carpi6
       }
     ],
