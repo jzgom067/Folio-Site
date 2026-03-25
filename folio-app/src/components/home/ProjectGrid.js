@@ -14,7 +14,8 @@ const ProjGrid = ({ projects }) => {
     'Website': '#22948e',
     'Mobile App': '#cf864b',
     'Game': '#d34747',
-    'Discord App': '#5865F2'
+    'Discord App': '#5865F2',
+    'Class Project': '#b765ac',
   };
 
   return (

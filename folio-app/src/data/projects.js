@@ -90,7 +90,7 @@ const projects = [
     subtitle: "A project for a graphics class",
     logo: camera,
     logo_alt: 'camera',
-    tags: [],
+    tags: ['Class Project'],
     github: {
       type: 'repo',
       owner: 'jzgom067',
