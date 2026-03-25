@@ -100,6 +100,14 @@ const projects = [
       {
         name: 'GitHub',
         link: 'https://github.com/jzgom067/Camera-Simulator'
+      },
+      {
+        name: 'Paper',
+        link: '/Camera Simulator Paper.pdf'
+      },
+      {
+        name: 'Presentation',
+        link: '/Camera Simulator Presentation.pdf'
       }
     ],
     date_start: 'March 2025',
