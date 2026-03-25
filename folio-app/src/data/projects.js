@@ -23,6 +23,14 @@ import keypt2 from '../img/keypt/python.png';
 import keypt3 from '../img/keypt/stocks.png';
 import keypt4 from '../img/keypt/duck.png';
 
+import camera from '../img/camera/camera.jpeg';
+import camera1 from '../img/camera/iso.png';
+import camera2 from '../img/camera/shutter speed.png';
+import camera3 from '../img/camera/aperture.png';
+import camera4 from '../img/camera/results 1.png';
+import camera5 from '../img/camera/results 2.png';
+import camera6 from '../img/camera/results 3.png';
+
 import plancake from '../img/plancake/plancake.png';
 import plancake1 from '../img/plancake/results.png';
 import plancake2 from '../img/plancake/dashboard.png';
@@ -73,6 +81,57 @@ const projects = [
       {
         title: "Demo",
         img: plancake3
+      }
+    ],
+  },
+  {
+    name: 'Camera Simulator',
+    slug: 'camera',
+    subtitle: "A project for a graphics class",
+    logo: camera,
+    logo_alt: 'camera',
+    tags: [],
+    github: {
+      type: 'repo',
+      owner: 'jzgom067',
+      repo: 'Camera-Simulator'
+    },
+    links: [
+      {
+        name: 'GitHub',
+        link: 'https://github.com/jzgom067/Camera-Simulator'
+      }
+    ],
+    date_start: 'March 2025',
+    date_end: 'April 2025',
+    tech_stack: [
+      'C++',
+    ],
+    description: "A camera simulator.",
+    images: [
+      {
+        title: "ISO Setting",
+        img: camera1
+      },
+      {
+        title: "Shutter Speed Setting",
+        img: camera2
+      },
+      {
+        title: "Aperture Setting",
+        img: camera3
+      },
+      {
+        title: "Results",
+        img: camera4
+      },
+      {
+        title: "More Results",
+        img: camera5
+      },
+      {
+        title: "Even More Results",
+        img: camera6
       }
     ],
   },
