@@ -115,7 +115,7 @@ const projects = [
     tech_stack: [
       'C++',
     ],
-    description: "A camera simulator.",
+    description: "This project is an interactive program that simulates the effects of ISO, shutter speed, and aperture on a camera's resulting image. Using ray tracing, it approximates how a lens physically interacts with light under the specified conditions. Built on top of a homework assignment, this is my final project for the Advanced Computer Graphics course at RPI.",
     images: [
       {
         title: "ISO Setting",
