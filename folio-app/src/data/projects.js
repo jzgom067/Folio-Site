@@ -226,12 +226,12 @@ const projects = [
     iframe_link: 'https://jackzgom.com',
   },
   {
-    name: 'Project CARPI',
+    name: 'CARPI Course Planner',
     slug: 'carpi',
-    subtitle: "A central resource for RPI students",
+    subtitle: "A 4-year planner for RPI students",
     logo: carpi,
     logo_alt: 'carpi',
-    tags: ['Website', 'Discord App'],
+    tags: ['Website'],
     github: {
       type: 'org',
       owner: 'Project-CARPI'
@@ -251,7 +251,7 @@ const projects = [
       'FastAPI',
       'MySQL'
     ],
-    description: "Project CARPI (Cool Academic RPI) is designed to be a central resource for students at Rensselaer Polytechnic Institute. The project is currently going through a large shift onto a web platform, with the main feature being a 4-year course planner. However, the images show the Discord bot that the project originally formed around. This project is part of the Rensselaer Center for Open Source (RCOS) program, which focuses on the development of open source solutions for real world problems.",
+    description: "CARPI Course Planner is a web interface for students to lay out courses for their time at RPI. The project originally formed around a Discord bot that offered convenient resources on a platform students were already on. Now, it's shifted to a web platform to offer a richer and more accessible experience. This project is part of the Rensselaer Center for Open Source (RCOS) program, which focuses on the development of open source solutions for real world problems.",
     images: [
       {
         title: "Discord App Summary",
