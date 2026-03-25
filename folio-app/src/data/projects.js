@@ -87,7 +87,7 @@ const projects = [
   {
     name: 'Camera Simulator',
     slug: 'camera',
-    subtitle: "A project for a graphics class",
+    subtitle: "A ray-traced camera lens simulator",
     logo: camera,
     logo_alt: 'camera',
     tags: ['Class Project'],
