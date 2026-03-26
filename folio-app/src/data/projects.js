@@ -23,6 +23,12 @@ import keypt2 from '../img/keypt/python.png';
 import keypt3 from '../img/keypt/stocks.png';
 import keypt4 from '../img/keypt/duck.png';
 
+import alien from '../img/grappler/alien.jpeg';
+import grappler1 from '../img/grappler/action shot.png';
+import grappler2 from '../img/grappler/grapple point.png';
+import grappler3 from '../img/grappler/grapple pull points.mp4';
+import grappler4 from '../img/grappler/grapple swing points.mp4';
+
 import camera from '../img/camera/camera.jpeg';
 import camera1 from '../img/camera/iso.png';
 import camera2 from '../img/camera/shutter speed.png';
@@ -141,6 +147,54 @@ const projects = [
         title: "Even More Results",
         img: camera6
       }
+    ],
+  },
+  {
+    name: 'Space Grappler',
+    slug: 'grappler',
+    subtitle: "A 2D platformer made in Unity",
+    logo: alien,
+    logo_alt: 'alien',
+    tags: ['Game', 'Class Project'],
+    github: {
+      type: 'repo',
+      owner: 'jzgom067',
+      repo: 'Space-Grappler'
+    },
+    links: [
+      {
+        name: 'GitHub',
+        link: 'https://github.com/jzgom067/Space-Grappler'
+      },
+      {
+        name: 'itch.io',
+        link: 'https://honketh.itch.io/space-grappler'
+      },
+    ],
+    date_start: 'February 2025',
+    date_end: 'March 2025',
+    tech_stack: [
+      'C#',
+      'Unity'
+    ],
+    description: "Space Grappler is a short 2D platformer made in Unity. Players can take advantage of grapple points to build momentum and cross large gaps. The levels focus on creative uses of this mechanic over precise movement, creating a more engaging experience for players with different skill levels. This project was created as a final project for the Intro to Game Programming course at RPI.",
+    images: [
+      {
+        title: "Action Shot",
+        img: grappler1
+      },
+      {
+        title: "Grapple Point",
+        img: grappler2
+      },
+      {
+        title: "Grapple Pull Points",
+        img: grappler3
+      },
+      {
+        title: "Grapple Swing Points",
+        img: grappler4
+      },
     ],
   },
   {
