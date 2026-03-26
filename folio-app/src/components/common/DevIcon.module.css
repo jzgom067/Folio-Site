@@ -11,8 +11,8 @@
 .tooltip {
   font-size: 0.9rem;
   background-color: var(--tooltip-color);
-  padding: 0.25rem;
-  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
   opacity: 0;
   z-index: 15;
@@ -20,7 +20,9 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .tooltip {
-    transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+    transition:
+      opacity 0.15s ease-out,
+      transform 0.15s ease-out;
   }
 }
 

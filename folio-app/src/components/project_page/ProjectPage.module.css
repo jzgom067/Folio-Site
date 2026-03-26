@@ -15,7 +15,7 @@
 
 .logoContainer {
   height: 4.75rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
@@ -130,11 +130,17 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .preview1 {
-    transition: left 0.15s ease-out, filter 0.075s ease-out, rotate 0.15s ease-out;
+    transition:
+      left 0.15s ease-out,
+      filter 0.075s ease-out,
+      rotate 0.15s ease-out;
   }
 
   .preview2 {
-    transition: right 0.15s ease-out, filter 0.075s ease-out, rotate 0.15s ease-out;
+    transition:
+      right 0.15s ease-out,
+      filter 0.075s ease-out,
+      rotate 0.15s ease-out;
   }
 
   .previewHover {
@@ -146,7 +152,7 @@
   position: relative;
   overflow: hidden;
   width: 85%;
-  border-radius: 0.75rem;
+  border-radius: 1.5rem;
   left: -2.5%;
   box-shadow: 0.2rem 0rem 0.2rem 0rem var(--obj-shadow-color);
   pointer-events: none;
@@ -159,7 +165,7 @@
   position: absolute;
   overflow: hidden;
   width: 85%;
-  border-radius: 0.75rem;
+  border-radius: 1.5rem;
   right: 5%;
   /* clip-path: inset(0 0 0 85%); */
   pointer-events: none;
@@ -191,7 +197,7 @@
   border-color: gray;
   border-width: 1px;
   border-style: solid;
-  border-radius: 0.75rem;
+  border-radius: 3rem;
   box-shadow: 0.2rem 0rem 0.2rem 0rem var(--obj-shadow-color);
   transform: scale(0.5);
   transform-origin: top left;

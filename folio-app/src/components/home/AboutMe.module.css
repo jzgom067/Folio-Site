@@ -13,15 +13,15 @@
   padding-top: 3rem;
 }
 
-.picContainer {  
+.picContainer {
   position: relative;
   aspect-ratio: 3 / 4;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
 }
 
 .pic {
   width: 100%;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
 }
 
 .cutout {
@@ -29,7 +29,7 @@
   width: 100%;
   bottom: 3px;
   left: 0;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
 }
 
 .firstName {

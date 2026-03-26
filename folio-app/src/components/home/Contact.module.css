@@ -21,8 +21,8 @@
   background-color: var(--obj-highlight-color);
   color: white;
   text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.25rem;
   transition: background-color 0.1s;
 }
 

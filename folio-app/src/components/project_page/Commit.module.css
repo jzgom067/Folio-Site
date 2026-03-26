@@ -1,97 +1,97 @@
 .commit {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.75rem;
-    border-radius: 0.75rem;
-    background-color: var(--obj-color);
-    box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
-    text-decoration: none;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: var(--obj-color);
+  box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
+  text-decoration: none;
+  color: white;
 }
 
 .commit:hover {
-    background-color: var(--obj-highlight-color);
+  background-color: var(--obj-highlight-color);
 }
 
 .mainRow {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .footerRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 0.9rem;
-    color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: lightgray;
 }
 
 .avatar {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--avatar-bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--avatar-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
 }
 
 .titleLine {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    margin-bottom: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-bottom: 0.1rem;
 }
 
 .titleLeft {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-weight: bold;
-    min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: bold;
+  min-width: 0;
 }
 
 .summary {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .linesChanged {
-    display: flex;
-    flex-direction: row;
-    font-size: 0.9rem;
-    gap: 0.5rem;
-    margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+  gap: 0.5rem;
+  margin-left: auto;
 }
 
 .additions {
-    font-weight: bold;
-    color: #3fb950;
+  font-weight: bold;
+  color: #3fb950;
 }
 
 .deletions {
-    font-weight: bold;
-    color: #f85149;
+  font-weight: bold;
+  color: #f85149;
 }
 
 .message {
-    font-style: italic;
-    font-size: 0.9rem;
-    color: gray;
-    text-align: start;
-    line-height: 1.2em; /* Default, but necessary to specify for multi-line truncation */
+  font-style: italic;
+  font-size: 0.9rem;
+  color: gray;
+  text-align: start;
+  line-height: 1.2em; /* Default, but necessary to specify for multi-line truncation */
 }
 
 .timeAgo {
-    color: gray;
+  color: gray;
 }

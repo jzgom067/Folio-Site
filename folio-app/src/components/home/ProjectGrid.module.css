@@ -29,7 +29,7 @@
   box-sizing: border-box;
   color: white;
   padding: 1rem;
-  border-radius: 0.75rem;
+  border-radius: 2rem;
   background-color: var(--obj-color);
   box-shadow: 0rem 0rem 0.25rem 0.25rem var(--obj-shadow-color);
   cursor: pointer;
@@ -51,7 +51,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 0.75rem;
+  border-radius: 2rem;
   pointer-events: none;
 }
 
@@ -62,7 +62,7 @@
 .logoContainer {
   width: 10rem;
   aspect-ratio: 1;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -111,6 +111,6 @@
 
 .tag {
   padding: 0.25rem 0.5rem;
-  border-radius: 1rem;
+  border-radius: calc(infinity * 1px);
   text-wrap: nowrap;
 }
