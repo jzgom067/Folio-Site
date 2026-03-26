@@ -4,7 +4,7 @@ const jobs = [
   {
     name: 'Hiveclass',
     slug: 'hiveclass',
-    subtitle: "Backend Software Engineer",
+    subtitle: "Backend Engineer",
     logo: hiveclass,
     logo_alt: 'hiveclass',
     date_start: 'June 2023',
@@ -16,11 +16,10 @@ const jobs = [
       'Drizzle ORM',
     ],
     bullets: [
-      "Designing a foundational database schema with 25+ tables to support an overhauled product",
-      "Orchestrating a database migration using TypeScript to bring client data to a new back-end",
-      "Writing JavaScript to create 20+ endpoints for a consistent and secure client-facing API",
-      "Analyzing data using SQL and Omni Analytics to compile 2M+ rows for business insights",
-      "Collaborating with non-technical superiors to automate previously manual workflows",
+      "Leading the design of a normalized database schema and coordinating a full data migration using TypeScript and Drizzle ORM to support an overhauled product with 25+ tables, resolving technical debt and ensuring strict relational integrity",
+      "Establishing the company's first data analytics pipeline using Omni Analytics to aggregate 2M+ rows of business data",
+      "Developing 20+ Express.js endpoints to support product features, including a teacher portal for the retrieval of complex data",
+      "Collaborating with cross-functional stakeholders to automate workflows and provide training for streamlined operations",
     ]
   }
 ]
