@@ -285,7 +285,7 @@ const projects = [
     subtitle: "A 4-year planner for RPI students",
     logo: carpi,
     logo_alt: 'carpi',
-    tags: ['Website'],
+    tags: ['Website', 'Discord App'],
     github: {
       type: 'org',
       owner: 'Project-CARPI'
