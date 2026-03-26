@@ -297,7 +297,7 @@ const projects = [
       }
     ],
     date_start: 'December 2023',
-    date_end: 'Present',
+    date_end: 'December 2025',
     tech_stack: [
       'React',
       'Tailwind CSS',
