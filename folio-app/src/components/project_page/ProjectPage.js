@@ -122,6 +122,18 @@ function Project() {
           </div>
         }
       </div>
+      {data.unity_playable &&
+        <div className={styles.unityContainer}>
+          <SlideFadeIn>
+            <iframe
+              src={data.unity_playable}
+              title="Unity Playable"
+              className={styles.unityIframe}
+              allowFullScreen
+            ></iframe>
+          </SlideFadeIn>
+        </div>
+      }
       {data.github &&
         <SlideFadeIn>
           <CommitList type={data.github.type} owner={data.github.owner} repo={data.github.repo} />

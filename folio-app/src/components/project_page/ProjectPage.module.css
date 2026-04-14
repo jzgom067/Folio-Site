@@ -203,3 +203,15 @@
   transform-origin: top left;
   margin-bottom: -56%;
 }
+
+.unityContainer {
+  justify-content: center;
+}
+
+.unityIframe {
+  width: 960px;
+  height: 600px;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+}
