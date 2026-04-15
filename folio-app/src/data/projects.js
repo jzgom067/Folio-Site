@@ -393,6 +393,7 @@ const projects = [
         img: golf7
       }
     ],
+    unity_playable: 'https://itch.io/embed-upload/17177582?color=333333',
   },
 ]
 
