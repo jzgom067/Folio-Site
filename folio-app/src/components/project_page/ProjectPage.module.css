@@ -205,7 +205,33 @@
 }
 
 .unityContainer {
+  display: flex;
   justify-content: center;
+}
+
+.unityPlayButtonContainer {
+  width: 960px;
+  height: 600px;
+  background-color: #333333;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  color: white;
+}
+
+.unityPlayButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
 }
 
 .unityIframe {

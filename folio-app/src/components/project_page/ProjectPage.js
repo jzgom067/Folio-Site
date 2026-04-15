@@ -29,6 +29,7 @@ function Project() {
   data = getProj(slug);
 
   const [showUnity, setShowUnity] = useState(false);
+  const [playClicked, setPlayClicked] = useState(false);
 
   useEffect(() => {
     // Check if the user is on desktop
@@ -134,12 +135,29 @@ function Project() {
       {data.unity_playable && showUnity &&
         <div className={styles.unityContainer}>
           <SlideFadeIn>
-            <iframe
-              src={data.unity_playable}
-              title="Unity Playable"
-              className={styles.unityIframe}
-              allowFullScreen
-            ></iframe>
+            {playClicked
+              ? (
+                <iframe
+                  src={data.unity_playable}
+                  title="Unity Playable"
+                  className={styles.unityIframe}
+                  allowFullScreen
+                ></iframe>
+              )
+              : (
+                <div className={styles.unityPlayButtonContainer}>
+                  <button
+                    className={styles.unityPlayButton}
+                    onClick={() => setPlayClicked(true)}
+                  >
+                    <div className={styles.unityPlayIcon}>
+                      <Icon name="Play" size="1.5rem" stroke="white" />
+                    </div>
+                    Play in Browser
+                  </button>
+                </div>
+              )
+            }
           </SlideFadeIn>
         </div>
       }
