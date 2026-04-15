@@ -10,7 +10,7 @@ import PlaceholderImage from '../common/PlaceholderImage.js';
 import HomeButton from '../common/HomeButton.js';
 
 // react stuff
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // router
 import { useParams } from 'react-router-dom';
@@ -27,6 +27,15 @@ function Project() {
   let { slug } = useParams();
   let data = null;
   data = getProj(slug);
+
+  const [showUnity, setShowUnity] = useState(false);
+
+  useEffect(() => {
+    // Check if the user is on desktop
+    if (window.innerWidth > 1024) {
+      setShowUnity(true);
+    }
+  }, []);
 
   return (
     <div className={styles.section}>
@@ -122,7 +131,7 @@ function Project() {
           </div>
         }
       </div>
-      {data.unity_playable &&
+      {data.unity_playable && showUnity &&
         <div className={styles.unityContainer}>
           <SlideFadeIn>
             <iframe
