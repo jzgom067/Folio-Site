@@ -7,7 +7,7 @@ import styles from './SlideFadeIn.module.css';
 const animQueue = [];
 let animInterval = null;
 
-const delay = 100; // milliseconds
+const delay = 75; // milliseconds
 
 const getDocumentPos = (element) => {
   const rect = element.getBoundingClientRect();
