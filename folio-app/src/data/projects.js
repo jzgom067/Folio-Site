@@ -109,11 +109,11 @@ const projects = [
       },
       {
         name: 'Paper',
-        link: '/Camera Simulator Paper.pdf'
+        link: '/Camera_Simulator_Paper.pdf'
       },
       {
         name: 'Presentation',
-        link: '/Camera Simulator Presentation.pdf'
+        link: '/Camera_Simulator_Presentation.pdf'
       }
     ],
     date_start: 'March 2025',
